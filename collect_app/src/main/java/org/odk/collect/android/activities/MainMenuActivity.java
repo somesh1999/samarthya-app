@@ -16,7 +16,6 @@ package org.odk.collect.android.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Environment;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -26,15 +25,12 @@ import android.widget.TextView;
 
 import androidx.appcompat.widget.Toolbar;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.test.core.app.ApplicationProvider;
 
 import org.odk.collect.android.R;
 import org.odk.collect.android.activities.viewmodels.CurrentProjectViewModel;
 import org.odk.collect.android.activities.viewmodels.MainMenuViewModel;
 import org.odk.collect.android.database.instances.DatabaseInstancesRepository;
-import org.odk.collect.android.gdrive.GoogleDriveActivity;
 import org.odk.collect.android.injection.DaggerUtils;
-import org.odk.collect.android.preferences.keys.ProjectKeys;
 import org.odk.collect.android.preferences.keys.MetaKeys;
 import org.odk.collect.android.preferences.source.SettingsProvider;
 import org.odk.collect.android.projects.ProjectIconView;
@@ -42,9 +38,8 @@ import org.odk.collect.android.projects.ProjectSettingsDialog;
 import org.odk.collect.android.storage.StorageInitializer;
 import org.odk.collect.android.utilities.ApplicationConstants;
 import org.odk.collect.android.utilities.MultiClickGuard;
-import org.odk.collect.android.utilities.PlayServicesChecker;
 import org.odk.collect.forms.instances.Instance;
-import org.odk.collect.shared.TempFiles;
+
 
 import javax.inject.Inject;
 
