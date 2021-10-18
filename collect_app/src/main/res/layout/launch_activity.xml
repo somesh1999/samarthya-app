@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.fragment.app.FragmentContainerView
+                android:name="org.odk.collect.android.fragments.MapBoxInitializationFragment"
+                android:id="@+id/map_box_initialization_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin_extra_large"
+                android:paddingTop="@dimen/margin_extra_large"
+                android:paddingRight="@dimen/margin_extra_large"
+                android:paddingBottom="@dimen/margin_standard"
+                android:layout_marginTop="@dimen/margin_extra_large">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/all_buttons"
+                    android:layout_marginTop="@dimen/margin_extra_large">
+                    <Button
+                        android:id="@+id/enter_data"
+                        style="@style/launch_page_buttons"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:text="@string/teacher_format" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/all_buttons"
+                    android:layout_marginTop="@dimen/margin_large">
+                    <Button
+                        android:id="@+id/review_data"
+                        style="@style/launch_page_buttons"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:text="@string/head_format" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/all_buttons"
+                    android:layout_marginTop="@dimen/margin_large">
+                    <Button
+                        android:id="@+id/send_data"
+                        style="@style/launch_page_buttons"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:text="@string/monitoring_format" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/app_name"
+                    android:textAppearance="?textAppearanceBody1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_standard"
+                    android:textColor="@color/color_on_surface_medium_emphasis"
+                    tools:text="ODK Collect v2022.3" />
+
+                <TextView
+                    android:id="@+id/version_sha"
+                    android:textAppearance="?textAppearanceCaption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    tools:text="commit sha" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/help"
+        app:maxImageSize="55dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <include layout="@layout/app_bar_layout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

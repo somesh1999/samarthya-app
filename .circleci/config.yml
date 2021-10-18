@@ -1,0 +1,208 @@
+# This config and the the Gradle flags/opts are based on: https://circleci.com/docs/2.0/language-android/
+# and https://support.circleci.com/hc/en-us/articles/360021812453
+
+version: 2
+
+references:
+  android_config: &android_config
+    working_directory: ~/work
+    docker:
+      - image: circleci/android:api-30
+
+jobs:
+  compile:
+    <<: *android_config
+    steps:
+      - checkout
+      - run:
+          name: Generate combined build.gradle file for cache key
+          command: cat build.gradle */build.gradle .circleci/gradle.properties > deps.txt
+      - restore_cache:
+          key: deps-{{ checksum "deps.txt" }}
+      - run:
+          name: Download dependencies
+          command: ./gradlew -PdisablePreDex --no-daemon --max-workers=2 androidDependencies
+      - run:
+          name: Copy gradle config
+          command: cp .circleci/gradle.properties ~/.gradle/gradle.properties
+      - save_cache:
+          paths:
+            - ~/.gradle
+          key: deps-{{ checksum "deps.txt" }}
+
+      - run:
+          name: Download Robolectric deps
+          command: ./download-robolectric-deps.sh
+
+      - run:
+          name: Compile code
+          command: ./gradlew -PdisablePreDex --no-daemon --max-workers=2 assembleDebug
+
+      - persist_to_workspace:
+          root: ~/work
+          paths:
+            - .
+
+  check_quality:
+    <<: *android_config
+    steps:
+      - attach_workspace:
+          at: ~/work
+      - restore_cache:
+          key: deps-{{ checksum "deps.txt" }}
+
+      - run:
+          name: Run code quality checks
+          command: ./gradlew -PdisablePreDex --no-daemon --max-workers=2 checkCode
+      - store_artifacts:
+          path: collect_app/build/reports
+          destination: reports
+
+  test_modules:
+    <<: *android_config
+    steps:
+      - attach_workspace:
+          at: ~/work
+      - restore_cache:
+          key: deps-{{ checksum "deps.txt" }}
+
+      - run:
+          name: Run shared unit tests
+          command: ./gradlew -PdisablePreDex --no-daemon --max-workers=2 shared:test
+      - run:
+          name: Run androidshared unit tests
+          command: ./gradlew -PdisablePreDex --no-daemon --max-workers=2 androidshared:testDebug
+      - run:
+          name: Run formtest unit tests
+          command: ./gradlew -PdisablePreDex --no-daemon --max-workers=2 formstest:test
+      - run:
+          name: Run async unit tests
+          command: ./gradlew -PdisablePreDex --no-daemon --max-workers=2 async:testDebug
+      - run:
+          name: Run strings unit tests
+          command: ./gradlew -PdisablePreDex --no-daemon --max-workers=2 strings:testDebug
+      - run:
+          name: Run audioclips unit tests
+          command: ./gradlew -PdisablePreDex --no-daemon --max-workers=2 audioclips:testDebug
+      - run:
+          name: Run audiorecorder unit tests
+          command: ./gradlew -PdisablePreDex --no-daemon --max-workers=2 audiorecorder:testDebug
+      - run:
+          name: Run projects unit tests
+          command: ./gradlew -PdisablePreDex --no-daemon --max-workers=2 projects:testDebug
+      - run:
+          name: Run location unit tests
+          command: ./gradlew -PdisablePreDex --no-daemon --max-workers=2 location:testDebug
+
+      - store_artifacts:
+          path: collect_app/build/reports
+          destination: reports
+      - store_test_results:
+          path: collect_app/build/test-results
+
+  test_app:
+    <<: *android_config
+    parallelism: 4
+    steps:
+      - attach_workspace:
+          at: ~/work
+      - restore_cache:
+          key: deps-{{ checksum "deps.txt" }}
+
+      - run:
+          name: Generate list of test classes
+          command: .circleci/generate-app-test-list.sh
+
+      - run:
+          name: Generate list of tests for this fork
+          command: |
+            cat .circleci/collect_app_test_classes.txt | circleci tests split > .circleci/fork_test_classes.txt && \
+            echo "Tests for this fork:" && \
+            cat .circleci/fork_test_classes.txt
+
+      - run:
+          name: Run app unit tests
+          command: |
+            ./gradlew -PdisablePreDex --no-daemon --max-workers=2 collect_app:testDebug $(cat .circleci/fork_test_classes.txt | awk '{for (i=1; i<=NF; i++) printf "--tests %s ",$i}')
+
+      - store_artifacts:
+          path: collect_app/build/reports
+          destination: reports
+      - store_test_results:
+          path: collect_app/build/test-results
+
+  build_instrumented:
+    <<: *android_config
+    steps:
+      - attach_workspace:
+          at: ~/work
+      - restore_cache:
+          key: deps-{{ checksum "deps.txt" }}
+
+      - run:
+          name: Assemble connected test build
+          command: ./gradlew -PdisablePreDex --no-daemon --max-workers=2 assembleDebugAndroidTest
+
+  test_instrumented:
+    <<: *android_config
+    steps:
+      - attach_workspace:
+          at: ~/work
+      - restore_cache:
+          key: deps-{{ checksum "deps.txt" }}
+
+      - run:
+          name: Assemble test build
+          command: ./gradlew -PdisablePreDex --no-daemon --max-workers=2 assembleDebug assembleDebugAndroidTest
+      - run:
+          name: Authorize gcloud
+          command: |
+            if [[ "$CIRCLE_PROJECT_USERNAME" == "getodk" ]]; then \
+              gcloud config set project api-project-322300403941
+              echo $GCLOUD_SERVICE_KEY | base64 --decode > client-secret.json
+              gcloud auth activate-service-account --key-file client-secret.json
+            fi
+      - run:
+          name: Run integration tests
+          command: |
+            if [[ "$CIRCLE_PROJECT_USERNAME" == "getodk" ]]; then \
+              echo "y" | gcloud beta firebase test android run \
+              --type instrumentation \
+              --num-uniform-shards=50 \
+              --app collect_app/build/outputs/apk/debug/*.apk \
+              --test collect_app/build/outputs/apk/androidTest/debug/*.apk \
+              --device model=Pixel2,version=28,locale=en,orientation=portrait \
+              --results-bucket opendatakit-collect-test-results \
+              --environment-variables coverage=true,coverageFile=/sdcard/coverage.ec \
+              --directories-to-pull /sdcard --timeout 20m
+            fi
+          no_output_timeout: 25m
+
+workflows:
+  version: 2
+  workflow:
+    jobs:
+      - compile
+      - check_quality:
+          requires:
+            - compile
+      - test_modules:
+          requires:
+            - compile
+      - test_app:
+          requires:
+            - compile
+      - build_instrumented:
+          requires:
+            - compile
+          filters:
+            branches:
+              ignore: master
+      - test_instrumented:
+          requires:
+            - check_quality
+            - test_modules
+            - test_app
+          filters:
+            branches:
+              only: master
