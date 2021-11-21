@@ -1,4 +1,4 @@
-package org.odk.collect.audiorecorder.recording.internal
+package org.samarthya.collect.audiorecorder.recording.internal
 
 import android.app.Application
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
@@ -11,19 +11,19 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.odk.collect.androidshared.data.Consumable
-import org.odk.collect.async.Scheduler
-import org.odk.collect.audiorecorder.AudioRecorderDependencyModule
-import org.odk.collect.audiorecorder.recorder.Output
-import org.odk.collect.audiorecorder.recorder.Recorder
-import org.odk.collect.audiorecorder.recording.AudioRecorder
-import org.odk.collect.audiorecorder.recording.AudioRecorderFactory
-import org.odk.collect.audiorecorder.recording.AudioRecorderTest
-import org.odk.collect.audiorecorder.recording.MicInUseException
-import org.odk.collect.audiorecorder.support.FakeRecorder
-import org.odk.collect.audiorecorder.testsupport.RobolectricApplication
-import org.odk.collect.testshared.FakeScheduler
-import org.odk.collect.testshared.RobolectricHelpers
+import org.samarthya.collect.androidshared.data.Consumable
+import org.samarthya.collect.async.Scheduler
+import org.samarthya.collect.audiorecorder.AudioRecorderDependencyModule
+import org.samarthya.collect.audiorecorder.recorder.Output
+import org.samarthya.collect.audiorecorder.recorder.Recorder
+import org.samarthya.collect.audiorecorder.recording.AudioRecorder
+import org.samarthya.collect.audiorecorder.recording.AudioRecorderFactory
+import org.samarthya.collect.audiorecorder.recording.AudioRecorderTest
+import org.samarthya.collect.audiorecorder.recording.MicInUseException
+import org.samarthya.collect.audiorecorder.support.FakeRecorder
+import org.samarthya.collect.audiorecorder.testsupport.RobolectricApplication
+import org.samarthya.collect.testshared.FakeScheduler
+import org.samarthya.collect.testshared.RobolectricHelpers
 import java.io.File
 
 @RunWith(AndroidJUnit4::class)

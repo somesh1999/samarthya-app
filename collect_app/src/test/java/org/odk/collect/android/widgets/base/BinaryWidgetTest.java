@@ -1,4 +1,4 @@
-package org.odk.collect.android.widgets.base;
+package org.samarthya.collect.android.widgets.base;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -8,10 +8,10 @@ import com.karumi.dexter.DexterActivity;
 
 import org.javarosa.core.model.data.IAnswerData;
 import org.junit.Test;
-import org.odk.collect.android.fakes.FakePermissionsProvider;
-import org.odk.collect.android.widgets.QuestionWidget;
-import org.odk.collect.android.widgets.interfaces.WidgetDataReceiver;
-import org.odk.collect.android.widgets.interfaces.Widget;
+import org.samarthya.collect.android.fakes.FakePermissionsProvider;
+import org.samarthya.collect.android.widgets.QuestionWidget;
+import org.samarthya.collect.android.widgets.interfaces.WidgetDataReceiver;
+import org.samarthya.collect.android.widgets.interfaces.Widget;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;

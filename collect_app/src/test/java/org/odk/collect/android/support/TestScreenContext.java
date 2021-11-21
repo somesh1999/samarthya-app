@@ -1,10 +1,10 @@
-package org.odk.collect.android.support;
+package org.samarthya.collect.android.support;
 
 import androidx.fragment.app.FragmentActivity;
 import androidx.lifecycle.LifecycleOwner;
 
-import org.odk.collect.android.utilities.ScreenContext;
-import org.odk.collect.testshared.FakeLifecycleOwner;
+import org.samarthya.collect.android.utilities.ScreenContext;
+import org.samarthya.collect.testshared.FakeLifecycleOwner;
 
 public class TestScreenContext implements ScreenContext {
 

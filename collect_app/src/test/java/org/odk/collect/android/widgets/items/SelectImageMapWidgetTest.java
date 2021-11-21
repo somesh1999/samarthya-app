@@ -1,4 +1,4 @@
-package org.odk.collect.android.widgets.items;
+package org.samarthya.collect.android.widgets.items;
 
 import android.view.MotionEvent;
 import android.view.View;
@@ -7,17 +7,17 @@ import androidx.core.util.Pair;
 
 import org.javarosa.core.model.data.IAnswerData;
 import org.javarosa.core.reference.ReferenceManager;
-import org.odk.collect.android.injection.config.AppDependencyModule;
-import org.odk.collect.android.support.CollectHelpers;
-import org.odk.collect.android.support.MockFormEntryPromptBuilder;
-import org.odk.collect.android.widgets.base.SelectWidgetTest;
+import org.samarthya.collect.android.injection.config.AppDependencyModule;
+import org.samarthya.collect.android.support.CollectHelpers;
+import org.samarthya.collect.android.support.MockFormEntryPromptBuilder;
+import org.samarthya.collect.android.widgets.base.SelectWidgetTest;
 
 import static java.util.Arrays.asList;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import static org.odk.collect.android.support.CollectHelpers.setupFakeReferenceManager;
+import static org.samarthya.collect.android.support.CollectHelpers.setupFakeReferenceManager;
 
 public abstract class SelectImageMapWidgetTest<W extends SelectImageMapWidget, A extends IAnswerData>
         extends SelectWidgetTest<W, A> {

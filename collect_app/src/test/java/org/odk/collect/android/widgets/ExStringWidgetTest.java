@@ -1,13 +1,13 @@
-package org.odk.collect.android.widgets;
+package org.samarthya.collect.android.widgets;
 
 import androidx.annotation.NonNull;
 
 import net.bytebuddy.utility.RandomString;
 
 import org.javarosa.core.model.data.StringData;
-import org.odk.collect.android.formentry.questions.QuestionDetails;
-import org.odk.collect.android.widgets.base.GeneralExStringWidgetTest;
-import org.odk.collect.android.widgets.support.FakeWaitingForDataRegistry;
+import org.samarthya.collect.android.formentry.questions.QuestionDetails;
+import org.samarthya.collect.android.widgets.base.GeneralExStringWidgetTest;
+import org.samarthya.collect.android.widgets.support.FakeWaitingForDataRegistry;
 
 import static org.mockito.Mockito.when;
 

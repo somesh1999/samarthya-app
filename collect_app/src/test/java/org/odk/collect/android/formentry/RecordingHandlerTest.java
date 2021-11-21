@@ -1,4 +1,4 @@
-package org.odk.collect.android.formentry;
+package org.samarthya.collect.android.formentry;
 
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule;
@@ -8,12 +8,12 @@ import org.javarosa.core.model.instance.TreeReference;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
-import org.odk.collect.android.audio.AudioFileAppender;
-import org.odk.collect.android.javarosawrapper.FormController;
-import org.odk.collect.android.widgets.support.FakeQuestionMediaManager;
-import org.odk.collect.audiorecorder.recording.AudioRecorder;
-import org.odk.collect.audiorecorder.recording.RecordingSession;
-import org.odk.collect.testshared.FakeLifecycleOwner;
+import org.samarthya.collect.android.audio.AudioFileAppender;
+import org.samarthya.collect.android.javarosawrapper.FormController;
+import org.samarthya.collect.android.widgets.support.FakeQuestionMediaManager;
+import org.samarthya.collect.audiorecorder.recording.AudioRecorder;
+import org.samarthya.collect.audiorecorder.recording.RecordingSession;
+import org.samarthya.collect.testshared.FakeLifecycleOwner;
 
 import java.io.File;
 import java.util.HashSet;

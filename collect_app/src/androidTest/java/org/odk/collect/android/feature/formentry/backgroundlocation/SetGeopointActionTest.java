@@ -1,4 +1,4 @@
-package org.odk.collect.android.feature.formentry.backgroundlocation;
+package org.samarthya.collect.android.feature.formentry.backgroundlocation;
 
 import android.Manifest;
 
@@ -9,12 +9,12 @@ import androidx.test.rule.GrantPermissionRule;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.RuleChain;
-import org.odk.collect.android.R;
-import org.odk.collect.android.support.ActivityHelpers;
-import org.odk.collect.android.support.CopyFormRule;
-import org.odk.collect.android.support.FormActivityTestRule;
-import org.odk.collect.android.support.AdbFormLoadingUtils;
-import org.odk.collect.android.support.ResetStateRule;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.support.ActivityHelpers;
+import org.samarthya.collect.android.support.CopyFormRule;
+import org.samarthya.collect.android.support.FormActivityTestRule;
+import org.samarthya.collect.android.support.AdbFormLoadingUtils;
+import org.samarthya.collect.android.support.ResetStateRule;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;

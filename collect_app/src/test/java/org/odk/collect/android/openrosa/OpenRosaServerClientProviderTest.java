@@ -1,9 +1,9 @@
-package org.odk.collect.android.openrosa;
+package org.samarthya.collect.android.openrosa;
 
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
-import org.odk.collect.android.openrosa.support.MockWebServerRule;
+import org.samarthya.collect.android.openrosa.support.MockWebServerRule;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -18,7 +18,7 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.isEmptyOrNullString;
 import static org.hamcrest.Matchers.startsWith;
 import static org.junit.Assert.assertThat;
-import static org.odk.collect.android.openrosa.support.MockWebServerHelper.buildRequest;
+import static org.samarthya.collect.android.openrosa.support.MockWebServerHelper.buildRequest;
 
 public abstract class OpenRosaServerClientProviderTest {
 

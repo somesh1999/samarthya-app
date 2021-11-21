@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.odk.collect.android.feature.formentry;
+package org.samarthya.collect.android.feature.formentry;
 
 import android.Manifest;
 import android.app.Activity;
@@ -35,17 +35,17 @@ import org.hamcrest.Matcher;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.RuleChain;
-import org.odk.collect.android.R;
-import org.odk.collect.android.RecordedIntentsRule;
-import org.odk.collect.android.TestSettingsProvider;
-import org.odk.collect.android.preferences.GuidanceHint;
-import org.odk.collect.android.preferences.keys.ProjectKeys;
-import org.odk.collect.android.storage.StoragePathProvider;
-import org.odk.collect.android.support.CopyFormRule;
-import org.odk.collect.android.support.FormActivityTestRule;
-import org.odk.collect.android.support.AdbFormLoadingUtils;
-import org.odk.collect.android.support.ResetStateRule;
-import org.odk.collect.android.support.pages.FormEntryPage;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.RecordedIntentsRule;
+import org.samarthya.collect.android.TestSettingsProvider;
+import org.samarthya.collect.android.preferences.GuidanceHint;
+import org.samarthya.collect.android.preferences.keys.ProjectKeys;
+import org.samarthya.collect.android.storage.StoragePathProvider;
+import org.samarthya.collect.android.support.CopyFormRule;
+import org.samarthya.collect.android.support.FormActivityTestRule;
+import org.samarthya.collect.android.support.AdbFormLoadingUtils;
+import org.samarthya.collect.android.support.ResetStateRule;
+import org.samarthya.collect.android.support.pages.FormEntryPage;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -77,8 +77,8 @@ import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.endsWith;
 import static org.hamcrest.core.IsNot.not;
 import static org.hamcrest.core.StringStartsWith.startsWith;
-import static org.odk.collect.android.support.CustomMatchers.withIndex;
-import static org.odk.collect.android.support.actions.NestedScrollToAction.nestedScrollTo;
+import static org.samarthya.collect.android.support.CustomMatchers.withIndex;
+import static org.samarthya.collect.android.support.actions.NestedScrollToAction.nestedScrollTo;
 
 public class FieldListUpdateTest {
     private static final String FIELD_LIST_TEST_FORM = "fieldlist-updates.xml";

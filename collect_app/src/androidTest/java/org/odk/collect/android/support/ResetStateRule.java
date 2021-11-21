@@ -1,4 +1,4 @@
-package org.odk.collect.android.support;
+package org.samarthya.collect.android.support;
 
 import android.content.Context;
 
@@ -8,15 +8,15 @@ import androidx.test.core.app.ApplicationProvider;
 import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
-import org.odk.collect.android.TestSettingsProvider;
-import org.odk.collect.android.database.DatabaseConnection;
-import org.odk.collect.android.injection.DaggerUtils;
-import org.odk.collect.android.injection.config.AppDependencyComponent;
-import org.odk.collect.android.injection.config.AppDependencyModule;
-import org.odk.collect.android.preferences.source.SettingsProvider;
-import org.odk.collect.android.storage.StoragePathProvider;
-import org.odk.collect.android.utilities.MultiClickGuard;
-import org.odk.collect.android.views.DecoratedBarcodeView;
+import org.samarthya.collect.android.TestSettingsProvider;
+import org.samarthya.collect.android.database.DatabaseConnection;
+import org.samarthya.collect.android.injection.DaggerUtils;
+import org.samarthya.collect.android.injection.config.AppDependencyComponent;
+import org.samarthya.collect.android.injection.config.AppDependencyModule;
+import org.samarthya.collect.android.preferences.source.SettingsProvider;
+import org.samarthya.collect.android.storage.StoragePathProvider;
+import org.samarthya.collect.android.utilities.MultiClickGuard;
+import org.samarthya.collect.android.views.DecoratedBarcodeView;
 
 import java.io.File;
 import java.io.IOException;

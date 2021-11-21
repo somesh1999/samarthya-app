@@ -1,4 +1,4 @@
-package org.odk.collect.android.fragments.dialogs;
+package org.samarthya.collect.android.fragments.dialogs;
 
 import android.content.DialogInterface;
 
@@ -8,10 +8,10 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.fragments.support.DialogFragmentHelpers;
-import org.odk.collect.android.logic.DatePickerDetails;
-import org.odk.collect.android.support.CollectHelpers;
-import org.odk.collect.testshared.RobolectricHelpers;
+import org.samarthya.collect.android.fragments.support.DialogFragmentHelpers;
+import org.samarthya.collect.android.logic.DatePickerDetails;
+import org.samarthya.collect.android.support.CollectHelpers;
+import org.samarthya.collect.testshared.RobolectricHelpers;
 
 import static org.mockito.Mockito.when;
 

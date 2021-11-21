@@ -1,4 +1,4 @@
-package org.odk.collect.projects
+package org.samarthya.collect.projects
 
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.Matchers.`is`

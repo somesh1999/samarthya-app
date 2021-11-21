@@ -1,4 +1,4 @@
-package org.odk.collect.android.externaldata;
+package org.samarthya.collect.android.externaldata;
 
 import org.junit.Assert;
 import org.junit.Test;

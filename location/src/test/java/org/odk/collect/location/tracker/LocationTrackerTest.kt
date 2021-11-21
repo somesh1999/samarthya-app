@@ -1,9 +1,9 @@
-package org.odk.collect.location.tracker
+package org.samarthya.collect.location.tracker
 
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.Matchers.equalTo
 import org.junit.Test
-import org.odk.collect.location.Location
+import org.samarthya.collect.location.Location
 
 abstract class LocationTrackerTest {
 

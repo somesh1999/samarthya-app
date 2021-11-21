@@ -1,4 +1,4 @@
-package org.odk.collect.strings.format
+package org.samarthya.collect.strings.format
 
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.Matchers.equalTo

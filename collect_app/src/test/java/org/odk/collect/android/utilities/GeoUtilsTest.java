@@ -1,4 +1,4 @@
-package org.odk.collect.android.utilities;
+package org.samarthya.collect.android.utilities;
 
 import android.location.Location;
 import android.os.Bundle;
@@ -7,9 +7,9 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.geo.MapPoint;
-import org.odk.collect.shared.TempFiles;
-import org.odk.collect.testshared.LocationTestUtils;
+import org.samarthya.collect.android.geo.MapPoint;
+import org.samarthya.collect.shared.TempFiles;
+import org.samarthya.collect.testshared.LocationTestUtils;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -20,7 +20,7 @@ import java.util.List;
 import static junit.framework.TestCase.assertNotNull;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
-import static org.odk.collect.android.geo.MapFragment.KEY_REFERENCE_LAYER;
+import static org.samarthya.collect.android.geo.MapFragment.KEY_REFERENCE_LAYER;
 
 @RunWith(AndroidJUnit4.class)
 public class GeoUtilsTest {

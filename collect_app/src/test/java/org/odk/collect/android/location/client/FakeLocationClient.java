@@ -1,4 +1,4 @@
-package org.odk.collect.android.location.client;
+package org.samarthya.collect.android.location.client;
 
 import android.location.Location;
 
@@ -6,7 +6,7 @@ import androidx.annotation.Nullable;
 
 import com.google.android.gms.location.LocationListener;
 
-import org.odk.collect.location.LocationClient;
+import org.samarthya.collect.location.LocationClient;
 
 import java.lang.ref.WeakReference;
 

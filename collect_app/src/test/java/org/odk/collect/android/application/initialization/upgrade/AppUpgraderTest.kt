@@ -1,11 +1,11 @@
-package org.odk.collect.android.application.initialization.upgrade
+package org.samarthya.collect.android.application.initialization.upgrade
 
 import org.junit.Test
 import org.mockito.kotlin.doReturn
 import org.mockito.kotlin.mock
 import org.mockito.kotlin.times
 import org.mockito.kotlin.verify
-import org.odk.collect.testshared.InMemSettings
+import org.samarthya.collect.testshared.InMemSettings
 
 class AppUpgraderTest {
 

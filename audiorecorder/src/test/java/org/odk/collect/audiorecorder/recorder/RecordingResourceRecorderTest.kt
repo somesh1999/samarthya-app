@@ -1,4 +1,4 @@
-package org.odk.collect.audiorecorder.recorder
+package org.samarthya.collect.audiorecorder.recorder
 
 import com.google.common.io.Files
 import org.hamcrest.MatcherAssert.assertThat
@@ -6,8 +6,8 @@ import org.hamcrest.Matchers.endsWith
 import org.hamcrest.Matchers.equalTo
 import org.hamcrest.Matchers.not
 import org.junit.Test
-import org.odk.collect.audiorecorder.recording.MicInUseException
-import org.odk.collect.audiorecorder.recording.SetupException
+import org.samarthya.collect.audiorecorder.recording.MicInUseException
+import org.samarthya.collect.audiorecorder.recording.SetupException
 import java.io.File
 import java.io.IOException
 

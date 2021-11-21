@@ -1,4 +1,4 @@
-package org.odk.collect.android.configure.qr;
+package org.samarthya.collect.android.configure.qr;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,11 +11,11 @@ import org.jetbrains.annotations.NotNull;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.R;
-import org.odk.collect.android.configure.SettingsImporter;
-import org.odk.collect.android.injection.config.AppDependencyModule;
-import org.odk.collect.android.support.CollectHelpers;
-import org.odk.collect.projects.Project;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.configure.SettingsImporter;
+import org.samarthya.collect.android.injection.config.AppDependencyModule;
+import org.samarthya.collect.android.support.CollectHelpers;
+import org.samarthya.collect.projects.Project;
 import org.robolectric.Robolectric;
 
 import java.io.ByteArrayInputStream;
@@ -29,7 +29,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import static org.odk.collect.android.configure.qr.QRCodeMenuDelegate.SELECT_PHOTO;
+import static org.samarthya.collect.android.configure.qr.QRCodeMenuDelegate.SELECT_PHOTO;
 import static org.robolectric.Shadows.shadowOf;
 import static org.robolectric.shadows.ShadowToast.getTextOfLatestToast;
 

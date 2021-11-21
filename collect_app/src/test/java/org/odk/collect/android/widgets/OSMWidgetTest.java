@@ -1,4 +1,4 @@
-package org.odk.collect.android.widgets;
+package org.samarthya.collect.android.widgets;
 
 import android.content.Intent;
 import android.view.View;
@@ -17,14 +17,14 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentMatchers;
-import org.odk.collect.android.R;
-import org.odk.collect.android.formentry.questions.QuestionDetails;
-import org.odk.collect.android.javarosawrapper.FormController;
-import org.odk.collect.android.listeners.WidgetValueChangedListener;
-import org.odk.collect.android.support.TestScreenContextActivity;
-import org.odk.collect.android.utilities.ActivityAvailability;
-import org.odk.collect.android.utilities.ApplicationConstants;
-import org.odk.collect.android.widgets.support.FakeWaitingForDataRegistry;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.formentry.questions.QuestionDetails;
+import org.samarthya.collect.android.javarosawrapper.FormController;
+import org.samarthya.collect.android.listeners.WidgetValueChangedListener;
+import org.samarthya.collect.android.support.TestScreenContextActivity;
+import org.samarthya.collect.android.utilities.ActivityAvailability;
+import org.samarthya.collect.android.utilities.ApplicationConstants;
+import org.samarthya.collect.android.widgets.support.FakeWaitingForDataRegistry;
 import org.robolectric.shadows.ShadowActivity;
 
 import java.io.File;
@@ -37,10 +37,10 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
-import static org.odk.collect.android.widgets.support.QuestionWidgetHelpers.mockValueChangedListener;
-import static org.odk.collect.android.widgets.support.QuestionWidgetHelpers.promptWithAnswer;
-import static org.odk.collect.android.widgets.support.QuestionWidgetHelpers.promptWithReadOnly;
-import static org.odk.collect.android.widgets.support.QuestionWidgetHelpers.widgetTestActivity;
+import static org.samarthya.collect.android.widgets.support.QuestionWidgetHelpers.mockValueChangedListener;
+import static org.samarthya.collect.android.widgets.support.QuestionWidgetHelpers.promptWithAnswer;
+import static org.samarthya.collect.android.widgets.support.QuestionWidgetHelpers.promptWithReadOnly;
+import static org.samarthya.collect.android.widgets.support.QuestionWidgetHelpers.widgetTestActivity;
 import static org.robolectric.Shadows.shadowOf;
 
 /**

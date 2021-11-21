@@ -1,4 +1,4 @@
-package org.odk.collect.android.feature.instancemanagement;
+package org.samarthya.collect.android.feature.instancemanagement;
 
 import android.Manifest;
 
@@ -9,15 +9,15 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.RuleChain;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.R;
-import org.odk.collect.android.RecordedIntentsRule;
-import org.odk.collect.android.support.CollectTestRule;
-import org.odk.collect.android.support.TestDependencies;
-import org.odk.collect.android.support.TestRuleChain;
-import org.odk.collect.android.support.pages.ProjectSettingsPage;
-import org.odk.collect.android.support.pages.MainMenuPage;
-import org.odk.collect.android.support.pages.OkDialog;
-import org.odk.collect.android.support.pages.SendFinalizedFormPage;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.RecordedIntentsRule;
+import org.samarthya.collect.android.support.CollectTestRule;
+import org.samarthya.collect.android.support.TestDependencies;
+import org.samarthya.collect.android.support.TestRuleChain;
+import org.samarthya.collect.android.support.pages.ProjectSettingsPage;
+import org.samarthya.collect.android.support.pages.MainMenuPage;
+import org.samarthya.collect.android.support.pages.OkDialog;
+import org.samarthya.collect.android.support.pages.SendFinalizedFormPage;
 
 @RunWith(AndroidJUnit4.class)
 public class SendFinalizedFormTest {

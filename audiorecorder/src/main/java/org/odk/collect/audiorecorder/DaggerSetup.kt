@@ -1,4 +1,4 @@
-package org.odk.collect.audiorecorder
+package org.samarthya.collect.audiorecorder
 
 import android.app.Application
 import android.media.MediaRecorder
@@ -7,17 +7,17 @@ import dagger.Component
 import dagger.Module
 import dagger.Provides
 import kotlinx.coroutines.Dispatchers
-import org.odk.collect.androidshared.data.getState
-import org.odk.collect.async.CoroutineScheduler
-import org.odk.collect.async.Scheduler
-import org.odk.collect.audiorecorder.mediarecorder.AACRecordingResource
-import org.odk.collect.audiorecorder.mediarecorder.AMRRecordingResource
-import org.odk.collect.audiorecorder.recorder.Output
-import org.odk.collect.audiorecorder.recorder.Recorder
-import org.odk.collect.audiorecorder.recorder.RecordingResourceRecorder
-import org.odk.collect.audiorecorder.recording.AudioRecorderFactory
-import org.odk.collect.audiorecorder.recording.AudioRecorderService
-import org.odk.collect.audiorecorder.recording.internal.RecordingRepository
+import org.samarthya.collect.androidshared.data.getState
+import org.samarthya.collect.async.CoroutineScheduler
+import org.samarthya.collect.async.Scheduler
+import org.samarthya.collect.audiorecorder.mediarecorder.AACRecordingResource
+import org.samarthya.collect.audiorecorder.mediarecorder.AMRRecordingResource
+import org.samarthya.collect.audiorecorder.recorder.Output
+import org.samarthya.collect.audiorecorder.recorder.Recorder
+import org.samarthya.collect.audiorecorder.recorder.RecordingResourceRecorder
+import org.samarthya.collect.audiorecorder.recording.AudioRecorderFactory
+import org.samarthya.collect.audiorecorder.recording.AudioRecorderService
+import org.samarthya.collect.audiorecorder.recording.internal.RecordingRepository
 import java.io.File
 import javax.inject.Singleton
 

@@ -1,4 +1,4 @@
-package org.odk.collect.android.support;
+package org.samarthya.collect.android.support;
 
 import android.view.View;
 
@@ -10,11 +10,11 @@ import androidx.test.espresso.util.HumanReadables;
 import androidx.test.espresso.util.TreeIterables;
 
 import org.hamcrest.Matcher;
-import org.odk.collect.android.TestSettingsProvider;
-import org.odk.collect.android.storage.StoragePathProvider;
-import org.odk.collect.android.storage.StorageSubdirectory;
-import org.odk.collect.android.utilities.InstancesRepositoryProvider;
-import org.odk.collect.shared.Settings;
+import org.samarthya.collect.android.TestSettingsProvider;
+import org.samarthya.collect.android.storage.StoragePathProvider;
+import org.samarthya.collect.android.storage.StorageSubdirectory;
+import org.samarthya.collect.android.utilities.InstancesRepositoryProvider;
+import org.samarthya.collect.shared.Settings;
 
 import java.io.Closeable;
 import java.io.File;

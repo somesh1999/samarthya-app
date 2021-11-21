@@ -1,4 +1,4 @@
-package org.odk.collect.android.openrosa;
+package org.samarthya.collect.android.openrosa;
 
 import android.webkit.MimeTypeMap;
 

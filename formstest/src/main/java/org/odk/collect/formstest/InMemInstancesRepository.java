@@ -1,8 +1,8 @@
-package org.odk.collect.formstest;
+package org.samarthya.collect.formstest;
 
 import org.apache.commons.io.FileUtils;
-import org.odk.collect.forms.instances.Instance;
-import org.odk.collect.forms.instances.InstancesRepository;
+import org.samarthya.collect.forms.instances.Instance;
+import org.samarthya.collect.forms.instances.InstancesRepository;
 
 import java.io.File;
 import java.io.IOException;

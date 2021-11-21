@@ -1,12 +1,12 @@
-package org.odk.collect.android
+package org.samarthya.collect.android
 
 import android.content.Context
 import androidx.test.core.app.ApplicationProvider
-import org.odk.collect.android.application.Collect
-import org.odk.collect.android.injection.DaggerUtils
-import org.odk.collect.android.preferences.source.SettingsProvider
-import org.odk.collect.android.preferences.source.SharedPreferencesSettings
-import org.odk.collect.shared.Settings
+import org.samarthya.collect.android.application.Collect
+import org.samarthya.collect.android.injection.DaggerUtils
+import org.samarthya.collect.android.preferences.source.SettingsProvider
+import org.samarthya.collect.android.preferences.source.SharedPreferencesSettings
+import org.samarthya.collect.shared.Settings
 
 // Use just for testing
 object TestSettingsProvider {

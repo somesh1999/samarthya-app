@@ -1,4 +1,4 @@
-package org.odk.collect.android.fragments.dialogs;
+package org.samarthya.collect.android.fragments.dialogs;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -10,8 +10,8 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.R;
-import org.odk.collect.fragmentstest.DialogFragmentTest;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.fragmentstest.DialogFragmentTest;
 
 import static android.os.Looper.getMainLooper;
 import static org.hamcrest.MatcherAssert.assertThat;

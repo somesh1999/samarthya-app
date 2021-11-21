@@ -1,4 +1,4 @@
-package org.odk.collect.android.utilities
+package org.samarthya.collect.android.utilities
 
 import android.app.Application
 import android.content.Context
@@ -14,21 +14,21 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.kotlin.mock
 import org.mockito.kotlin.verify
-import org.odk.collect.android.events.RxEventBus
-import org.odk.collect.android.injection.DaggerUtils
-import org.odk.collect.android.injection.config.AppDependencyModule
-import org.odk.collect.android.logic.PropertyManager
-import org.odk.collect.android.permissions.PermissionsProvider
-import org.odk.collect.android.preferences.keys.ProjectKeys
-import org.odk.collect.android.preferences.keys.ProtectedProjectKeys
-import org.odk.collect.android.preferences.source.SettingsProvider
-import org.odk.collect.android.storage.StoragePathProvider
-import org.odk.collect.android.storage.StorageSubdirectory
-import org.odk.collect.android.support.CollectHelpers
-import org.odk.collect.forms.Form
-import org.odk.collect.forms.instances.Instance
-import org.odk.collect.projects.Project
-import org.odk.collect.shared.Settings
+import org.samarthya.collect.android.events.RxEventBus
+import org.samarthya.collect.android.injection.DaggerUtils
+import org.samarthya.collect.android.injection.config.AppDependencyModule
+import org.samarthya.collect.android.logic.PropertyManager
+import org.samarthya.collect.android.permissions.PermissionsProvider
+import org.samarthya.collect.android.preferences.keys.ProjectKeys
+import org.samarthya.collect.android.preferences.keys.ProtectedProjectKeys
+import org.samarthya.collect.android.preferences.source.SettingsProvider
+import org.samarthya.collect.android.storage.StoragePathProvider
+import org.samarthya.collect.android.storage.StorageSubdirectory
+import org.samarthya.collect.android.support.CollectHelpers
+import org.samarthya.collect.forms.Form
+import org.samarthya.collect.forms.instances.Instance
+import org.samarthya.collect.projects.Project
+import org.samarthya.collect.shared.Settings
 import java.io.File
 
 @RunWith(AndroidJUnit4::class)

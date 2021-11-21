@@ -1,4 +1,4 @@
-package org.odk.collect.android.metadata;
+package org.samarthya.collect.android.metadata;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
@@ -6,8 +6,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.odk.collect.android.TestSettingsProvider;
-import org.odk.collect.shared.Settings;
+import org.samarthya.collect.android.TestSettingsProvider;
+import org.samarthya.collect.shared.Settings;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;

@@ -1,15 +1,15 @@
-package org.odk.collect.android.activities;
+package org.samarthya.collect.android.activities;
 
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
-import org.odk.collect.android.activities.viewmodels.FormMapViewModel;
-import org.odk.collect.forms.Form;
-import org.odk.collect.forms.instances.Instance;
-import org.odk.collect.forms.instances.InstancesRepository;
-import org.odk.collect.formstest.InMemInstancesRepository;
+import org.samarthya.collect.android.activities.viewmodels.FormMapViewModel;
+import org.samarthya.collect.forms.Form;
+import org.samarthya.collect.forms.instances.Instance;
+import org.samarthya.collect.forms.instances.InstancesRepository;
+import org.samarthya.collect.formstest.InMemInstancesRepository;
 
 import java.util.Arrays;
 import java.util.List;

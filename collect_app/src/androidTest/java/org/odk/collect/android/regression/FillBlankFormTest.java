@@ -1,4 +1,4 @@
-package org.odk.collect.android.regression;
+package org.samarthya.collect.android.regression;
 
 import android.Manifest;
 import android.widget.FrameLayout;
@@ -11,20 +11,20 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.RuleChain;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.R;
-import org.odk.collect.android.activities.FormEntryActivity;
-import org.odk.collect.android.storage.StoragePathProvider;
-import org.odk.collect.android.storage.StorageSubdirectory;
-import org.odk.collect.android.support.ActivityHelpers;
-import org.odk.collect.android.support.CollectTestRule;
-import org.odk.collect.android.support.ResetStateRule;
-import org.odk.collect.android.support.pages.BlankFormSearchPage;
-import org.odk.collect.android.support.pages.ExitFormDialog;
-import org.odk.collect.android.support.pages.FillBlankFormPage;
-import org.odk.collect.android.support.pages.FormEndPage;
-import org.odk.collect.android.support.pages.FormEntryPage;
-import org.odk.collect.android.support.pages.ProjectSettingsPage;
-import org.odk.collect.android.support.pages.MainMenuPage;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.activities.FormEntryActivity;
+import org.samarthya.collect.android.storage.StoragePathProvider;
+import org.samarthya.collect.android.storage.StorageSubdirectory;
+import org.samarthya.collect.android.support.ActivityHelpers;
+import org.samarthya.collect.android.support.CollectTestRule;
+import org.samarthya.collect.android.support.ResetStateRule;
+import org.samarthya.collect.android.support.pages.BlankFormSearchPage;
+import org.samarthya.collect.android.support.pages.ExitFormDialog;
+import org.samarthya.collect.android.support.pages.FillBlankFormPage;
+import org.samarthya.collect.android.support.pages.FormEndPage;
+import org.samarthya.collect.android.support.pages.FormEntryPage;
+import org.samarthya.collect.android.support.pages.ProjectSettingsPage;
+import org.samarthya.collect.android.support.pages.MainMenuPage;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,8 +36,8 @@ import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static java.util.Arrays.asList;
 import static java.util.Collections.singletonList;
 import static junit.framework.TestCase.assertNotSame;
-import static org.odk.collect.android.support.matchers.DrawableMatcher.withImageDrawable;
-import static org.odk.collect.android.support.matchers.RecyclerViewMatcher.withRecyclerView;
+import static org.samarthya.collect.android.support.matchers.DrawableMatcher.withImageDrawable;
+import static org.samarthya.collect.android.support.matchers.RecyclerViewMatcher.withRecyclerView;
 
 //Issue NODK-244
 @RunWith(AndroidJUnit4.class)

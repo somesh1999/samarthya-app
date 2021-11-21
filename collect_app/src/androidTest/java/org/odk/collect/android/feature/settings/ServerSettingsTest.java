@@ -1,4 +1,4 @@
-package org.odk.collect.android.feature.settings;
+package org.samarthya.collect.android.feature.settings;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
@@ -6,14 +6,14 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.RuleChain;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.R;
-import org.odk.collect.android.RecordedIntentsRule;
-import org.odk.collect.android.gdrive.sheets.DriveHelper;
-import org.odk.collect.android.support.CollectTestRule;
-import org.odk.collect.android.support.TestDependencies;
-import org.odk.collect.android.support.TestRuleChain;
-import org.odk.collect.android.support.pages.ProjectSettingsPage;
-import org.odk.collect.android.support.pages.MainMenuPage;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.RecordedIntentsRule;
+import org.samarthya.collect.android.gdrive.sheets.DriveHelper;
+import org.samarthya.collect.android.support.CollectTestRule;
+import org.samarthya.collect.android.support.TestDependencies;
+import org.samarthya.collect.android.support.TestRuleChain;
+import org.samarthya.collect.android.support.pages.ProjectSettingsPage;
+import org.samarthya.collect.android.support.pages.MainMenuPage;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
@@ -64,7 +64,7 @@ public class ServerSettingsTest {
      * This test could definitely be extended to cover form download/submit with the creation
      * of a stub
      * {@link DriveHelper} and
-     * {@link org.odk.collect.android.gdrive.GoogleAccountsManager}
+     * {@link org.samarthya.collect.android.gdrive.GoogleAccountsManager}
      */
     @Test
     public void selectingGoogleAccount_showsGoogleAccountSettings() {

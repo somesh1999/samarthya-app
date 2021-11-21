@@ -1,4 +1,4 @@
-package org.odk.collect.android.configure
+package org.samarthya.collect.android.configure
 
 import androidx.core.util.Pair
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -14,15 +14,15 @@ import org.mockito.kotlin.doReturn
 import org.mockito.kotlin.mock
 import org.mockito.kotlin.verify
 import org.mockito.kotlin.whenever
-import org.odk.collect.android.application.initialization.SettingsMigrator
-import org.odk.collect.android.application.initialization.migration.SharedPreferenceUtils
-import org.odk.collect.android.configure.qr.AppConfigurationKeys
-import org.odk.collect.android.preferences.keys.ProjectKeys
-import org.odk.collect.android.projects.ProjectDetailsCreator
-import org.odk.collect.android.support.InMemSettingsProvider
-import org.odk.collect.projects.Project
-import org.odk.collect.projects.ProjectsRepository
-import org.odk.collect.shared.Settings
+import org.samarthya.collect.android.application.initialization.SettingsMigrator
+import org.samarthya.collect.android.application.initialization.migration.SharedPreferenceUtils
+import org.samarthya.collect.android.configure.qr.AppConfigurationKeys
+import org.samarthya.collect.android.preferences.keys.ProjectKeys
+import org.samarthya.collect.android.projects.ProjectDetailsCreator
+import org.samarthya.collect.android.support.InMemSettingsProvider
+import org.samarthya.collect.projects.Project
+import org.samarthya.collect.projects.ProjectsRepository
+import org.samarthya.collect.shared.Settings
 
 @RunWith(AndroidJUnit4::class)
 class SettingsImporterTest {

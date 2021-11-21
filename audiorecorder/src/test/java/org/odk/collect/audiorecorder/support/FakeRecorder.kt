@@ -1,9 +1,9 @@
-package org.odk.collect.audiorecorder.support
+package org.samarthya.collect.audiorecorder.support
 
-import org.odk.collect.audiorecorder.recorder.Output
-import org.odk.collect.audiorecorder.recorder.Recorder
-import org.odk.collect.audiorecorder.recording.MicInUseException
-import org.odk.collect.audiorecorder.recording.SetupException
+import org.samarthya.collect.audiorecorder.recorder.Output
+import org.samarthya.collect.audiorecorder.recorder.Recorder
+import org.samarthya.collect.audiorecorder.recording.MicInUseException
+import org.samarthya.collect.audiorecorder.recording.SetupException
 import java.io.File
 
 class FakeRecorder : Recorder {

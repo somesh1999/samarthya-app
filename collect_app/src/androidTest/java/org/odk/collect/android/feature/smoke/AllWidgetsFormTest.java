@@ -1,4 +1,4 @@
-package org.odk.collect.android.feature.smoke;
+package org.samarthya.collect.android.feature.smoke;
 
 import android.content.Context;
 
@@ -7,11 +7,11 @@ import org.junit.ClassRule;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.RuleChain;
-import org.odk.collect.android.injection.config.AppDependencyModule;
-import org.odk.collect.android.support.CopyFormRule;
-import org.odk.collect.android.support.FormActivityTestRule;
-import org.odk.collect.android.support.ResetStateRule;
-import org.odk.collect.android.utilities.ActivityAvailability;
+import org.samarthya.collect.android.injection.config.AppDependencyModule;
+import org.samarthya.collect.android.support.CopyFormRule;
+import org.samarthya.collect.android.support.FormActivityTestRule;
+import org.samarthya.collect.android.support.ResetStateRule;
+import org.samarthya.collect.android.utilities.ActivityAvailability;
 
 import tools.fastlane.screengrab.Screengrab;
 import tools.fastlane.screengrab.UiAutomatorScreenshotStrategy;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.odk.collect.forms;
+package org.samarthya.collect.forms;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;

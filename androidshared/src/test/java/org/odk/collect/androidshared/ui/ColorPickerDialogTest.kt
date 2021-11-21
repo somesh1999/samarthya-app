@@ -1,4 +1,4 @@
-package org.odk.collect.androidshared.ui
+package org.samarthya.collect.androidshared.ui
 
 import android.graphics.Color
 import android.graphics.drawable.GradientDrawable
@@ -15,9 +15,9 @@ import org.hamcrest.Matchers.equalToIgnoringCase
 import org.hamcrest.Matchers.nullValue
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.odk.collect.androidshared.ColorPickerDialog
-import org.odk.collect.fragmentstest.DialogFragmentTest
-import org.odk.collect.testshared.RobolectricHelpers
+import org.samarthya.collect.androidshared.ColorPickerDialog
+import org.samarthya.collect.fragmentstest.DialogFragmentTest
+import org.samarthya.collect.testshared.RobolectricHelpers
 
 @RunWith(AndroidJUnit4::class)
 class ColorPickerDialogTest {

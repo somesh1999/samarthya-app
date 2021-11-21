@@ -1,4 +1,4 @@
-package org.odk.collect.android.projects
+package org.samarthya.collect.android.projects
 
 import androidx.core.view.children
 import androidx.lifecycle.ViewModel
@@ -19,20 +19,20 @@ import org.junit.runner.RunWith
 import org.mockito.kotlin.doReturn
 import org.mockito.kotlin.mock
 import org.mockito.kotlin.verify
-import org.odk.collect.android.activities.AboutActivity
-import org.odk.collect.android.activities.viewmodels.CurrentProjectViewModel
-import org.odk.collect.android.application.initialization.AnalyticsInitializer
-import org.odk.collect.android.injection.config.AppDependencyModule
-import org.odk.collect.android.preferences.screens.ProjectPreferencesActivity
-import org.odk.collect.android.preferences.source.SettingsProvider
-import org.odk.collect.android.support.CollectHelpers
-import org.odk.collect.androidshared.livedata.MutableNonNullLiveData
-import org.odk.collect.fragmentstest.DialogFragmentTest
-import org.odk.collect.projects.InMemProjectsRepository
-import org.odk.collect.projects.Project
-import org.odk.collect.projects.ProjectsRepository
-import org.odk.collect.shared.strings.UUIDGenerator
-import org.odk.collect.testshared.RobolectricHelpers
+import org.samarthya.collect.android.activities.AboutActivity
+import org.samarthya.collect.android.activities.viewmodels.CurrentProjectViewModel
+import org.samarthya.collect.android.application.initialization.AnalyticsInitializer
+import org.samarthya.collect.android.injection.config.AppDependencyModule
+import org.samarthya.collect.android.preferences.screens.ProjectPreferencesActivity
+import org.samarthya.collect.android.preferences.source.SettingsProvider
+import org.samarthya.collect.android.support.CollectHelpers
+import org.samarthya.collect.androidshared.livedata.MutableNonNullLiveData
+import org.samarthya.collect.fragmentstest.DialogFragmentTest
+import org.samarthya.collect.projects.InMemProjectsRepository
+import org.samarthya.collect.projects.Project
+import org.samarthya.collect.projects.ProjectsRepository
+import org.samarthya.collect.shared.strings.UUIDGenerator
+import org.samarthya.collect.testshared.RobolectricHelpers
 
 @RunWith(AndroidJUnit4::class)
 class ProjectSettingsDialogTest {

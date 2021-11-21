@@ -1,4 +1,4 @@
-package org.odk.collect.android.support;
+package org.samarthya.collect.android.support;
 
 import android.app.Activity;
 import android.app.Instrumentation;
@@ -9,13 +9,13 @@ import androidx.test.core.app.ActivityScenario;
 import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
-import org.odk.collect.android.R;
-import org.odk.collect.android.activities.SplashScreenActivity;
-import org.odk.collect.android.external.AndroidShortcutsActivity;
-import org.odk.collect.android.support.pages.FirstLaunchPage;
-import org.odk.collect.android.support.pages.MainMenuPage;
-import org.odk.collect.android.support.pages.Page;
-import org.odk.collect.android.support.pages.ShortcutsPage;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.activities.SplashScreenActivity;
+import org.samarthya.collect.android.external.AndroidShortcutsActivity;
+import org.samarthya.collect.android.support.pages.FirstLaunchPage;
+import org.samarthya.collect.android.support.pages.MainMenuPage;
+import org.samarthya.collect.android.support.pages.Page;
+import org.samarthya.collect.android.support.pages.ShortcutsPage;
 
 import java.util.function.Consumer;
 

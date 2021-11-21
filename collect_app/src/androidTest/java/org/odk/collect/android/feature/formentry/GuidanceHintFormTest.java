@@ -1,4 +1,4 @@
-package org.odk.collect.android.feature.formentry;
+package org.samarthya.collect.android.feature.formentry;
 
 import android.text.TextUtils;
 
@@ -9,15 +9,15 @@ import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.RuleChain;
-import org.odk.collect.android.R;
-import org.odk.collect.android.TestSettingsProvider;
-import org.odk.collect.android.application.Collect;
-import org.odk.collect.android.preferences.GuidanceHint;
-import org.odk.collect.android.preferences.keys.ProjectKeys;
-import org.odk.collect.android.support.CopyFormRule;
-import org.odk.collect.android.support.FormActivityTestRule;
-import org.odk.collect.android.support.AdbFormLoadingUtils;
-import org.odk.collect.android.support.ResetStateRule;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.TestSettingsProvider;
+import org.samarthya.collect.android.application.Collect;
+import org.samarthya.collect.android.preferences.GuidanceHint;
+import org.samarthya.collect.android.preferences.keys.ProjectKeys;
+import org.samarthya.collect.android.support.CopyFormRule;
+import org.samarthya.collect.android.support.FormActivityTestRule;
+import org.samarthya.collect.android.support.AdbFormLoadingUtils;
+import org.samarthya.collect.android.support.ResetStateRule;
 
 import tools.fastlane.screengrab.Screengrab;
 import tools.fastlane.screengrab.UiAutomatorScreenshotStrategy;

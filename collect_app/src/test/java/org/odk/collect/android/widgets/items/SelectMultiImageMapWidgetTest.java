@@ -1,4 +1,4 @@
-package org.odk.collect.android.widgets.items;
+package org.samarthya.collect.android.widgets.items;
 
 import android.view.View;
 import android.widget.TextView;
@@ -11,9 +11,9 @@ import org.javarosa.core.model.SelectChoice;
 import org.javarosa.core.model.data.SelectMultiData;
 import org.javarosa.core.model.data.helper.Selection;
 import org.junit.Test;
-import org.odk.collect.android.R;
-import org.odk.collect.android.formentry.questions.QuestionDetails;
-import org.odk.collect.android.support.MockFormEntryPromptBuilder;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.formentry.questions.QuestionDetails;
+import org.samarthya.collect.android.support.MockFormEntryPromptBuilder;
 
 import java.util.List;
 

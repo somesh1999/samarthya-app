@@ -1,4 +1,4 @@
-package org.odk.collect.android.formmanagement;
+package org.samarthya.collect.android.formmanagement;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -8,9 +8,9 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
-import org.odk.collect.android.formmanagement.matchexactly.SyncStatusAppState;
-import org.odk.collect.android.external.FormsContract;
-import org.odk.collect.forms.FormSourceException;
+import org.samarthya.collect.android.formmanagement.matchexactly.SyncStatusAppState;
+import org.samarthya.collect.android.external.FormsContract;
+import org.samarthya.collect.forms.FormSourceException;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;

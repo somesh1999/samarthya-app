@@ -1,4 +1,4 @@
-package org.odk.collect.audiorecorder.recording.internal
+package org.samarthya.collect.audiorecorder.recording.internal
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -9,11 +9,11 @@ import android.content.Intent
 import android.os.Build
 import androidx.core.app.NotificationCompat
 import androidx.lifecycle.Observer
-import org.odk.collect.androidshared.ui.ReturnToAppActivity
-import org.odk.collect.audiorecorder.R
-import org.odk.collect.audiorecorder.recording.RecordingSession
-import org.odk.collect.strings.format.formatLength
-import org.odk.collect.strings.getLocalizedString
+import org.samarthya.collect.androidshared.ui.ReturnToAppActivity
+import org.samarthya.collect.audiorecorder.R
+import org.samarthya.collect.audiorecorder.recording.RecordingSession
+import org.samarthya.collect.strings.format.formatLength
+import org.samarthya.collect.strings.getLocalizedString
 
 internal class RecordingForegroundServiceNotification(private val service: Service, private val recordingRepository: RecordingRepository) {
 

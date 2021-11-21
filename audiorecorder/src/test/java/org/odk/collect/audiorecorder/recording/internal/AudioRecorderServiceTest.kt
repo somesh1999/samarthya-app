@@ -1,4 +1,4 @@
-package org.odk.collect.audiorecorder.recording.internal
+package org.samarthya.collect.audiorecorder.recording.internal
 
 import android.app.Application
 import android.content.Intent
@@ -11,17 +11,17 @@ import org.hamcrest.Matchers.nullValue
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.odk.collect.androidshared.ui.ReturnToAppActivity
-import org.odk.collect.async.Scheduler
-import org.odk.collect.audiorecorder.AudioRecorderDependencyModule
-import org.odk.collect.audiorecorder.R
-import org.odk.collect.audiorecorder.recorder.Output
-import org.odk.collect.audiorecorder.recorder.Recorder
-import org.odk.collect.audiorecorder.recording.AudioRecorderService
-import org.odk.collect.audiorecorder.support.FakeRecorder
-import org.odk.collect.audiorecorder.testsupport.RobolectricApplication
-import org.odk.collect.testshared.FakeScheduler
-import org.odk.collect.testshared.ServiceScenario
+import org.samarthya.collect.androidshared.ui.ReturnToAppActivity
+import org.samarthya.collect.async.Scheduler
+import org.samarthya.collect.audiorecorder.AudioRecorderDependencyModule
+import org.samarthya.collect.audiorecorder.R
+import org.samarthya.collect.audiorecorder.recorder.Output
+import org.samarthya.collect.audiorecorder.recorder.Recorder
+import org.samarthya.collect.audiorecorder.recording.AudioRecorderService
+import org.samarthya.collect.audiorecorder.support.FakeRecorder
+import org.samarthya.collect.audiorecorder.testsupport.RobolectricApplication
+import org.samarthya.collect.testshared.FakeScheduler
+import org.samarthya.collect.testshared.ServiceScenario
 import org.robolectric.Robolectric.buildService
 import org.robolectric.RobolectricTestRunner
 import org.robolectric.Shadows.shadowOf

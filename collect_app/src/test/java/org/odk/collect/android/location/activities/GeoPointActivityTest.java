@@ -1,4 +1,4 @@
-package org.odk.collect.android.location.activities;
+package org.samarthya.collect.android.location.activities;
 
 import android.content.Intent;
 import android.location.Location;
@@ -12,10 +12,10 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
-import org.odk.collect.android.activities.FormEntryActivity;
-import org.odk.collect.android.activities.GeoPointActivity;
-import org.odk.collect.location.LocationClient;
-import org.odk.collect.location.LocationClientProvider;
+import org.samarthya.collect.android.activities.FormEntryActivity;
+import org.samarthya.collect.android.activities.GeoPointActivity;
+import org.samarthya.collect.location.LocationClient;
+import org.samarthya.collect.location.LocationClientProvider;
 import org.robolectric.Robolectric;
 import org.robolectric.android.controller.ActivityController;
 
@@ -29,7 +29,7 @@ import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
-import static org.odk.collect.android.widgets.utilities.GeoWidgetUtils.DEFAULT_LOCATION_ACCURACY;
+import static org.samarthya.collect.android.widgets.utilities.GeoWidgetUtils.DEFAULT_LOCATION_ACCURACY;
 import static org.robolectric.Shadows.shadowOf;
 
 @RunWith(AndroidJUnit4.class)

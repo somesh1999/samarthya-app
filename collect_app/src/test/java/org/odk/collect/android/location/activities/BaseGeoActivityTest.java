@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.odk.collect.android.location.activities;
+package org.samarthya.collect.android.location.activities;
 
 import android.content.Intent;
 
 import org.junit.Before;
-import org.odk.collect.android.location.client.FakeLocationClient;
-import org.odk.collect.location.LocationClientProvider;
-import org.odk.collect.android.geo.GoogleMapFragment;
-import org.odk.collect.android.geo.MapboxMapFragment;
+import org.samarthya.collect.android.location.client.FakeLocationClient;
+import org.samarthya.collect.location.LocationClientProvider;
+import org.samarthya.collect.android.geo.GoogleMapFragment;
+import org.samarthya.collect.android.geo.MapboxMapFragment;
 import org.robolectric.shadows.ShadowApplication;
 
 public abstract class BaseGeoActivityTest {

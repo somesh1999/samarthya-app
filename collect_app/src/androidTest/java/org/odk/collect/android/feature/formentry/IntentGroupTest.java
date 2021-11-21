@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.odk.collect.android.feature.formentry;
+package org.samarthya.collect.android.feature.formentry;
 
 import android.app.Activity;
 import android.app.Instrumentation;
@@ -28,15 +28,15 @@ import androidx.core.content.FileProvider;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.RuleChain;
-import org.odk.collect.android.BuildConfig;
-import org.odk.collect.android.R;
-import org.odk.collect.android.RecordedIntentsRule;
-import org.odk.collect.android.application.Collect;
-import org.odk.collect.android.support.ActivityHelpers;
-import org.odk.collect.android.support.CopyFormRule;
-import org.odk.collect.android.support.FormActivityTestRule;
-import org.odk.collect.android.support.AdbFormLoadingUtils;
-import org.odk.collect.android.support.ResetStateRule;
+import org.samarthya.collect.android.BuildConfig;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.RecordedIntentsRule;
+import org.samarthya.collect.android.application.Collect;
+import org.samarthya.collect.android.support.ActivityHelpers;
+import org.samarthya.collect.android.support.CopyFormRule;
+import org.samarthya.collect.android.support.FormActivityTestRule;
+import org.samarthya.collect.android.support.AdbFormLoadingUtils;
+import org.samarthya.collect.android.support.ResetStateRule;
 
 import java.io.File;
 import java.io.IOException;
@@ -59,9 +59,9 @@ import static org.hamcrest.Matchers.is;
 import static org.hamcrest.core.StringEndsWith.endsWith;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import static org.odk.collect.android.support.CustomMatchers.withIndex;
-import static org.odk.collect.android.support.FileUtils.copyFileFromAssets;
-import static org.odk.collect.android.support.actions.NestedScrollToAction.nestedScrollTo;
+import static org.samarthya.collect.android.support.CustomMatchers.withIndex;
+import static org.samarthya.collect.android.support.FileUtils.copyFileFromAssets;
+import static org.samarthya.collect.android.support.actions.NestedScrollToAction.nestedScrollTo;
 
 /**
  * Tests that intent groups work as documented at https://docs.getodk.org/launch-apps-from-collect/#launching-external-apps-to-populate-multiple-fields

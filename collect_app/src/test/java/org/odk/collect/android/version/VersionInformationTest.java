@@ -1,4 +1,4 @@
-package org.odk.collect.android.version;
+package org.samarthya.collect.android.version;
 
 import org.junit.Test;
 

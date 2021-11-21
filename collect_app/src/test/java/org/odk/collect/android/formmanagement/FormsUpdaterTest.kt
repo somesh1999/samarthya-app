@@ -1,4 +1,4 @@
-package org.odk.collect.android.formmanagement
+package org.samarthya.collect.android.formmanagement
 
 import android.app.Application
 import android.database.ContentObserver
@@ -17,21 +17,21 @@ import org.mockito.kotlin.inOrder
 import org.mockito.kotlin.mock
 import org.mockito.kotlin.verify
 import org.mockito.kotlin.whenever
-import org.odk.collect.analytics.Analytics
-import org.odk.collect.android.external.FormsContract
-import org.odk.collect.android.formmanagement.matchexactly.SyncStatusAppState
-import org.odk.collect.android.injection.DaggerUtils
-import org.odk.collect.android.notifications.Notifier
-import org.odk.collect.android.preferences.keys.ProjectKeys
-import org.odk.collect.android.storage.StorageSubdirectory
-import org.odk.collect.android.utilities.ChangeLockProvider
-import org.odk.collect.forms.FormListItem
-import org.odk.collect.forms.FormSource
-import org.odk.collect.forms.FormSourceException
-import org.odk.collect.formstest.FormUtils
-import org.odk.collect.projects.Project
-import org.odk.collect.shared.strings.Md5.getMd5Hash
-import org.odk.collect.testshared.BooleanChangeLock
+import org.samarthya.collect.analytics.Analytics
+import org.samarthya.collect.android.external.FormsContract
+import org.samarthya.collect.android.formmanagement.matchexactly.SyncStatusAppState
+import org.samarthya.collect.android.injection.DaggerUtils
+import org.samarthya.collect.android.notifications.Notifier
+import org.samarthya.collect.android.preferences.keys.ProjectKeys
+import org.samarthya.collect.android.storage.StorageSubdirectory
+import org.samarthya.collect.android.utilities.ChangeLockProvider
+import org.samarthya.collect.forms.FormListItem
+import org.samarthya.collect.forms.FormSource
+import org.samarthya.collect.forms.FormSourceException
+import org.samarthya.collect.formstest.FormUtils
+import org.samarthya.collect.projects.Project
+import org.samarthya.collect.shared.strings.Md5.getMd5Hash
+import org.samarthya.collect.testshared.BooleanChangeLock
 
 @RunWith(AndroidJUnit4::class)
 class FormsUpdaterTest {

@@ -1,16 +1,16 @@
-package org.odk.collect.android.feature.formentry;
+package org.samarthya.collect.android.feature.formentry;
 
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.RuleChain;
-import org.odk.collect.android.R;
-import org.odk.collect.android.storage.StoragePathProvider;
-import org.odk.collect.android.storage.StorageSubdirectory;
-import org.odk.collect.android.support.CopyFormRule;
-import org.odk.collect.android.support.FormActivityTestRule;
-import org.odk.collect.android.support.AdbFormLoadingUtils;
-import org.odk.collect.android.support.ResetStateRule;
-import org.odk.collect.android.support.pages.FormEntryPage;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.storage.StoragePathProvider;
+import org.samarthya.collect.android.storage.StorageSubdirectory;
+import org.samarthya.collect.android.support.CopyFormRule;
+import org.samarthya.collect.android.support.FormActivityTestRule;
+import org.samarthya.collect.android.support.AdbFormLoadingUtils;
+import org.samarthya.collect.android.support.ResetStateRule;
+import org.samarthya.collect.android.support.pages.FormEntryPage;
 
 public class ExternalDataFileNotFoundTest {
     private static final String EXTERNAL_DATA_QUESTIONS = "external_data_questions.xml";

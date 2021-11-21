@@ -1,4 +1,4 @@
-package org.odk.collect.android.feature.external
+package org.samarthya.collect.android.feature.external
 
 import android.content.Intent
 import androidx.test.espresso.matcher.ViewMatchers.assertThat
@@ -8,11 +8,11 @@ import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.RuleChain
 import org.junit.runner.RunWith
-import org.odk.collect.android.external.InstancesContract
-import org.odk.collect.android.support.CollectTestRule
-import org.odk.collect.android.support.ContentProviderUtils
-import org.odk.collect.android.support.TestRuleChain
-import org.odk.collect.android.support.pages.EditSavedFormPage
+import org.samarthya.collect.android.external.InstancesContract
+import org.samarthya.collect.android.support.CollectTestRule
+import org.samarthya.collect.android.support.ContentProviderUtils
+import org.samarthya.collect.android.support.TestRuleChain
+import org.samarthya.collect.android.support.pages.EditSavedFormPage
 
 @RunWith(AndroidJUnit4::class)
 class InstancePickActionTest {

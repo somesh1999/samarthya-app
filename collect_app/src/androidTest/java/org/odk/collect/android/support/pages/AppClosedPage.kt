@@ -1,4 +1,4 @@
-package org.odk.collect.android.support.pages
+package org.samarthya.collect.android.support.pages
 
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat

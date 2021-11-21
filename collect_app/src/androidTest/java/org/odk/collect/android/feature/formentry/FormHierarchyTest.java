@@ -1,23 +1,23 @@
-package org.odk.collect.android.feature.formentry;
+package org.samarthya.collect.android.feature.formentry;
 
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.RuleChain;
-import org.odk.collect.android.R;
-import org.odk.collect.android.support.CollectTestRule;
-import org.odk.collect.android.support.CopyFormRule;
-import org.odk.collect.android.support.ResetStateRule;
-import org.odk.collect.android.support.matchers.RecyclerViewMatcher;
-import org.odk.collect.android.support.pages.AddNewRepeatDialog;
-import org.odk.collect.android.support.pages.FormEntryPage;
-import org.odk.collect.android.support.pages.FormHierarchyPage;
-import org.odk.collect.android.support.pages.MainMenuPage;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.support.CollectTestRule;
+import org.samarthya.collect.android.support.CopyFormRule;
+import org.samarthya.collect.android.support.ResetStateRule;
+import org.samarthya.collect.android.support.matchers.RecyclerViewMatcher;
+import org.samarthya.collect.android.support.pages.AddNewRepeatDialog;
+import org.samarthya.collect.android.support.pages.FormEntryPage;
+import org.samarthya.collect.android.support.pages.FormHierarchyPage;
+import org.samarthya.collect.android.support.pages.MainMenuPage;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
-import static org.odk.collect.android.support.matchers.RecyclerViewMatcher.withRecyclerView;
+import static org.samarthya.collect.android.support.matchers.RecyclerViewMatcher.withRecyclerView;
 
 public class FormHierarchyTest {
 

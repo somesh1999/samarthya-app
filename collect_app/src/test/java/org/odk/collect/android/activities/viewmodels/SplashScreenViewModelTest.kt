@@ -1,4 +1,4 @@
-package org.odk.collect.android.activities.viewmodels
+package org.samarthya.collect.android.activities.viewmodels
 
 import org.hamcrest.CoreMatchers.`is`
 import org.hamcrest.MatcherAssert.assertThat
@@ -6,11 +6,11 @@ import org.junit.Before
 import org.junit.Test
 import org.mockito.Mockito.`when`
 import org.mockito.Mockito.mock
-import org.odk.collect.android.preferences.keys.ProjectKeys
-import org.odk.collect.android.preferences.source.SharedPreferencesSettings
-import org.odk.collect.android.utilities.LaunchState
-import org.odk.collect.projects.Project
-import org.odk.collect.projects.ProjectsRepository
+import org.samarthya.collect.android.preferences.keys.ProjectKeys
+import org.samarthya.collect.android.preferences.source.SharedPreferencesSettings
+import org.samarthya.collect.android.utilities.LaunchState
+import org.samarthya.collect.projects.Project
+import org.samarthya.collect.projects.ProjectsRepository
 
 class SplashScreenViewModelTest {
 

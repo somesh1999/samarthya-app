@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.odk.collect.android.utilities;
+package org.samarthya.collect.android.utilities;
 
 import android.app.DatePickerDialog;
 import android.widget.DatePicker;
@@ -30,13 +30,13 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.formentry.questions.QuestionDetails;
-import org.odk.collect.android.support.CollectHelpers;
-import org.odk.collect.android.support.MockFormEntryPromptBuilder;
-import org.odk.collect.android.support.TestScreenContextActivity;
-import org.odk.collect.android.widgets.DateTimeWidget;
-import org.odk.collect.android.widgets.DateWidget;
-import org.odk.collect.android.widgets.utilities.DateTimeWidgetUtils;
+import org.samarthya.collect.android.formentry.questions.QuestionDetails;
+import org.samarthya.collect.android.support.CollectHelpers;
+import org.samarthya.collect.android.support.MockFormEntryPromptBuilder;
+import org.samarthya.collect.android.support.TestScreenContextActivity;
+import org.samarthya.collect.android.widgets.DateTimeWidget;
+import org.samarthya.collect.android.widgets.DateWidget;
+import org.samarthya.collect.android.widgets.utilities.DateTimeWidgetUtils;
 
 import java.util.TimeZone;
 

@@ -1,12 +1,12 @@
-package org.odk.collect.location
+package org.samarthya.collect.location
 
 import android.location.LocationManager
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.core.Is.`is`
 import org.hamcrest.core.IsNull.nullValue
 import org.junit.Test
-import org.odk.collect.location.LocationUtils.sanitizeAccuracy
-import org.odk.collect.testshared.LocationTestUtils.createLocation
+import org.samarthya.collect.location.LocationUtils.sanitizeAccuracy
+import org.samarthya.collect.testshared.LocationTestUtils.createLocation
 
 class LocationUtilsTest {
 

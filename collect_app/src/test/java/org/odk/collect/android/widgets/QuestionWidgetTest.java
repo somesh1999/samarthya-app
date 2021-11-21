@@ -1,4 +1,4 @@
-package org.odk.collect.android.widgets;
+package org.samarthya.collect.android.widgets;
 
 import android.app.Application;
 import android.content.Context;
@@ -17,24 +17,24 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
-import org.odk.collect.analytics.Analytics;
-import org.odk.collect.android.R;
-import org.odk.collect.android.audio.AudioButton;
-import org.odk.collect.android.audio.AudioHelper;
-import org.odk.collect.android.formentry.media.AudioHelperFactory;
-import org.odk.collect.android.formentry.questions.QuestionDetails;
-import org.odk.collect.android.injection.config.AppDependencyModule;
-import org.odk.collect.android.support.CollectHelpers;
-import org.odk.collect.android.support.MockFormEntryPromptBuilder;
-import org.odk.collect.android.support.TestScreenContextActivity;
-import org.odk.collect.async.Scheduler;
-import org.odk.collect.audioclips.Clip;
+import org.samarthya.collect.analytics.Analytics;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.audio.AudioButton;
+import org.samarthya.collect.android.audio.AudioHelper;
+import org.samarthya.collect.android.formentry.media.AudioHelperFactory;
+import org.samarthya.collect.android.formentry.questions.QuestionDetails;
+import org.samarthya.collect.android.injection.config.AppDependencyModule;
+import org.samarthya.collect.android.support.CollectHelpers;
+import org.samarthya.collect.android.support.MockFormEntryPromptBuilder;
+import org.samarthya.collect.android.support.TestScreenContextActivity;
+import org.samarthya.collect.async.Scheduler;
+import org.samarthya.collect.audioclips.Clip;
 
 import static java.util.Arrays.asList;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
-import static org.odk.collect.android.support.CollectHelpers.setupFakeReferenceManager;
+import static org.samarthya.collect.android.support.CollectHelpers.setupFakeReferenceManager;
 
 @RunWith(AndroidJUnit4.class)
 public class QuestionWidgetTest {

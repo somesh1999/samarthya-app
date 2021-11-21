@@ -1,7 +1,7 @@
-package org.odk.collect.android.widgets.support;
+package org.samarthya.collect.android.widgets.support;
 
 import org.javarosa.core.model.FormIndex;
-import org.odk.collect.android.widgets.utilities.WaitingForDataRegistry;
+import org.samarthya.collect.android.widgets.utilities.WaitingForDataRegistry;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -5,7 +5,7 @@
     android:paddingTop="@dimen/margin_small"
     android:paddingHorizontal="@dimen/margin_standard">
 
-    <org.odk.collect.android.views.MultiClickSafeButton
+    <org.samarthya.collect.android.views.MultiClickSafeButton
         android:id="@+id/bearing_button"
         style="@style/Widget.Collect.Button.WidgetAnswer"
         android:text="@string/get_bearing" />

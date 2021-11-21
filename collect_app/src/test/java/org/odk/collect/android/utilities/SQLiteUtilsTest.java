@@ -1,4 +1,4 @@
-package org.odk.collect.android.utilities;
+package org.samarthya.collect.android.utilities;
 
 import android.database.sqlite.SQLiteDatabase;
 
@@ -6,7 +6,7 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.application.Collect;
+import org.samarthya.collect.android.application.Collect;
 
 import java.util.ArrayList;
 import java.util.List;

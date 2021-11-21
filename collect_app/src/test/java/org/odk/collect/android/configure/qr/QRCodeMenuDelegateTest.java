@@ -1,4 +1,4 @@
-package org.odk.collect.android.configure.qr;
+package org.samarthya.collect.android.configure.qr;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -9,12 +9,12 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.R;
+import org.samarthya.collect.android.R;
 
-import org.odk.collect.android.TestSettingsProvider;
-import org.odk.collect.android.utilities.ActivityAvailability;
-import org.odk.collect.android.utilities.FileProvider;
-import org.odk.collect.testshared.FakeScheduler;
+import org.samarthya.collect.android.TestSettingsProvider;
+import org.samarthya.collect.android.utilities.ActivityAvailability;
+import org.samarthya.collect.android.utilities.FileProvider;
+import org.samarthya.collect.testshared.FakeScheduler;
 import org.robolectric.Robolectric;
 import org.robolectric.fakes.RoboMenuItem;
 import org.robolectric.shadows.ShadowActivity;
@@ -27,7 +27,7 @@ import static org.hamcrest.Matchers.nullValue;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import static org.odk.collect.android.configure.qr.QRCodeMenuDelegate.SELECT_PHOTO;
+import static org.samarthya.collect.android.configure.qr.QRCodeMenuDelegate.SELECT_PHOTO;
 import static org.robolectric.Shadows.shadowOf;
 
 @RunWith(AndroidJUnit4.class)

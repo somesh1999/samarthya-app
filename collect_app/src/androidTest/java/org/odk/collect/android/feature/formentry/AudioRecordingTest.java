@@ -1,4 +1,4 @@
-package org.odk.collect.android.feature.formentry;
+package org.samarthya.collect.android.feature.formentry;
 
 import android.Manifest;
 import android.app.Application;
@@ -10,19 +10,19 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.RuleChain;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.R;
-import org.odk.collect.android.support.CollectTestRule;
-import org.odk.collect.android.support.TestDependencies;
-import org.odk.collect.android.support.TestRuleChain;
-import org.odk.collect.android.support.pages.FormEntryPage;
-import org.odk.collect.android.support.pages.OkDialog;
-import org.odk.collect.audiorecorder.recording.AudioRecorder;
-import org.odk.collect.audiorecorder.testsupport.StubAudioRecorder;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.support.CollectTestRule;
+import org.samarthya.collect.android.support.TestDependencies;
+import org.samarthya.collect.android.support.TestRuleChain;
+import org.samarthya.collect.android.support.pages.FormEntryPage;
+import org.samarthya.collect.android.support.pages.OkDialog;
+import org.samarthya.collect.audiorecorder.recording.AudioRecorder;
+import org.samarthya.collect.audiorecorder.testsupport.StubAudioRecorder;
 
 import java.io.File;
 import java.io.IOException;
 
-import static org.odk.collect.android.support.FileUtils.copyFileFromAssets;
+import static org.samarthya.collect.android.support.FileUtils.copyFileFromAssets;
 
 @RunWith(AndroidJUnit4.class)
 public class AudioRecordingTest {

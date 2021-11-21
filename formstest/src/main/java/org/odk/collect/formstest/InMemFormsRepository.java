@@ -1,11 +1,11 @@
-package org.odk.collect.formstest;
+package org.samarthya.collect.formstest;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.odk.collect.forms.Form;
-import org.odk.collect.forms.FormsRepository;
-import org.odk.collect.shared.strings.Md5;
-import org.odk.collect.shared.TempFiles;
+import org.samarthya.collect.forms.Form;
+import org.samarthya.collect.forms.FormsRepository;
+import org.samarthya.collect.shared.strings.Md5;
+import org.samarthya.collect.shared.TempFiles;
 
 import java.io.File;
 import java.io.IOException;

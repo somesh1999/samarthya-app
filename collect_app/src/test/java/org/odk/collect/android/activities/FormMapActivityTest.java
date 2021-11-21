@@ -1,4 +1,4 @@
-package org.odk.collect.android.activities;
+package org.samarthya.collect.android.activities;
 
 import android.content.Intent;
 import android.view.View;
@@ -19,20 +19,20 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentMatchers;
-import org.odk.collect.android.R;
-import org.odk.collect.android.TestSettingsProvider;
-import org.odk.collect.android.activities.viewmodels.FormMapViewModel;
-import org.odk.collect.android.application.Collect;
-import org.odk.collect.android.external.InstanceProvider;
-import org.odk.collect.android.geo.MapPoint;
-import org.odk.collect.android.geo.MapProvider;
-import org.odk.collect.android.geo.TestMapFragment;
-import org.odk.collect.android.injection.config.AppDependencyModule;
-import org.odk.collect.android.preferences.keys.ProtectedProjectKeys;
-import org.odk.collect.android.preferences.screens.MapsPreferencesFragment;
-import org.odk.collect.android.support.CollectHelpers;
-import org.odk.collect.android.utilities.ApplicationConstants;
-import org.odk.collect.formstest.InMemInstancesRepository;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.TestSettingsProvider;
+import org.samarthya.collect.android.activities.viewmodels.FormMapViewModel;
+import org.samarthya.collect.android.application.Collect;
+import org.samarthya.collect.android.external.InstanceProvider;
+import org.samarthya.collect.android.geo.MapPoint;
+import org.samarthya.collect.android.geo.MapProvider;
+import org.samarthya.collect.android.geo.TestMapFragment;
+import org.samarthya.collect.android.injection.config.AppDependencyModule;
+import org.samarthya.collect.android.preferences.keys.ProtectedProjectKeys;
+import org.samarthya.collect.android.preferences.screens.MapsPreferencesFragment;
+import org.samarthya.collect.android.support.CollectHelpers;
+import org.samarthya.collect.android.utilities.ApplicationConstants;
+import org.samarthya.collect.formstest.InMemInstancesRepository;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.android.controller.ActivityController;
 
@@ -48,7 +48,7 @@ import static org.hamcrest.CoreMatchers.nullValue;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import static org.odk.collect.android.activities.FormMapViewModelTest.testInstances;
+import static org.samarthya.collect.android.activities.FormMapViewModelTest.testInstances;
 import static org.robolectric.Shadows.shadowOf;
 
 @RunWith(AndroidJUnit4.class)

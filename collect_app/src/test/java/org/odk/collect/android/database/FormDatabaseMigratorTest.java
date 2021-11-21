@@ -1,4 +1,4 @@
-package org.odk.collect.android.database;
+package org.samarthya.collect.android.database;
 
 import android.content.ContentValues;
 import android.database.Cursor;
@@ -10,32 +10,32 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.database.forms.FormDatabaseMigrator;
-import org.odk.collect.android.utilities.SQLiteUtils;
+import org.samarthya.collect.android.database.forms.FormDatabaseMigrator;
+import org.samarthya.collect.android.utilities.SQLiteUtils;
 
 import java.util.List;
 
 import static java.util.Arrays.asList;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
-import static org.odk.collect.android.database.DatabaseConstants.FORMS_TABLE_NAME;
-import static org.odk.collect.android.database.forms.DatabaseFormColumns.AUTO_DELETE;
-import static org.odk.collect.android.database.forms.DatabaseFormColumns.AUTO_SEND;
-import static org.odk.collect.android.database.forms.DatabaseFormColumns.BASE64_RSA_PUBLIC_KEY;
-import static org.odk.collect.android.database.forms.DatabaseFormColumns.DATE;
-import static org.odk.collect.android.database.forms.DatabaseFormColumns.DELETED_DATE;
-import static org.odk.collect.android.database.forms.DatabaseFormColumns.DESCRIPTION;
-import static org.odk.collect.android.database.forms.DatabaseFormColumns.DISPLAY_NAME;
-import static org.odk.collect.android.database.forms.DatabaseFormColumns.FORM_FILE_PATH;
-import static org.odk.collect.android.database.forms.DatabaseFormColumns.FORM_MEDIA_PATH;
-import static org.odk.collect.android.database.forms.DatabaseFormColumns.GEOMETRY_XPATH;
-import static org.odk.collect.android.database.forms.DatabaseFormColumns.JRCACHE_FILE_PATH;
-import static org.odk.collect.android.database.forms.DatabaseFormColumns.JR_FORM_ID;
-import static org.odk.collect.android.database.forms.DatabaseFormColumns.JR_VERSION;
-import static org.odk.collect.android.database.forms.DatabaseFormColumns.LANGUAGE;
-import static org.odk.collect.android.database.forms.DatabaseFormColumns.MD5_HASH;
-import static org.odk.collect.android.database.forms.DatabaseFormColumns.SUBMISSION_URI;
-import static org.odk.collect.android.database.forms.DatabaseFormColumns._ID;
+import static org.samarthya.collect.android.database.DatabaseConstants.FORMS_TABLE_NAME;
+import static org.samarthya.collect.android.database.forms.DatabaseFormColumns.AUTO_DELETE;
+import static org.samarthya.collect.android.database.forms.DatabaseFormColumns.AUTO_SEND;
+import static org.samarthya.collect.android.database.forms.DatabaseFormColumns.BASE64_RSA_PUBLIC_KEY;
+import static org.samarthya.collect.android.database.forms.DatabaseFormColumns.DATE;
+import static org.samarthya.collect.android.database.forms.DatabaseFormColumns.DELETED_DATE;
+import static org.samarthya.collect.android.database.forms.DatabaseFormColumns.DESCRIPTION;
+import static org.samarthya.collect.android.database.forms.DatabaseFormColumns.DISPLAY_NAME;
+import static org.samarthya.collect.android.database.forms.DatabaseFormColumns.FORM_FILE_PATH;
+import static org.samarthya.collect.android.database.forms.DatabaseFormColumns.FORM_MEDIA_PATH;
+import static org.samarthya.collect.android.database.forms.DatabaseFormColumns.GEOMETRY_XPATH;
+import static org.samarthya.collect.android.database.forms.DatabaseFormColumns.JRCACHE_FILE_PATH;
+import static org.samarthya.collect.android.database.forms.DatabaseFormColumns.JR_FORM_ID;
+import static org.samarthya.collect.android.database.forms.DatabaseFormColumns.JR_VERSION;
+import static org.samarthya.collect.android.database.forms.DatabaseFormColumns.LANGUAGE;
+import static org.samarthya.collect.android.database.forms.DatabaseFormColumns.MD5_HASH;
+import static org.samarthya.collect.android.database.forms.DatabaseFormColumns.SUBMISSION_URI;
+import static org.samarthya.collect.android.database.forms.DatabaseFormColumns._ID;
 
 @RunWith(AndroidJUnit4.class)
 public class FormDatabaseMigratorTest {

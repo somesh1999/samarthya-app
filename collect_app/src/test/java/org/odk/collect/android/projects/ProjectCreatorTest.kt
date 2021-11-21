@@ -1,4 +1,4 @@
-package org.odk.collect.android.projects
+package org.samarthya.collect.android.projects
 
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.Matchers.`is`
@@ -8,11 +8,11 @@ import org.mockito.kotlin.doReturn
 import org.mockito.kotlin.mock
 import org.mockito.kotlin.verify
 import org.mockito.kotlin.whenever
-import org.odk.collect.android.configure.SettingsImporter
-import org.odk.collect.android.storage.StoragePathProvider
-import org.odk.collect.projects.Project
-import org.odk.collect.projects.ProjectsRepository
-import org.odk.collect.shared.TempFiles
+import org.samarthya.collect.android.configure.SettingsImporter
+import org.samarthya.collect.android.storage.StoragePathProvider
+import org.samarthya.collect.projects.Project
+import org.samarthya.collect.projects.ProjectsRepository
+import org.samarthya.collect.shared.TempFiles
 import java.io.File
 
 class ProjectCreatorTest {

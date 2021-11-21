@@ -1,4 +1,4 @@
-package org.odk.collect.android.formmanagement;
+package org.samarthya.collect.android.formmanagement;
 
 import android.content.Context;
 
@@ -8,8 +8,8 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.R;
-import org.odk.collect.forms.FormSourceException;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.forms.FormSourceException;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;

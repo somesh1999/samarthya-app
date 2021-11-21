@@ -1,4 +1,4 @@
-package org.odk.collect.android.audio;
+package org.samarthya.collect.android.audio;
 
 import android.app.Application;
 import android.content.DialogInterface;
@@ -12,12 +12,12 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.R;
-import org.odk.collect.android.injection.config.AppDependencyModule;
-import org.odk.collect.android.support.CollectHelpers;
-import org.odk.collect.testshared.RobolectricHelpers;
-import org.odk.collect.audiorecorder.recording.AudioRecorder;
-import org.odk.collect.audiorecorder.testsupport.StubAudioRecorder;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.injection.config.AppDependencyModule;
+import org.samarthya.collect.android.support.CollectHelpers;
+import org.samarthya.collect.testshared.RobolectricHelpers;
+import org.samarthya.collect.audiorecorder.recording.AudioRecorder;
+import org.samarthya.collect.audiorecorder.testsupport.StubAudioRecorder;
 
 import java.io.File;
 

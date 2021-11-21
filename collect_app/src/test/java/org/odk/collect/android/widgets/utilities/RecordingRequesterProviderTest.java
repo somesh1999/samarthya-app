@@ -1,8 +1,8 @@
-package org.odk.collect.android.widgets.utilities;
+package org.samarthya.collect.android.widgets.utilities;
 
 import org.javarosa.form.api.FormEntryPrompt;
 import org.junit.Test;
-import org.odk.collect.android.support.MockFormEntryPromptBuilder;
+import org.samarthya.collect.android.support.MockFormEntryPromptBuilder;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.instanceOf;

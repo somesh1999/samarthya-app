@@ -1,4 +1,4 @@
-package org.odk.collect.analytics
+package org.samarthya.collect.analytics
 
 import android.app.Application
 import android.os.Bundle

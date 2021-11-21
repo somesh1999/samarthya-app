@@ -1,4 +1,4 @@
-package org.odk.collect.android.application.initialization;
+package org.samarthya.collect.android.application.initialization;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
@@ -8,15 +8,15 @@ import com.mapbox.mapboxsdk.maps.Style;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.TestSettingsProvider;
-import org.odk.collect.shared.Settings;
+import org.samarthya.collect.android.TestSettingsProvider;
+import org.samarthya.collect.shared.Settings;
 
 import java.util.List;
 
 import static java.util.Arrays.asList;
-import static org.odk.collect.android.application.initialization.migration.SharedPreferenceUtils.assertPrefs;
-import static org.odk.collect.android.application.initialization.migration.SharedPreferenceUtils.assertPrefsEmpty;
-import static org.odk.collect.android.application.initialization.migration.SharedPreferenceUtils.initPrefs;
+import static org.samarthya.collect.android.application.initialization.migration.SharedPreferenceUtils.assertPrefs;
+import static org.samarthya.collect.android.application.initialization.migration.SharedPreferenceUtils.assertPrefsEmpty;
+import static org.samarthya.collect.android.application.initialization.migration.SharedPreferenceUtils.initPrefs;
 
 @RunWith(AndroidJUnit4.class)
 public class CollectSettingsMigratorTest {

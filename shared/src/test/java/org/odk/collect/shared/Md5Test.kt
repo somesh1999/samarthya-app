@@ -1,8 +1,8 @@
-package org.odk.collect.shared
+package org.samarthya.collect.shared
 
 import org.junit.Assert
 import org.junit.Test
-import org.odk.collect.shared.strings.Md5
+import org.samarthya.collect.shared.strings.Md5
 import java.io.File
 import java.io.FileWriter
 

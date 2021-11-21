@@ -1,4 +1,4 @@
-package org.odk.collect.android.preferences.source
+package org.samarthya.collect.android.preferences.source
 
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -8,7 +8,7 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.odk.collect.android.preferences.keys.MetaKeys.CURRENT_PROJECT_ID
+import org.samarthya.collect.android.preferences.keys.MetaKeys.CURRENT_PROJECT_ID
 
 @RunWith(AndroidJUnit4::class)
 class SharedPreferencesSettingsProviderTest {

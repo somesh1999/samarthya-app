@@ -1,4 +1,4 @@
-package org.odk.collect.audiorecorder.recorder
+package org.samarthya.collect.audiorecorder.recorder
 
 import java.io.IOException
 

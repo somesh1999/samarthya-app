@@ -1,4 +1,4 @@
-package org.odk.collect.android.backgroundwork
+package org.samarthya.collect.android.backgroundwork
 
 import android.app.Application
 import androidx.test.core.app.ApplicationProvider
@@ -9,15 +9,15 @@ import org.mockito.kotlin.any
 import org.mockito.kotlin.eq
 import org.mockito.kotlin.mock
 import org.mockito.kotlin.verify
-import org.odk.collect.android.R
-import org.odk.collect.android.TestSettingsProvider
-import org.odk.collect.android.preferences.FormUpdateMode.MATCH_EXACTLY
-import org.odk.collect.android.preferences.FormUpdateMode.PREVIOUSLY_DOWNLOADED_ONLY
-import org.odk.collect.android.preferences.keys.ProjectKeys
-import org.odk.collect.android.preferences.keys.ProjectKeys.KEY_FORM_UPDATE_MODE
-import org.odk.collect.android.preferences.keys.ProjectKeys.KEY_PERIODIC_FORM_UPDATES_CHECK
-import org.odk.collect.android.preferences.keys.ProjectKeys.KEY_PROTOCOL
-import org.odk.collect.async.Scheduler
+import org.samarthya.collect.android.R
+import org.samarthya.collect.android.TestSettingsProvider
+import org.samarthya.collect.android.preferences.FormUpdateMode.MATCH_EXACTLY
+import org.samarthya.collect.android.preferences.FormUpdateMode.PREVIOUSLY_DOWNLOADED_ONLY
+import org.samarthya.collect.android.preferences.keys.ProjectKeys
+import org.samarthya.collect.android.preferences.keys.ProjectKeys.KEY_FORM_UPDATE_MODE
+import org.samarthya.collect.android.preferences.keys.ProjectKeys.KEY_PERIODIC_FORM_UPDATES_CHECK
+import org.samarthya.collect.android.preferences.keys.ProjectKeys.KEY_PROTOCOL
+import org.samarthya.collect.async.Scheduler
 
 @RunWith(AndroidJUnit4::class)
 class FormUpdateAndInstanceSubmitSchedulerTest {

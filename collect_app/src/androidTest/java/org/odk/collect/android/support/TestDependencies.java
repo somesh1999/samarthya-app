@@ -1,4 +1,4 @@
-package org.odk.collect.android.support;
+package org.samarthya.collect.android.support;
 
 import android.content.Context;
 import android.webkit.MimeTypeMap;
@@ -6,16 +6,16 @@ import android.webkit.MimeTypeMap;
 import androidx.test.espresso.IdlingResource;
 import androidx.work.WorkManager;
 
-import org.odk.collect.android.gdrive.GoogleAccountPicker;
-import org.odk.collect.android.gdrive.GoogleApiProvider;
-import org.odk.collect.android.gdrive.sheets.DriveApi;
-import org.odk.collect.android.gdrive.sheets.SheetsApi;
-import org.odk.collect.android.injection.config.AppDependencyModule;
-import org.odk.collect.android.openrosa.OpenRosaHttpInterface;
-import org.odk.collect.android.storage.StoragePathProvider;
-import org.odk.collect.android.views.BarcodeViewDecoder;
-import org.odk.collect.async.Scheduler;
-import org.odk.collect.utilities.UserAgentProvider;
+import org.samarthya.collect.android.gdrive.GoogleAccountPicker;
+import org.samarthya.collect.android.gdrive.GoogleApiProvider;
+import org.samarthya.collect.android.gdrive.sheets.DriveApi;
+import org.samarthya.collect.android.gdrive.sheets.SheetsApi;
+import org.samarthya.collect.android.injection.config.AppDependencyModule;
+import org.samarthya.collect.android.openrosa.OpenRosaHttpInterface;
+import org.samarthya.collect.android.storage.StoragePathProvider;
+import org.samarthya.collect.android.views.BarcodeViewDecoder;
+import org.samarthya.collect.async.Scheduler;
+import org.samarthya.collect.utilities.UserAgentProvider;
 
 import java.util.List;
 

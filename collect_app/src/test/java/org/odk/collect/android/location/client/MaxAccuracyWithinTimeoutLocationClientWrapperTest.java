@@ -1,4 +1,4 @@
-package org.odk.collect.android.location.client;
+package org.samarthya.collect.android.location.client;
 
 import android.location.Location;
 
@@ -9,7 +9,7 @@ import com.google.android.gms.location.LocationListener;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.testshared.RobolectricHelpers;
+import org.samarthya.collect.testshared.RobolectricHelpers;
 
 import java.util.concurrent.TimeUnit;
 
@@ -19,7 +19,7 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
-import static org.odk.collect.testshared.LocationTestUtils.createLocation;
+import static org.samarthya.collect.testshared.LocationTestUtils.createLocation;
 import static org.robolectric.shadows.ShadowSystemClock.advanceBy;
 
 @RunWith(AndroidJUnit4.class)

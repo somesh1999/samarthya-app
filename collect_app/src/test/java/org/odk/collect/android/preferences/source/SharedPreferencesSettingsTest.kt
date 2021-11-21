@@ -1,4 +1,4 @@
-package org.odk.collect.android.preferences.source
+package org.samarthya.collect.android.preferences.source
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -12,7 +12,7 @@ import org.junit.runner.RunWith
 import org.mockito.Mockito.mock
 import org.mockito.Mockito.never
 import org.mockito.Mockito.verify
-import org.odk.collect.shared.Settings
+import org.samarthya.collect.shared.Settings
 import org.robolectric.RobolectricTestRunner
 import java.math.BigDecimal
 

@@ -1,4 +1,4 @@
-package org.odk.collect.android.support;
+package org.samarthya.collect.android.support;
 
 import android.app.Application;
 import android.content.Intent;
@@ -9,11 +9,11 @@ import androidx.test.core.app.ApplicationProvider;
 import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
-import org.odk.collect.android.activities.FormEntryActivity;
-import org.odk.collect.android.injection.DaggerUtils;
-import org.odk.collect.android.external.FormsContract;
-import org.odk.collect.android.storage.StorageSubdirectory;
-import org.odk.collect.forms.Form;
+import org.samarthya.collect.android.activities.FormEntryActivity;
+import org.samarthya.collect.android.injection.DaggerUtils;
+import org.samarthya.collect.android.external.FormsContract;
+import org.samarthya.collect.android.storage.StorageSubdirectory;
+import org.samarthya.collect.forms.Form;
 
 public class FormActivityTestRule implements TestRule {
 

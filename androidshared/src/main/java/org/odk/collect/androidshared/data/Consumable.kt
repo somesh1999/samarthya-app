@@ -1,4 +1,4 @@
-package org.odk.collect.androidshared.data
+package org.samarthya.collect.androidshared.data
 
 /**
  * Useful for values that are read multiple times but only used

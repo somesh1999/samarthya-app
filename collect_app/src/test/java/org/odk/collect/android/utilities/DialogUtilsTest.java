@@ -1,4 +1,4 @@
-package org.odk.collect.android.utilities;
+package org.samarthya.collect.android.utilities;
 
 import android.os.Bundle;
 
@@ -14,8 +14,8 @@ import org.robolectric.android.controller.ActivityController;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
-import static org.odk.collect.android.support.CollectHelpers.buildThemedActivity;
-import static org.odk.collect.android.support.CollectHelpers.createThemedActivity;
+import static org.samarthya.collect.android.support.CollectHelpers.buildThemedActivity;
+import static org.samarthya.collect.android.support.CollectHelpers.createThemedActivity;
 
 @RunWith(AndroidJUnit4.class)
 public class DialogUtilsTest {

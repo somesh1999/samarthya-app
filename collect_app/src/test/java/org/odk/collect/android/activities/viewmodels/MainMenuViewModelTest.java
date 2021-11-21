@@ -1,4 +1,4 @@
-package org.odk.collect.android.activities.viewmodels;
+package org.samarthya.collect.android.activities.viewmodels;
 
 import android.app.Application;
 
@@ -7,10 +7,10 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 import org.jetbrains.annotations.NotNull;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.formmanagement.InstancesAppState;
-import org.odk.collect.android.preferences.source.SettingsProvider;
-import org.odk.collect.android.version.VersionInformation;
-import org.odk.collect.async.Scheduler;
+import org.samarthya.collect.android.formmanagement.InstancesAppState;
+import org.samarthya.collect.android.preferences.source.SettingsProvider;
+import org.samarthya.collect.android.version.VersionInformation;
+import org.samarthya.collect.async.Scheduler;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;

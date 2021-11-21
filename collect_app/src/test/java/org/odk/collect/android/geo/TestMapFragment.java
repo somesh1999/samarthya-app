@@ -1,4 +1,4 @@
-package org.odk.collect.android.geo;
+package org.samarthya.collect.android.geo;
 
 import android.os.Bundle;
 

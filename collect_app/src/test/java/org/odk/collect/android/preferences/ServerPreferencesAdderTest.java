@@ -1,4 +1,4 @@
-package org.odk.collect.android.preferences;
+package org.samarthya.collect.android.preferences;
 
 import androidx.fragment.app.FragmentActivity;
 import androidx.preference.PreferenceFragmentCompat;
@@ -7,7 +7,7 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.R;
+import org.samarthya.collect.android.R;
 import org.robolectric.Robolectric;
 import org.robolectric.shadows.ShadowToast;
 

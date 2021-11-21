@@ -1,17 +1,17 @@
-package org.odk.collect.android.formmanagement;
+package org.samarthya.collect.android.formmanagement;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.odk.collect.formstest.InMemFormsRepository;
-import org.odk.collect.forms.Form;
-import org.odk.collect.forms.FormListItem;
-import org.odk.collect.forms.FormSource;
-import org.odk.collect.forms.FormsRepository;
-import org.odk.collect.forms.ManifestFile;
-import org.odk.collect.forms.MediaFile;
-import org.odk.collect.formstest.FormUtils;
-import org.odk.collect.shared.strings.Md5;
-import org.odk.collect.shared.TempFiles;
+import org.samarthya.collect.formstest.InMemFormsRepository;
+import org.samarthya.collect.forms.Form;
+import org.samarthya.collect.forms.FormListItem;
+import org.samarthya.collect.forms.FormSource;
+import org.samarthya.collect.forms.FormsRepository;
+import org.samarthya.collect.forms.ManifestFile;
+import org.samarthya.collect.forms.MediaFile;
+import org.samarthya.collect.formstest.FormUtils;
+import org.samarthya.collect.shared.strings.Md5;
+import org.samarthya.collect.shared.TempFiles;
 
 import java.io.BufferedWriter;
 import java.io.ByteArrayInputStream;

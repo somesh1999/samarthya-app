@@ -1,8 +1,8 @@
-package org.odk.collect.android.support;
+package org.samarthya.collect.android.support;
 
 import android.content.Context;
 
-import org.odk.collect.android.utilities.PlayServicesChecker;
+import org.samarthya.collect.android.utilities.PlayServicesChecker;
 import org.robolectric.annotation.Implementation;
 import org.robolectric.annotation.Implements;
 

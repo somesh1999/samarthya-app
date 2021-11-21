@@ -12,11 +12,11 @@
  * the License.
  */
 
-package org.odk.collect.formstest;
+package org.samarthya.collect.formstest;
 
 import org.junit.Before;
-import org.odk.collect.forms.instances.InstancesRepository;
-import org.odk.collect.shared.TempFiles;
+import org.samarthya.collect.forms.instances.InstancesRepository;
+import org.samarthya.collect.shared.TempFiles;
 
 import java.util.function.Supplier;
 

@@ -1,4 +1,4 @@
-package org.odk.collect.android.regression;
+package org.samarthya.collect.android.regression;
 
 import android.Manifest;
 
@@ -9,16 +9,16 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.RuleChain;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.R;
-import org.odk.collect.android.support.CollectTestRule;
-import org.odk.collect.android.support.TestRuleChain;
-import org.odk.collect.android.support.pages.AboutPage;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.support.CollectTestRule;
+import org.samarthya.collect.android.support.TestRuleChain;
+import org.samarthya.collect.android.support.pages.AboutPage;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
-import static org.odk.collect.android.support.matchers.DrawableMatcher.withImageDrawable;
-import static org.odk.collect.android.support.matchers.RecyclerViewMatcher.withRecyclerView;
+import static org.samarthya.collect.android.support.matchers.DrawableMatcher.withImageDrawable;
+import static org.samarthya.collect.android.support.matchers.RecyclerViewMatcher.withRecyclerView;
 
 //Issue NODK-234
 @RunWith(AndroidJUnit4.class)

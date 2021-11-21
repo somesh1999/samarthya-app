@@ -1,4 +1,4 @@
-package org.odk.collect.android.preferences.dialogs;
+package org.samarthya.collect.android.preferences.dialogs;
 
 import android.widget.EditText;
 
@@ -8,11 +8,11 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.R;
-import org.odk.collect.android.TestSettingsProvider;
-import org.odk.collect.android.preferences.keys.ProjectKeys;
-import org.odk.collect.shared.Settings;
-import org.odk.collect.testshared.RobolectricHelpers;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.TestSettingsProvider;
+import org.samarthya.collect.android.preferences.keys.ProjectKeys;
+import org.samarthya.collect.shared.Settings;
+import org.samarthya.collect.testshared.RobolectricHelpers;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;

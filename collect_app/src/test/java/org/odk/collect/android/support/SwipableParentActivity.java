@@ -1,8 +1,8 @@
-package org.odk.collect.android.support;
+package org.samarthya.collect.android.support;
 
 import androidx.fragment.app.FragmentActivity;
 
-import org.odk.collect.android.audio.AudioControllerView;
+import org.samarthya.collect.android.audio.AudioControllerView;
 
 public class SwipableParentActivity extends FragmentActivity implements AudioControllerView.SwipableParent {
 

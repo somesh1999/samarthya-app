@@ -1,4 +1,4 @@
-package org.odk.collect.android.feature.formentry;
+package org.samarthya.collect.android.feature.formentry;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
@@ -6,9 +6,9 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.RuleChain;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.support.CollectTestRule;
-import org.odk.collect.android.support.ResetStateRule;
-import org.odk.collect.android.support.pages.MainMenuPage;
+import org.samarthya.collect.android.support.CollectTestRule;
+import org.samarthya.collect.android.support.ResetStateRule;
+import org.samarthya.collect.android.support.pages.MainMenuPage;
 
 import java.util.Collections;
 

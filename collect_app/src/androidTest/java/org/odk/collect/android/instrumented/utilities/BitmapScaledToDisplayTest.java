@@ -1,12 +1,12 @@
-package org.odk.collect.android.instrumented.utilities;
+package org.samarthya.collect.android.instrumented.utilities;
 
 import android.graphics.Bitmap;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.application.Collect;
-import org.odk.collect.android.utilities.FileUtils;
+import org.samarthya.collect.android.application.Collect;
+import org.samarthya.collect.android.utilities.FileUtils;
 
 import java.io.File;
 

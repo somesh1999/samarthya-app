@@ -1,14 +1,14 @@
-package org.odk.collect.android.formmanagement;
+package org.samarthya.collect.android.formmanagement;
 
 import org.junit.Test;
-import org.odk.collect.android.formmanagement.matchexactly.ServerFormsSynchronizer;
-import org.odk.collect.forms.Form;
-import org.odk.collect.forms.FormSourceException;
-import org.odk.collect.forms.FormsRepository;
-import org.odk.collect.forms.instances.InstancesRepository;
-import org.odk.collect.formstest.FormUtils;
-import org.odk.collect.formstest.InMemFormsRepository;
-import org.odk.collect.formstest.InMemInstancesRepository;
+import org.samarthya.collect.android.formmanagement.matchexactly.ServerFormsSynchronizer;
+import org.samarthya.collect.forms.Form;
+import org.samarthya.collect.forms.FormSourceException;
+import org.samarthya.collect.forms.FormsRepository;
+import org.samarthya.collect.forms.instances.InstancesRepository;
+import org.samarthya.collect.formstest.FormUtils;
+import org.samarthya.collect.formstest.InMemFormsRepository;
+import org.samarthya.collect.formstest.InMemInstancesRepository;
 
 import java.util.ArrayList;
 import java.util.List;

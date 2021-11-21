@@ -1,4 +1,4 @@
-package org.odk.collect.android.formentry;
+package org.samarthya.collect.android.formentry;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentActivity;
@@ -7,18 +7,18 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.R;
-import org.odk.collect.android.TestSettingsProvider;
-import org.odk.collect.android.activities.FormHierarchyActivity;
-import org.odk.collect.android.formentry.backgroundlocation.BackgroundLocationViewModel;
-import org.odk.collect.android.formentry.questions.AnswersProvider;
-import org.odk.collect.android.formentry.saving.FormSaveViewModel;
-import org.odk.collect.android.javarosawrapper.FormController;
-import org.odk.collect.android.preferences.screens.ProjectPreferencesActivity;
-import org.odk.collect.android.utilities.ApplicationConstants;
-import org.odk.collect.androidshared.livedata.MutableNonNullLiveData;
-import org.odk.collect.audiorecorder.recording.AudioRecorder;
-import org.odk.collect.testshared.RobolectricHelpers;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.TestSettingsProvider;
+import org.samarthya.collect.android.activities.FormHierarchyActivity;
+import org.samarthya.collect.android.formentry.backgroundlocation.BackgroundLocationViewModel;
+import org.samarthya.collect.android.formentry.questions.AnswersProvider;
+import org.samarthya.collect.android.formentry.saving.FormSaveViewModel;
+import org.samarthya.collect.android.javarosawrapper.FormController;
+import org.samarthya.collect.android.preferences.screens.ProjectPreferencesActivity;
+import org.samarthya.collect.android.utilities.ApplicationConstants;
+import org.samarthya.collect.androidshared.livedata.MutableNonNullLiveData;
+import org.samarthya.collect.audiorecorder.recording.AudioRecorder;
+import org.samarthya.collect.testshared.RobolectricHelpers;
 import org.robolectric.Robolectric;
 import org.robolectric.annotation.LooperMode;
 import org.robolectric.fakes.RoboMenu;
@@ -37,7 +37,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
-import static org.odk.collect.testshared.RobolectricHelpers.getFragmentByClass;
+import static org.samarthya.collect.testshared.RobolectricHelpers.getFragmentByClass;
 import static org.robolectric.Shadows.shadowOf;
 
 @RunWith(AndroidJUnit4.class)

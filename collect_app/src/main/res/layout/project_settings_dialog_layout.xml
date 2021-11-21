@@ -46,7 +46,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/close_icon" />
 
-    <org.odk.collect.android.projects.ProjectListItemView
+    <org.samarthya.collect.android.projects.ProjectListItemView
         android:id="@+id/current_project"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

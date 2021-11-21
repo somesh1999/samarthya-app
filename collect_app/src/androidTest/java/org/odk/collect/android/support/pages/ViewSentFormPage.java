@@ -1,7 +1,7 @@
-package org.odk.collect.android.support.pages;
+package org.samarthya.collect.android.support.pages;
 
-import org.odk.collect.android.R;
-import org.odk.collect.android.database.forms.DatabaseFormColumns;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.database.forms.DatabaseFormColumns;
 
 import static androidx.test.espresso.Espresso.onData;
 import static androidx.test.espresso.action.ViewActions.click;

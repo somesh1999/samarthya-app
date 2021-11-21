@@ -1,4 +1,4 @@
-package org.odk.collect.android.support;
+package org.samarthya.collect.android.support;
 
 import android.app.Application;
 
@@ -9,14 +9,14 @@ import androidx.test.core.app.ApplicationProvider;
 import org.javarosa.core.reference.InvalidReferenceException;
 import org.javarosa.core.reference.Reference;
 import org.javarosa.core.reference.ReferenceManager;
-import org.odk.collect.android.R;
-import org.odk.collect.android.application.Collect;
-import org.odk.collect.android.injection.DaggerUtils;
-import org.odk.collect.android.injection.config.AppDependencyComponent;
-import org.odk.collect.android.injection.config.AppDependencyModule;
-import org.odk.collect.android.injection.config.DaggerAppDependencyComponent;
-import org.odk.collect.projects.Project;
-import org.odk.collect.testshared.RobolectricHelpers;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.application.Collect;
+import org.samarthya.collect.android.injection.DaggerUtils;
+import org.samarthya.collect.android.injection.config.AppDependencyComponent;
+import org.samarthya.collect.android.injection.config.AppDependencyModule;
+import org.samarthya.collect.android.injection.config.DaggerAppDependencyComponent;
+import org.samarthya.collect.projects.Project;
+import org.samarthya.collect.testshared.RobolectricHelpers;
 import org.robolectric.Robolectric;
 import org.robolectric.android.controller.ActivityController;
 

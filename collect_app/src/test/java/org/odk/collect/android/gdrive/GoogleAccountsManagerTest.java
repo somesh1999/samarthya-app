@@ -1,4 +1,4 @@
-package org.odk.collect.android.gdrive;
+package org.samarthya.collect.android.gdrive;
 
 import android.accounts.Account;
 import android.content.Intent;
@@ -9,11 +9,11 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
-import org.odk.collect.android.permissions.PermissionsProvider;
-import org.odk.collect.android.preferences.keys.ProjectKeys;
-import org.odk.collect.shared.Settings;
-import org.odk.collect.android.preferences.source.SettingsProvider;
-import org.odk.collect.android.utilities.ThemeUtils;
+import org.samarthya.collect.android.permissions.PermissionsProvider;
+import org.samarthya.collect.android.preferences.keys.ProjectKeys;
+import org.samarthya.collect.shared.Settings;
+import org.samarthya.collect.android.preferences.source.SettingsProvider;
+import org.samarthya.collect.android.utilities.ThemeUtils;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 import org.powermock.reflect.Whitebox;

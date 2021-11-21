@@ -1,11 +1,11 @@
-package org.odk.collect.android.support.pages;
+package org.samarthya.collect.android.support.pages;
 
 import android.accounts.AccountManager;
 import android.app.Activity;
 import android.app.Instrumentation;
 import android.content.Intent;
 
-import org.odk.collect.android.R;
+import org.samarthya.collect.android.R;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;

@@ -1,4 +1,4 @@
-package org.odk.collect.androidshared.livedata;
+package org.samarthya.collect.androidshared.livedata;
 
 import androidx.annotation.Nullable;
 import androidx.lifecycle.LiveData;

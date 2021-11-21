@@ -1,13 +1,13 @@
-package org.odk.collect.android.widgets.support;
+package org.samarthya.collect.android.widgets.support;
 
 import org.javarosa.core.model.QuestionDef;
 import org.javarosa.core.model.data.IAnswerData;
 import org.javarosa.form.api.FormEntryPrompt;
-import org.odk.collect.android.listeners.WidgetValueChangedListener;
-import org.odk.collect.android.support.CollectHelpers;
-import org.odk.collect.android.support.MockFormEntryPromptBuilder;
-import org.odk.collect.android.support.TestScreenContextActivity;
-import org.odk.collect.android.widgets.QuestionWidget;
+import org.samarthya.collect.android.listeners.WidgetValueChangedListener;
+import org.samarthya.collect.android.support.CollectHelpers;
+import org.samarthya.collect.android.support.MockFormEntryPromptBuilder;
+import org.samarthya.collect.android.support.TestScreenContextActivity;
+import org.samarthya.collect.android.widgets.QuestionWidget;
 
 import static org.mockito.Mockito.mock;
 

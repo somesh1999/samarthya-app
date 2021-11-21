@@ -1,4 +1,4 @@
-package org.odk.collect.android.preferences.screens;
+package org.samarthya.collect.android.preferences.screens;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,22 +11,22 @@ import androidx.test.platform.app.InstrumentationRegistry;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.R;
-import org.odk.collect.android.injection.config.AppDependencyModule;
-import org.odk.collect.android.listeners.PermissionListener;
-import org.odk.collect.android.metadata.InstallIDProvider;
-import org.odk.collect.android.permissions.PermissionsChecker;
-import org.odk.collect.android.support.CollectHelpers;
-import org.odk.collect.android.utilities.DeviceDetailsProvider;
-import org.odk.collect.android.permissions.PermissionsProvider;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.injection.config.AppDependencyModule;
+import org.samarthya.collect.android.listeners.PermissionListener;
+import org.samarthya.collect.android.metadata.InstallIDProvider;
+import org.samarthya.collect.android.permissions.PermissionsChecker;
+import org.samarthya.collect.android.support.CollectHelpers;
+import org.samarthya.collect.android.utilities.DeviceDetailsProvider;
+import org.samarthya.collect.android.permissions.PermissionsProvider;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.when;
-import static org.odk.collect.android.logic.PropertyManager.PROPMGR_DEVICE_ID;
-import static org.odk.collect.android.preferences.keys.ProjectKeys.KEY_METADATA_PHONENUMBER;
+import static org.samarthya.collect.android.logic.PropertyManager.PROPMGR_DEVICE_ID;
+import static org.samarthya.collect.android.preferences.keys.ProjectKeys.KEY_METADATA_PHONENUMBER;
 
 @RunWith(AndroidJUnit4.class)
 public class FormMetadataPreferencesFragmentTest {

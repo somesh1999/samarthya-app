@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.odk.collect.shared
+package org.samarthya.collect.shared
 
 import junit.framework.TestCase.assertFalse
 import junit.framework.TestCase.assertTrue
 import org.junit.Test
-import org.odk.collect.shared.strings.Validator
+import org.samarthya.collect.shared.strings.Validator
 
 class ValidatorTest {
     @Test

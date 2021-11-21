@@ -1,4 +1,4 @@
-package org.odk.collect.android.activities.viewmodels
+package org.samarthya.collect.android.activities.viewmodels
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import org.hamcrest.CoreMatchers.`is`
@@ -8,9 +8,9 @@ import org.junit.Test
 import org.mockito.Mockito.verify
 import org.mockito.kotlin.doReturn
 import org.mockito.kotlin.mock
-import org.odk.collect.android.application.initialization.AnalyticsInitializer
-import org.odk.collect.android.projects.CurrentProjectProvider
-import org.odk.collect.projects.Project
+import org.samarthya.collect.android.application.initialization.AnalyticsInitializer
+import org.samarthya.collect.android.projects.CurrentProjectProvider
+import org.samarthya.collect.projects.Project
 
 class CurrentProjectViewModelTest {
 

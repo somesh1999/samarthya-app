@@ -1,9 +1,9 @@
-package org.odk.collect.android.storage;
+package org.samarthya.collect.android.storage;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.odk.collect.android.projects.CurrentProjectProvider;
-import org.odk.collect.projects.Project;
+import org.samarthya.collect.android.projects.CurrentProjectProvider;
+import org.samarthya.collect.projects.Project;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.arrayWithSize;

@@ -1,4 +1,4 @@
-package org.odk.collect.android.support.pages;
+package org.samarthya.collect.android.support.pages;
 
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
@@ -11,8 +11,8 @@ import androidx.test.espresso.matcher.BoundedMatcher;
 
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
-import org.odk.collect.android.R;
-import org.odk.collect.android.support.ActivityHelpers;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.support.ActivityHelpers;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;

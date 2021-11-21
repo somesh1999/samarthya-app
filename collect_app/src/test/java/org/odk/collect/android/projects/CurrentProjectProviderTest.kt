@@ -1,4 +1,4 @@
-package org.odk.collect.android.projects
+package org.samarthya.collect.android.projects
 
 import androidx.test.espresso.matcher.ViewMatchers.assertThat
 import org.hamcrest.Matchers.`is`
@@ -7,11 +7,11 @@ import org.junit.Test
 import org.mockito.Mockito.`when`
 import org.mockito.Mockito.mock
 import org.mockito.Mockito.verify
-import org.odk.collect.android.preferences.keys.MetaKeys
-import org.odk.collect.android.preferences.source.SettingsProvider
-import org.odk.collect.android.preferences.source.SharedPreferencesSettings
-import org.odk.collect.projects.Project
-import org.odk.collect.projects.ProjectsRepository
+import org.samarthya.collect.android.preferences.keys.MetaKeys
+import org.samarthya.collect.android.preferences.source.SettingsProvider
+import org.samarthya.collect.android.preferences.source.SharedPreferencesSettings
+import org.samarthya.collect.projects.Project
+import org.samarthya.collect.projects.ProjectsRepository
 
 class CurrentProjectProviderTest {
 

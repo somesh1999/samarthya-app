@@ -1,12 +1,12 @@
-package org.odk.collect.android.feature.projects
+package org.samarthya.collect.android.feature.projects
 
 import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.RuleChain
-import org.odk.collect.android.support.CollectTestRule
-import org.odk.collect.android.support.TestRuleChain
-import org.odk.collect.android.support.pages.MainMenuPage
-import org.odk.collect.android.support.pages.ProjectSettingsPage
+import org.samarthya.collect.android.support.CollectTestRule
+import org.samarthya.collect.android.support.TestRuleChain
+import org.samarthya.collect.android.support.pages.MainMenuPage
+import org.samarthya.collect.android.support.pages.ProjectSettingsPage
 
 class UpdateProjectTest {
 

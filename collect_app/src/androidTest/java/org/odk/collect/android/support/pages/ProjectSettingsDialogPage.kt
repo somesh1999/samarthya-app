@@ -1,4 +1,4 @@
-package org.odk.collect.android.support.pages
+package org.samarthya.collect.android.support.pages
 
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions
@@ -12,7 +12,7 @@ import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.espresso.matcher.ViewMatchers.withText
 import org.hamcrest.Matchers.allOf
 import org.hamcrest.Matchers.not
-import org.odk.collect.android.R
+import org.samarthya.collect.android.R
 
 internal class ProjectSettingsDialogPage() : Page<ProjectSettingsDialogPage>() {
     override fun assertOnPage(): ProjectSettingsDialogPage {

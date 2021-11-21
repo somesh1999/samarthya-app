@@ -1,4 +1,4 @@
-package org.odk.collect.android.fragments.support;
+package org.samarthya.collect.android.fragments.support;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -11,12 +11,12 @@ import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.FragmentActivity;
 
 import org.joda.time.LocalDateTime;
-import org.odk.collect.android.R;
-import org.odk.collect.android.fragments.dialogs.CustomDatePickerDialog;
-import org.odk.collect.android.logic.DatePickerDetails;
-import org.odk.collect.android.support.TestActivityScenario;
-import org.odk.collect.android.widgets.utilities.DateTimeWidgetUtils;
-import org.odk.collect.testshared.RobolectricHelpers;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.fragments.dialogs.CustomDatePickerDialog;
+import org.samarthya.collect.android.logic.DatePickerDetails;
+import org.samarthya.collect.android.support.TestActivityScenario;
+import org.samarthya.collect.android.widgets.utilities.DateTimeWidgetUtils;
+import org.samarthya.collect.testshared.RobolectricHelpers;
 import org.robolectric.shadows.ShadowDialog;
 
 import static junit.framework.TestCase.assertTrue;

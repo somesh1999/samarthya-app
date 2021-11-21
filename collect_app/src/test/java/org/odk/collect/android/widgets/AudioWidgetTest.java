@@ -1,4 +1,4 @@
-package org.odk.collect.android.widgets;
+package org.samarthya.collect.android.widgets;
 
 import android.util.Pair;
 import android.view.View;
@@ -14,19 +14,19 @@ import org.jetbrains.annotations.NotNull;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.audio.AudioControllerView;
-import org.odk.collect.android.formentry.questions.QuestionDetails;
-import org.odk.collect.android.listeners.WidgetValueChangedListener;
-import org.odk.collect.android.support.CollectHelpers;
-import org.odk.collect.android.support.TestScreenContextActivity;
-import org.odk.collect.android.utilities.Appearances;
-import org.odk.collect.android.widgets.support.FakeQuestionMediaManager;
-import org.odk.collect.android.widgets.utilities.AudioFileRequester;
-import org.odk.collect.android.widgets.utilities.AudioPlayer;
-import org.odk.collect.android.widgets.utilities.RecordingRequester;
-import org.odk.collect.android.widgets.utilities.RecordingStatusHandler;
-import org.odk.collect.audioclips.Clip;
-import org.odk.collect.testshared.RobolectricHelpers;
+import org.samarthya.collect.android.audio.AudioControllerView;
+import org.samarthya.collect.android.formentry.questions.QuestionDetails;
+import org.samarthya.collect.android.listeners.WidgetValueChangedListener;
+import org.samarthya.collect.android.support.CollectHelpers;
+import org.samarthya.collect.android.support.TestScreenContextActivity;
+import org.samarthya.collect.android.utilities.Appearances;
+import org.samarthya.collect.android.widgets.support.FakeQuestionMediaManager;
+import org.samarthya.collect.android.widgets.utilities.AudioFileRequester;
+import org.samarthya.collect.android.widgets.utilities.AudioPlayer;
+import org.samarthya.collect.android.widgets.utilities.RecordingRequester;
+import org.samarthya.collect.android.widgets.utilities.RecordingStatusHandler;
+import org.samarthya.collect.audioclips.Clip;
+import org.samarthya.collect.testshared.RobolectricHelpers;
 
 import java.io.File;
 import java.util.HashMap;
@@ -43,11 +43,11 @@ import static org.hamcrest.Matchers.nullValue;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
-import static org.odk.collect.testshared.RobolectricHelpers.setupMediaPlayerDataSource;
-import static org.odk.collect.android.widgets.support.QuestionWidgetHelpers.mockValueChangedListener;
-import static org.odk.collect.android.widgets.support.QuestionWidgetHelpers.promptWithAnswer;
-import static org.odk.collect.android.widgets.support.QuestionWidgetHelpers.promptWithReadOnly;
-import static org.odk.collect.android.widgets.support.QuestionWidgetHelpers.promptWithReadOnlyAndAnswer;
+import static org.samarthya.collect.testshared.RobolectricHelpers.setupMediaPlayerDataSource;
+import static org.samarthya.collect.android.widgets.support.QuestionWidgetHelpers.mockValueChangedListener;
+import static org.samarthya.collect.android.widgets.support.QuestionWidgetHelpers.promptWithAnswer;
+import static org.samarthya.collect.android.widgets.support.QuestionWidgetHelpers.promptWithReadOnly;
+import static org.samarthya.collect.android.widgets.support.QuestionWidgetHelpers.promptWithReadOnlyAndAnswer;
 import static org.robolectric.shadows.ShadowDialog.getLatestDialog;
 
 @RunWith(AndroidJUnit4.class)
@@ -234,9 +234,9 @@ public class AudioWidgetTest {
     }
 
     /**
-     * Currently choosing audio is locked into the {@link org.odk.collect.android.tasks.MediaLoadingTask}
+     * Currently choosing audio is locked into the {@link org.samarthya.collect.android.tasks.MediaLoadingTask}
      * flow and so we'd need to rip this apart to let us drop support for accepting File as data. In
-     * this case it will just grab the name off the file and use {@link org.odk.collect.android.utilities.QuestionMediaManager}
+     * this case it will just grab the name off the file and use {@link org.samarthya.collect.android.utilities.QuestionMediaManager}
      * to handle grabbing the actual file
      */
     @Test

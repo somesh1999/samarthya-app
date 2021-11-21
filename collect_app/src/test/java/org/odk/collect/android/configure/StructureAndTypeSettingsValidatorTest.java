@@ -1,8 +1,8 @@
-package org.odk.collect.android.configure;
+package org.samarthya.collect.android.configure;
 
 import org.json.JSONObject;
 import org.junit.Test;
-import org.odk.collect.android.configure.qr.AppConfigurationKeys;
+import org.samarthya.collect.android.configure.qr.AppConfigurationKeys;
 
 import java.util.HashMap;
 import java.util.Map;

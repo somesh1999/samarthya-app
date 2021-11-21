@@ -1,4 +1,4 @@
-package org.odk.collect.android.formentry.backgroundlocation;
+package org.samarthya.collect.android.formentry.backgroundlocation;
 
 import android.location.Location;
 
@@ -12,10 +12,10 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
-import org.odk.collect.android.formentry.audit.AuditConfig;
-import org.odk.collect.testshared.LocationTestUtils;
-import org.odk.collect.android.location.client.FakeLocationClient;
-import org.odk.collect.android.formentry.audit.AuditEvent;
+import org.samarthya.collect.android.formentry.audit.AuditConfig;
+import org.samarthya.collect.testshared.LocationTestUtils;
+import org.samarthya.collect.android.location.client.FakeLocationClient;
+import org.samarthya.collect.android.formentry.audit.AuditEvent;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;

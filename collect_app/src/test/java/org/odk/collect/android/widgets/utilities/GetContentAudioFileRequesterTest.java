@@ -1,4 +1,4 @@
-package org.odk.collect.android.widgets.utilities;
+package org.samarthya.collect.android.widgets.utilities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,11 +9,11 @@ import org.javarosa.form.api.FormEntryPrompt;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.R;
-import org.odk.collect.android.formentry.FormEntryViewModel;
-import org.odk.collect.android.utilities.ActivityAvailability;
-import org.odk.collect.android.utilities.ApplicationConstants;
-import org.odk.collect.android.widgets.support.FakeWaitingForDataRegistry;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.formentry.FormEntryViewModel;
+import org.samarthya.collect.android.utilities.ActivityAvailability;
+import org.samarthya.collect.android.utilities.ApplicationConstants;
+import org.samarthya.collect.android.widgets.support.FakeWaitingForDataRegistry;
 import org.robolectric.Robolectric;
 import org.robolectric.shadows.ShadowActivity;
 import org.robolectric.shadows.ShadowToast;
@@ -25,7 +25,7 @@ import static org.hamcrest.Matchers.nullValue;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import static org.odk.collect.android.widgets.support.QuestionWidgetHelpers.promptWithAnswer;
+import static org.samarthya.collect.android.widgets.support.QuestionWidgetHelpers.promptWithAnswer;
 import static org.robolectric.Shadows.shadowOf;
 
 @RunWith(AndroidJUnit4.class)

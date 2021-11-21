@@ -12,7 +12,7 @@
  * the License.
  */
 
-package org.odk.collect.android.location.activities;
+package org.samarthya.collect.android.location.activities;
 
 import android.view.View;
 
@@ -24,10 +24,10 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
-import org.odk.collect.android.R;
-import org.odk.collect.android.activities.GeoPolyActivity;
-import org.odk.collect.android.geo.MapPoint;
-import org.odk.collect.android.support.CollectHelpers;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.activities.GeoPolyActivity;
+import org.samarthya.collect.android.geo.MapPoint;
+import org.samarthya.collect.android.support.CollectHelpers;
 import org.robolectric.Robolectric;
 import org.robolectric.android.controller.ActivityController;
 
@@ -36,7 +36,7 @@ import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-import static org.odk.collect.testshared.LocationTestUtils.createLocation;
+import static org.samarthya.collect.testshared.LocationTestUtils.createLocation;
 
 @RunWith(AndroidJUnit4.class)
 public class GeoPolyActivityTest extends BaseGeoActivityTest {

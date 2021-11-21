@@ -1,4 +1,4 @@
-package org.odk.collect.android.formentry;
+package org.samarthya.collect.android.formentry;
 
 import android.Manifest;
 
@@ -8,17 +8,17 @@ import org.javarosa.core.model.instance.TreeReference;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.analytics.Analytics;
-import org.odk.collect.android.TestSettingsProvider;
-import org.odk.collect.android.formentry.audit.AuditEvent;
-import org.odk.collect.android.formentry.audit.AuditEventLogger;
-import org.odk.collect.android.javarosawrapper.FormController;
-import org.odk.collect.android.permissions.PermissionsChecker;
-import org.odk.collect.shared.Settings;
-import org.odk.collect.audiorecorder.recorder.Output;
-import org.odk.collect.audiorecorder.recording.AudioRecorder;
-import org.odk.collect.testshared.RobolectricHelpers;
-import org.odk.collect.utilities.Clock;
+import org.samarthya.collect.analytics.Analytics;
+import org.samarthya.collect.android.TestSettingsProvider;
+import org.samarthya.collect.android.formentry.audit.AuditEvent;
+import org.samarthya.collect.android.formentry.audit.AuditEventLogger;
+import org.samarthya.collect.android.javarosawrapper.FormController;
+import org.samarthya.collect.android.permissions.PermissionsChecker;
+import org.samarthya.collect.shared.Settings;
+import org.samarthya.collect.audiorecorder.recorder.Output;
+import org.samarthya.collect.audiorecorder.recording.AudioRecorder;
+import org.samarthya.collect.testshared.RobolectricHelpers;
+import org.samarthya.collect.utilities.Clock;
 
 import java.util.HashSet;
 import java.util.function.BiConsumer;

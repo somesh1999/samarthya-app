@@ -1,17 +1,17 @@
-package org.odk.collect.android.instrumented.forms;
+package org.samarthya.collect.android.instrumented.forms;
 
 import org.javarosa.core.reference.RootTranslator;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.RuleChain;
-import org.odk.collect.android.utilities.FormUtils;
-import org.odk.collect.android.storage.StoragePathProvider;
-import org.odk.collect.android.storage.StorageSubdirectory;
-import org.odk.collect.android.support.CopyFormRule;
-import org.odk.collect.android.support.ResetStateRule;
-import org.odk.collect.android.tasks.FormLoaderTask;
-import org.odk.collect.android.utilities.FileUtils;
+import org.samarthya.collect.android.utilities.FormUtils;
+import org.samarthya.collect.android.storage.StoragePathProvider;
+import org.samarthya.collect.android.storage.StorageSubdirectory;
+import org.samarthya.collect.android.support.CopyFormRule;
+import org.samarthya.collect.android.support.ResetStateRule;
+import org.samarthya.collect.android.tasks.FormLoaderTask;
+import org.samarthya.collect.android.utilities.FileUtils;
 
 import java.io.File;
 import java.util.List;

@@ -1,4 +1,4 @@
-package org.odk.collect.android.support;
+package org.samarthya.collect.android.support;
 
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;

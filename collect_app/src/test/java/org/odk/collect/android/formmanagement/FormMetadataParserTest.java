@@ -1,10 +1,10 @@
-package org.odk.collect.android.formmanagement;
+package org.samarthya.collect.android.formmanagement;
 
 import com.google.common.io.Files;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.odk.collect.android.utilities.FileUtils;
+import org.samarthya.collect.android.utilities.FileUtils;
 
 import java.io.File;
 import java.util.Map;

@@ -12,16 +12,16 @@
  * the License.
  */
 
-package org.odk.collect.android.database;
+package org.samarthya.collect.android.database;
 
 import androidx.test.core.app.ApplicationProvider;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import org.junit.runner.RunWith;
-import org.odk.collect.android.database.instances.DatabaseInstancesRepository;
-import org.odk.collect.forms.instances.InstancesRepository;
-import org.odk.collect.formstest.InstancesRepositoryTest;
-import org.odk.collect.shared.TempFiles;
+import org.samarthya.collect.android.database.instances.DatabaseInstancesRepository;
+import org.samarthya.collect.forms.instances.InstancesRepository;
+import org.samarthya.collect.formstest.InstancesRepositoryTest;
+import org.samarthya.collect.shared.TempFiles;
 
 import java.io.File;
 import java.util.function.Supplier;

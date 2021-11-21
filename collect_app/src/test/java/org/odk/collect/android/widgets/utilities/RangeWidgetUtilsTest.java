@@ -1,4 +1,4 @@
-package org.odk.collect.android.widgets.utilities;
+package org.samarthya.collect.android.widgets.utilities;
 
 import android.view.View;
 import android.widget.TextView;
@@ -11,13 +11,13 @@ import org.javarosa.core.model.data.StringData;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.R;
-import org.odk.collect.android.databinding.RangePickerWidgetAnswerBinding;
-import org.odk.collect.android.fragments.dialogs.NumberPickerDialog;
-import org.odk.collect.android.support.CollectHelpers;
-import org.odk.collect.android.support.TestScreenContextActivity;
-import org.odk.collect.android.views.TrackingTouchSlider;
-import org.odk.collect.testshared.RobolectricHelpers;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.databinding.RangePickerWidgetAnswerBinding;
+import org.samarthya.collect.android.fragments.dialogs.NumberPickerDialog;
+import org.samarthya.collect.android.support.CollectHelpers;
+import org.samarthya.collect.android.support.TestScreenContextActivity;
+import org.samarthya.collect.android.views.TrackingTouchSlider;
+import org.samarthya.collect.testshared.RobolectricHelpers;
 import org.robolectric.shadows.ShadowToast;
 
 import java.math.BigDecimal;
@@ -28,10 +28,10 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import static org.odk.collect.android.support.CollectHelpers.createThemedContext;
-import static org.odk.collect.android.widgets.support.QuestionWidgetHelpers.promptWithQuestionDefAndAnswer;
-import static org.odk.collect.android.widgets.support.QuestionWidgetHelpers.promptWithReadOnlyAndQuestionDef;
-import static org.odk.collect.android.widgets.support.QuestionWidgetHelpers.widgetTestActivity;
+import static org.samarthya.collect.android.support.CollectHelpers.createThemedContext;
+import static org.samarthya.collect.android.widgets.support.QuestionWidgetHelpers.promptWithQuestionDefAndAnswer;
+import static org.samarthya.collect.android.widgets.support.QuestionWidgetHelpers.promptWithReadOnlyAndQuestionDef;
+import static org.samarthya.collect.android.widgets.support.QuestionWidgetHelpers.widgetTestActivity;
 
 @RunWith(AndroidJUnit4.class)
 public class RangeWidgetUtilsTest {

@@ -1,9 +1,9 @@
-package org.odk.collect.audiorecorder.testsupport
+package org.samarthya.collect.audiorecorder.testsupport
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import org.junit.runner.RunWith
-import org.odk.collect.audiorecorder.recording.AudioRecorder
-import org.odk.collect.audiorecorder.recording.AudioRecorderTest
+import org.samarthya.collect.audiorecorder.recording.AudioRecorder
+import org.samarthya.collect.audiorecorder.recording.AudioRecorderTest
 import java.io.File
 
 @RunWith(AndroidJUnit4::class)

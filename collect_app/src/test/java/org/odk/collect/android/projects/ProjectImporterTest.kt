@@ -1,4 +1,4 @@
-package org.odk.collect.android.projects
+package org.samarthya.collect.android.projects
 
 import androidx.test.espresso.matcher.ViewMatchers.assertThat
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -7,11 +7,11 @@ import org.hamcrest.Matchers.contains
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.kotlin.mock
-import org.odk.collect.android.storage.StoragePathProvider
-import org.odk.collect.projects.InMemProjectsRepository
-import org.odk.collect.projects.Project
-import org.odk.collect.shared.TempFiles
-import org.odk.collect.shared.strings.UUIDGenerator
+import org.samarthya.collect.android.storage.StoragePathProvider
+import org.samarthya.collect.projects.InMemProjectsRepository
+import org.samarthya.collect.projects.Project
+import org.samarthya.collect.shared.TempFiles
+import org.samarthya.collect.shared.strings.UUIDGenerator
 import java.io.File
 
 @RunWith(AndroidJUnit4::class)

@@ -1,7 +1,7 @@
-package org.odk.collect.android.openrosa;
+package org.samarthya.collect.android.openrosa;
 
 import org.junit.Test;
-import org.odk.collect.android.openrosa.okhttp.OkHttpOpenRosaServerClientProvider;
+import org.samarthya.collect.android.openrosa.okhttp.OkHttpOpenRosaServerClientProvider;
 
 import okhttp3.OkHttpClient;
 import okhttp3.tls.internal.TlsUtil;
@@ -30,7 +30,7 @@ public class OkHttpOpenRosaServerClientProviderTest extends OpenRosaServerClient
         assertFalse(clientProvider.credentialsHaveChanged(null));
         assertTrue(clientProvider.credentialsHaveChanged(newCredentials));
 
-        clientProvider.get("https", "Dalvik/2.1.0 (Linux; U; Android 9; Android SDK built for x86 Build/PSR1.180720.093) org.odk.collect.android/v1.23.3-127-g2e2b1ac76", newCredentials);
+        clientProvider.get("https", "Dalvik/2.1.0 (Linux; U; Android 9; Android SDK built for x86 Build/PSR1.180720.093) org.samarthya.collect.android/v1.23.3-127-g2e2b1ac76", newCredentials);
 
         assertTrue(clientProvider.credentialsHaveChanged(null));
         assertFalse(clientProvider.credentialsHaveChanged(newCredentials));

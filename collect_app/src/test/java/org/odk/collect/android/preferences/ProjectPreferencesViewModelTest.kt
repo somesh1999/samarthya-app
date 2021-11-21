@@ -1,4 +1,4 @@
-package org.odk.collect.android.preferences
+package org.samarthya.collect.android.preferences
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import org.hamcrest.MatcherAssert.assertThat
@@ -7,9 +7,9 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.kotlin.mock
 import org.mockito.kotlin.whenever
-import org.odk.collect.android.utilities.AdminPasswordProvider
-import org.odk.collect.androidshared.data.Consumable
-import org.odk.collect.testshared.RobolectricHelpers
+import org.samarthya.collect.android.utilities.AdminPasswordProvider
+import org.samarthya.collect.androidshared.data.Consumable
+import org.samarthya.collect.testshared.RobolectricHelpers
 
 @RunWith(AndroidJUnit4::class)
 class ProjectPreferencesViewModelTest {

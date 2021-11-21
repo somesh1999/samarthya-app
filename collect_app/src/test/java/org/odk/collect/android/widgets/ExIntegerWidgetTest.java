@@ -1,16 +1,16 @@
-package org.odk.collect.android.widgets;
+package org.samarthya.collect.android.widgets;
 
 import androidx.annotation.NonNull;
 
 import org.javarosa.core.model.data.IntegerData;
-import org.odk.collect.android.formentry.questions.QuestionDetails;
+import org.samarthya.collect.android.formentry.questions.QuestionDetails;
 import org.junit.Test;
-import org.odk.collect.android.widgets.base.GeneralExStringWidgetTest;
-import org.odk.collect.android.widgets.support.FakeWaitingForDataRegistry;
+import org.samarthya.collect.android.widgets.base.GeneralExStringWidgetTest;
+import org.samarthya.collect.android.widgets.support.FakeWaitingForDataRegistry;
 
 import static junit.framework.TestCase.assertEquals;
 import static org.mockito.Mockito.when;
-import static org.odk.collect.android.utilities.Appearances.THOUSANDS_SEP;
+import static org.samarthya.collect.android.utilities.Appearances.THOUSANDS_SEP;
 
 /**
  * @author James Knight

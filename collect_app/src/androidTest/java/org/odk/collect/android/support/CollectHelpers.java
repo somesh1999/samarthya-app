@@ -1,12 +1,12 @@
-package org.odk.collect.android.support;
+package org.samarthya.collect.android.support;
 
 import androidx.test.platform.app.InstrumentationRegistry;
 
-import org.odk.collect.android.application.Collect;
-import org.odk.collect.android.injection.config.AppDependencyComponent;
-import org.odk.collect.android.injection.config.AppDependencyModule;
-import org.odk.collect.android.injection.config.DaggerAppDependencyComponent;
-import org.odk.collect.android.javarosawrapper.FormController;
+import org.samarthya.collect.android.application.Collect;
+import org.samarthya.collect.android.injection.config.AppDependencyComponent;
+import org.samarthya.collect.android.injection.config.AppDependencyModule;
+import org.samarthya.collect.android.injection.config.DaggerAppDependencyComponent;
+import org.samarthya.collect.android.javarosawrapper.FormController;
 
 public final class CollectHelpers {
 

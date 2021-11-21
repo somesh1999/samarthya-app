@@ -1,10 +1,10 @@
-package org.odk.collect.android.fragments.dialogs;
+package org.samarthya.collect.android.fragments.dialogs;
 
 import androidx.test.core.app.ApplicationProvider;
 
 import org.javarosa.core.model.SelectChoice;
 import org.junit.Test;
-import org.odk.collect.testshared.RobolectricHelpers;
+import org.samarthya.collect.testshared.RobolectricHelpers;
 
 import java.util.List;
 

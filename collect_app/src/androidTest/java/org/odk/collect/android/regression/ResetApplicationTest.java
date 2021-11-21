@@ -1,4 +1,4 @@
-package org.odk.collect.android.regression;
+package org.samarthya.collect.android.regression;
 
 import android.Manifest;
 
@@ -7,14 +7,14 @@ import androidx.test.rule.GrantPermissionRule;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.RuleChain;
-import org.odk.collect.android.R;
-import org.odk.collect.android.support.CollectTestRule;
-import org.odk.collect.android.support.CopyFormRule;
-import org.odk.collect.android.support.ResetStateRule;
-import org.odk.collect.android.support.pages.AccessControlPage;
-import org.odk.collect.android.support.pages.ProjectSettingsPage;
-import org.odk.collect.android.support.pages.MainMenuPage;
-import org.odk.collect.android.support.pages.ResetApplicationDialog;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.support.CollectTestRule;
+import org.samarthya.collect.android.support.CopyFormRule;
+import org.samarthya.collect.android.support.ResetStateRule;
+import org.samarthya.collect.android.support.pages.AccessControlPage;
+import org.samarthya.collect.android.support.pages.ProjectSettingsPage;
+import org.samarthya.collect.android.support.pages.MainMenuPage;
+import org.samarthya.collect.android.support.pages.ResetApplicationDialog;
 
 //Issue NODK-240
 public class ResetApplicationTest {

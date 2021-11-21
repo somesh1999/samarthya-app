@@ -1,4 +1,4 @@
-package org.odk.collect.android.activities
+package org.samarthya.collect.android.activities
 
 import android.app.Application
 import android.graphics.Color
@@ -20,23 +20,23 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.kotlin.doReturn
 import org.mockito.kotlin.mock
-import org.odk.collect.android.R
-import org.odk.collect.android.activities.viewmodels.CurrentProjectViewModel
-import org.odk.collect.android.activities.viewmodels.MainMenuViewModel
-import org.odk.collect.android.application.initialization.AnalyticsInitializer
-import org.odk.collect.android.formmanagement.InstancesAppState
-import org.odk.collect.android.injection.config.AppDependencyModule
-import org.odk.collect.android.preferences.source.SettingsProvider
-import org.odk.collect.android.projects.CurrentProjectProvider
-import org.odk.collect.android.projects.ProjectImporter
-import org.odk.collect.android.storage.StoragePathProvider
-import org.odk.collect.android.support.CollectHelpers
-import org.odk.collect.android.utilities.ApplicationConstants
-import org.odk.collect.android.version.VersionInformation
-import org.odk.collect.androidshared.livedata.MutableNonNullLiveData
-import org.odk.collect.async.Scheduler
-import org.odk.collect.projects.Project
-import org.odk.collect.projects.ProjectsRepository
+import org.samarthya.collect.android.R
+import org.samarthya.collect.android.activities.viewmodels.CurrentProjectViewModel
+import org.samarthya.collect.android.activities.viewmodels.MainMenuViewModel
+import org.samarthya.collect.android.application.initialization.AnalyticsInitializer
+import org.samarthya.collect.android.formmanagement.InstancesAppState
+import org.samarthya.collect.android.injection.config.AppDependencyModule
+import org.samarthya.collect.android.preferences.source.SettingsProvider
+import org.samarthya.collect.android.projects.CurrentProjectProvider
+import org.samarthya.collect.android.projects.ProjectImporter
+import org.samarthya.collect.android.storage.StoragePathProvider
+import org.samarthya.collect.android.support.CollectHelpers
+import org.samarthya.collect.android.utilities.ApplicationConstants
+import org.samarthya.collect.android.version.VersionInformation
+import org.samarthya.collect.androidshared.livedata.MutableNonNullLiveData
+import org.samarthya.collect.async.Scheduler
+import org.samarthya.collect.projects.Project
+import org.samarthya.collect.projects.ProjectsRepository
 
 @RunWith(AndroidJUnit4::class)
 class MainMenuActivityTest {

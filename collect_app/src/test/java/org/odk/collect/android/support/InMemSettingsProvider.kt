@@ -1,8 +1,8 @@
-package org.odk.collect.android.support
+package org.samarthya.collect.android.support
 
-import org.odk.collect.android.preferences.source.SettingsProvider
-import org.odk.collect.shared.Settings
-import org.odk.collect.testshared.InMemSettings
+import org.samarthya.collect.android.preferences.source.SettingsProvider
+import org.samarthya.collect.shared.Settings
+import org.samarthya.collect.testshared.InMemSettings
 
 class InMemSettingsProvider : SettingsProvider {
 

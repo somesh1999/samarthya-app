@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.odk.collect.testshared">
+    package="org.samarthya.collect.testshared">
 
     /
 </manifest>

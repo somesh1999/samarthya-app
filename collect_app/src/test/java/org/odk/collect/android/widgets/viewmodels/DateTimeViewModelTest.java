@@ -1,4 +1,4 @@
-package org.odk.collect.android.widgets.viewmodels;
+package org.samarthya.collect.android.widgets.viewmodels;
 
 import android.widget.DatePicker;
 import android.widget.TimePicker;
@@ -14,8 +14,8 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.utilities.DateTimeUtils;
-import org.odk.collect.testshared.LiveDataTester;
+import org.samarthya.collect.android.utilities.DateTimeUtils;
+import org.samarthya.collect.testshared.LiveDataTester;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;

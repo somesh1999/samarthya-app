@@ -1,11 +1,11 @@
-package org.odk.collect.android.support.pages
+package org.samarthya.collect.android.support.pages
 
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.isEnabled
 import androidx.test.espresso.matcher.ViewMatchers.withText
 import org.hamcrest.Matchers.not
-import org.odk.collect.android.R
+import org.samarthya.collect.android.R
 
 class AccessControlPage : Page<AccessControlPage>() {
 

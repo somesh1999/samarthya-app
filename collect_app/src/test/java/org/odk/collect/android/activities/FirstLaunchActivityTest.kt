@@ -1,4 +1,4 @@
-package org.odk.collect.android.activities
+package org.samarthya.collect.android.activities
 
 import androidx.test.core.app.ActivityScenario
 import androidx.test.core.app.ApplicationProvider
@@ -17,14 +17,14 @@ import org.junit.runner.RunWith
 import org.mockito.Mockito.mock
 import org.mockito.Mockito.verify
 import org.mockito.kotlin.whenever
-import org.odk.collect.android.R
-import org.odk.collect.android.application.Collect
-import org.odk.collect.android.injection.config.AppDependencyModule
-import org.odk.collect.android.projects.ManualProjectCreatorDialog
-import org.odk.collect.android.projects.QrCodeProjectCreatorDialog
-import org.odk.collect.android.support.CollectHelpers
-import org.odk.collect.android.utilities.TranslationHandler.getString
-import org.odk.collect.android.version.VersionInformation
+import org.samarthya.collect.android.R
+import org.samarthya.collect.android.application.Collect
+import org.samarthya.collect.android.injection.config.AppDependencyModule
+import org.samarthya.collect.android.projects.ManualProjectCreatorDialog
+import org.samarthya.collect.android.projects.QrCodeProjectCreatorDialog
+import org.samarthya.collect.android.support.CollectHelpers
+import org.samarthya.collect.android.utilities.TranslationHandler.getString
+import org.samarthya.collect.android.version.VersionInformation
 
 @RunWith(AndroidJUnit4::class)
 class FirstLaunchActivityTest {

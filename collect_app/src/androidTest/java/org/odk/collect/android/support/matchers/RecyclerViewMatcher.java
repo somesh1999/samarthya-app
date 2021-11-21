@@ -1,4 +1,4 @@
-package org.odk.collect.android.support.matchers;
+package org.samarthya.collect.android.support.matchers;
 
 import android.content.res.Resources;
 import android.view.View;

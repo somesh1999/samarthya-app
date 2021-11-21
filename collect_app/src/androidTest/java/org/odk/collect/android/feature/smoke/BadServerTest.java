@@ -1,4 +1,4 @@
-package org.odk.collect.android.feature.smoke;
+package org.samarthya.collect.android.feature.smoke;
 
 import android.Manifest;
 import android.webkit.MimeTypeMap;
@@ -10,12 +10,12 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.RuleChain;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.injection.config.AppDependencyModule;
-import org.odk.collect.android.openrosa.OpenRosaHttpInterface;
-import org.odk.collect.android.support.CollectTestRule;
-import org.odk.collect.android.support.ResetStateRule;
-import org.odk.collect.android.support.StubOpenRosaServer;
-import org.odk.collect.utilities.UserAgentProvider;
+import org.samarthya.collect.android.injection.config.AppDependencyModule;
+import org.samarthya.collect.android.openrosa.OpenRosaHttpInterface;
+import org.samarthya.collect.android.support.CollectTestRule;
+import org.samarthya.collect.android.support.ResetStateRule;
+import org.samarthya.collect.android.support.StubOpenRosaServer;
+import org.samarthya.collect.utilities.UserAgentProvider;
 
 @RunWith(AndroidJUnit4.class)
 public class BadServerTest {

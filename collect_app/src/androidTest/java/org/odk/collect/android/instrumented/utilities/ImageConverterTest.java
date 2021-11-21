@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.odk.collect.android.instrumented.utilities;
+package org.samarthya.collect.android.instrumented.utilities;
 
 import android.app.Application;
 import android.graphics.Bitmap;
@@ -31,19 +31,19 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.RuleChain;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.TestSettingsProvider;
-import org.odk.collect.android.application.Collect;
-import org.odk.collect.android.injection.DaggerUtils;
-import org.odk.collect.android.injection.config.AppDependencyComponent;
-import org.odk.collect.android.support.RunnableRule;
-import org.odk.collect.projects.Project;
-import org.odk.collect.shared.Settings;
-import org.odk.collect.android.storage.StoragePathProvider;
-import org.odk.collect.android.storage.StorageSubdirectory;
-import org.odk.collect.android.support.ResetStateRule;
-import org.odk.collect.android.utilities.FileUtils;
-import org.odk.collect.android.utilities.ImageConverter;
-import org.odk.collect.android.widgets.ImageWidget;
+import org.samarthya.collect.android.TestSettingsProvider;
+import org.samarthya.collect.android.application.Collect;
+import org.samarthya.collect.android.injection.DaggerUtils;
+import org.samarthya.collect.android.injection.config.AppDependencyComponent;
+import org.samarthya.collect.android.support.RunnableRule;
+import org.samarthya.collect.projects.Project;
+import org.samarthya.collect.shared.Settings;
+import org.samarthya.collect.android.storage.StoragePathProvider;
+import org.samarthya.collect.android.storage.StorageSubdirectory;
+import org.samarthya.collect.android.support.ResetStateRule;
+import org.samarthya.collect.android.utilities.FileUtils;
+import org.samarthya.collect.android.utilities.ImageConverter;
+import org.samarthya.collect.android.widgets.ImageWidget;
 
 import java.io.File;
 import java.io.IOException;
@@ -60,7 +60,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import static org.odk.collect.android.utilities.ApplicationConstants.Namespaces.XML_OPENROSA_NAMESPACE;
+import static org.samarthya.collect.android.utilities.ApplicationConstants.Namespaces.XML_OPENROSA_NAMESPACE;
 
 @RunWith(AndroidJUnit4.class)
 public class ImageConverterTest {

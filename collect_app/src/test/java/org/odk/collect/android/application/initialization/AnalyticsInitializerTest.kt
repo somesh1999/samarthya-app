@@ -1,4 +1,4 @@
-package org.odk.collect.android.application.initialization
+package org.samarthya.collect.android.application.initialization
 
 import org.junit.Test
 import org.mockito.kotlin.doReturn
@@ -6,10 +6,10 @@ import org.mockito.kotlin.mock
 import org.mockito.kotlin.only
 import org.mockito.kotlin.verify
 import org.mockito.kotlin.whenever
-import org.odk.collect.analytics.Analytics
-import org.odk.collect.android.preferences.keys.ProjectKeys
-import org.odk.collect.android.support.InMemSettingsProvider
-import org.odk.collect.android.version.VersionInformation
+import org.samarthya.collect.analytics.Analytics
+import org.samarthya.collect.android.preferences.keys.ProjectKeys
+import org.samarthya.collect.android.support.InMemSettingsProvider
+import org.samarthya.collect.android.version.VersionInformation
 
 class AnalyticsInitializerTest {
 

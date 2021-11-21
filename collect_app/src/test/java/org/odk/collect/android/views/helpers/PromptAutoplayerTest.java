@@ -1,4 +1,4 @@
-package org.odk.collect.android.views.helpers;
+package org.samarthya.collect.android.views.helpers;
 
 import androidx.core.util.Pair;
 
@@ -9,11 +9,11 @@ import org.javarosa.form.api.FormEntryCaption;
 import org.javarosa.form.api.FormEntryPrompt;
 import org.junit.Before;
 import org.junit.Test;
-import org.odk.collect.analytics.Analytics;
-import org.odk.collect.android.audio.AudioHelper;
-import org.odk.collect.android.formentry.media.PromptAutoplayer;
-import org.odk.collect.android.support.MockFormEntryPromptBuilder;
-import org.odk.collect.audioclips.Clip;
+import org.samarthya.collect.analytics.Analytics;
+import org.samarthya.collect.android.audio.AudioHelper;
+import org.samarthya.collect.android.formentry.media.PromptAutoplayer;
+import org.samarthya.collect.android.support.MockFormEntryPromptBuilder;
+import org.samarthya.collect.audioclips.Clip;
 
 import java.util.List;
 
@@ -24,10 +24,10 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
-import static org.odk.collect.android.support.CollectHelpers.setupFakeReferenceManager;
-import static org.odk.collect.android.utilities.Appearances.COMPACT;
-import static org.odk.collect.android.utilities.Appearances.MINIMAL;
-import static org.odk.collect.android.utilities.Appearances.NO_BUTTONS;
+import static org.samarthya.collect.android.support.CollectHelpers.setupFakeReferenceManager;
+import static org.samarthya.collect.android.utilities.Appearances.COMPACT;
+import static org.samarthya.collect.android.utilities.Appearances.MINIMAL;
+import static org.samarthya.collect.android.utilities.Appearances.NO_BUTTONS;
 
 public class PromptAutoplayerTest {
 

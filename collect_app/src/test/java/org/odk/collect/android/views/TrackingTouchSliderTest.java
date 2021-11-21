@@ -1,4 +1,4 @@
-package org.odk.collect.android.views;
+package org.samarthya.collect.android.views;
 
 import android.widget.LinearLayout;
 
@@ -9,7 +9,7 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.support.CollectHelpers;
+import org.samarthya.collect.android.support.CollectHelpers;
 
 import static android.view.MotionEvent.ACTION_DOWN;
 import static android.view.MotionEvent.ACTION_UP;

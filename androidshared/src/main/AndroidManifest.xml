@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.odk.collect.androidshared">
+    package="org.samarthya.collect.androidshared">
 
     <application>
-        <activity android:name="org.odk.collect.androidshared.ui.ReturnToAppActivity" />
+        <activity android:name="org.samarthya.collect.androidshared.ui.ReturnToAppActivity" />
     </application>
 </manifest>

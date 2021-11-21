@@ -1,11 +1,11 @@
-package org.odk.collect.android.support.pages;
+package org.samarthya.collect.android.support.pages;
 
 import android.database.Cursor;
 
 import androidx.test.espresso.matcher.CursorMatchers;
 
-import org.odk.collect.android.R;
-import org.odk.collect.android.database.forms.DatabaseFormColumns;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.database.forms.DatabaseFormColumns;
 
 import static androidx.test.espresso.Espresso.onData;
 import static androidx.test.espresso.Espresso.onView;
@@ -21,7 +21,7 @@ import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.core.AllOf.allOf;
-import static org.odk.collect.android.support.CustomMatchers.withIndex;
+import static org.samarthya.collect.android.support.CustomMatchers.withIndex;
 
 public class FillBlankFormPage extends Page<FillBlankFormPage> {
 

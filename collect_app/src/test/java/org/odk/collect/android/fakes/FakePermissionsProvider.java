@@ -1,12 +1,12 @@
-package org.odk.collect.android.fakes;
+package org.samarthya.collect.android.fakes;
 
 import android.app.Activity;
 import androidx.annotation.NonNull;
 import androidx.test.platform.app.InstrumentationRegistry;
 
-import org.odk.collect.android.listeners.PermissionListener;
-import org.odk.collect.android.permissions.PermissionsChecker;
-import org.odk.collect.android.permissions.PermissionsProvider;
+import org.samarthya.collect.android.listeners.PermissionListener;
+import org.samarthya.collect.android.permissions.PermissionsChecker;
+import org.samarthya.collect.android.permissions.PermissionsProvider;
 
 /**
  * Mocked implementation of {@link PermissionsProvider}.

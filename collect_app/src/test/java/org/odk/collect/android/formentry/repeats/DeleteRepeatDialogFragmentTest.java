@@ -1,4 +1,4 @@
-package org.odk.collect.android.formentry.repeats;
+package org.samarthya.collect.android.formentry.repeats;
 
 import android.content.DialogInterface;
 import android.widget.TextView;
@@ -12,10 +12,10 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.R;
-import org.odk.collect.android.javarosawrapper.FormController;
-import org.odk.collect.android.support.CollectHelpers;
-import org.odk.collect.testshared.RobolectricHelpers;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.javarosawrapper.FormController;
+import org.samarthya.collect.android.support.CollectHelpers;
+import org.samarthya.collect.testshared.RobolectricHelpers;
 import org.robolectric.shadows.ShadowDialog;
 
 import static junit.framework.TestCase.assertTrue;

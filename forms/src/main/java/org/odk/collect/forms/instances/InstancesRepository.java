@@ -1,4 +1,4 @@
-package org.odk.collect.forms.instances;
+package org.samarthya.collect.forms.instances;
 
 import org.jetbrains.annotations.Nullable;
 

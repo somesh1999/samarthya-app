@@ -1,4 +1,4 @@
-package org.odk.collect.android.projects
+package org.samarthya.collect.android.projects
 
 import android.content.Context
 import android.graphics.Color
@@ -11,8 +11,8 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.Matchers
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.odk.collect.android.R
-import org.odk.collect.projects.Project
+import org.samarthya.collect.android.R
+import org.samarthya.collect.projects.Project
 
 @RunWith(AndroidJUnit4::class)
 class ProjectIconViewTest {

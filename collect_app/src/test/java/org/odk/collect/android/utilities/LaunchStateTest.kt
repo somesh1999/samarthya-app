@@ -1,4 +1,4 @@
-package org.odk.collect.android.utilities
+package org.samarthya.collect.android.utilities
 
 import android.app.Application
 import android.content.Context
@@ -9,8 +9,8 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.Matchers.equalTo
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.odk.collect.android.preferences.keys.MetaKeys
-import org.odk.collect.testshared.InMemSettings
+import org.samarthya.collect.android.preferences.keys.MetaKeys
+import org.samarthya.collect.testshared.InMemSettings
 import java.io.File
 
 @RunWith(AndroidJUnit4::class)

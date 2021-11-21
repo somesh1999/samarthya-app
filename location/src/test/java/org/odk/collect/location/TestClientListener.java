@@ -1,4 +1,4 @@
-package org.odk.collect.location;
+package org.samarthya.collect.location;
 
 class TestClientListener implements LocationClient.LocationClientListener {
 

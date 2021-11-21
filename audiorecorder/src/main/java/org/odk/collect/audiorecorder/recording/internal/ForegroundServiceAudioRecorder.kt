@@ -1,20 +1,20 @@
-package org.odk.collect.audiorecorder.recording.internal
+package org.samarthya.collect.audiorecorder.recording.internal
 
 import android.app.Application
 import android.content.Intent
 import androidx.lifecycle.LiveData
-import org.odk.collect.androidshared.data.Consumable
-import org.odk.collect.audiorecorder.recorder.Output
-import org.odk.collect.audiorecorder.recording.AudioRecorder
-import org.odk.collect.audiorecorder.recording.AudioRecorderService
-import org.odk.collect.audiorecorder.recording.AudioRecorderService.Companion.ACTION_CLEAN_UP
-import org.odk.collect.audiorecorder.recording.AudioRecorderService.Companion.ACTION_PAUSE
-import org.odk.collect.audiorecorder.recording.AudioRecorderService.Companion.ACTION_RESUME
-import org.odk.collect.audiorecorder.recording.AudioRecorderService.Companion.ACTION_START
-import org.odk.collect.audiorecorder.recording.AudioRecorderService.Companion.ACTION_STOP
-import org.odk.collect.audiorecorder.recording.AudioRecorderService.Companion.EXTRA_OUTPUT
-import org.odk.collect.audiorecorder.recording.AudioRecorderService.Companion.EXTRA_SESSION_ID
-import org.odk.collect.audiorecorder.recording.RecordingSession
+import org.samarthya.collect.androidshared.data.Consumable
+import org.samarthya.collect.audiorecorder.recorder.Output
+import org.samarthya.collect.audiorecorder.recording.AudioRecorder
+import org.samarthya.collect.audiorecorder.recording.AudioRecorderService
+import org.samarthya.collect.audiorecorder.recording.AudioRecorderService.Companion.ACTION_CLEAN_UP
+import org.samarthya.collect.audiorecorder.recording.AudioRecorderService.Companion.ACTION_PAUSE
+import org.samarthya.collect.audiorecorder.recording.AudioRecorderService.Companion.ACTION_RESUME
+import org.samarthya.collect.audiorecorder.recording.AudioRecorderService.Companion.ACTION_START
+import org.samarthya.collect.audiorecorder.recording.AudioRecorderService.Companion.ACTION_STOP
+import org.samarthya.collect.audiorecorder.recording.AudioRecorderService.Companion.EXTRA_OUTPUT
+import org.samarthya.collect.audiorecorder.recording.AudioRecorderService.Companion.EXTRA_SESSION_ID
+import org.samarthya.collect.audiorecorder.recording.RecordingSession
 import java.io.Serializable
 
 internal class ForegroundServiceAudioRecorder internal constructor(private val application: Application, private val recordingRepository: RecordingRepository) : AudioRecorder() {

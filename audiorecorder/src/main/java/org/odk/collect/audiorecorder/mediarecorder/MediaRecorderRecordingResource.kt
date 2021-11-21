@@ -1,8 +1,8 @@
-package org.odk.collect.audiorecorder.mediarecorder
+package org.samarthya.collect.audiorecorder.mediarecorder
 
 import android.annotation.SuppressLint
 import android.media.MediaRecorder
-import org.odk.collect.audiorecorder.recorder.RecordingResource
+import org.samarthya.collect.audiorecorder.recorder.RecordingResource
 
 internal abstract class MediaRecorderRecordingResource(private val mediaRecorder: MediaRecorder, private val sdk: Int) : RecordingResource {
 

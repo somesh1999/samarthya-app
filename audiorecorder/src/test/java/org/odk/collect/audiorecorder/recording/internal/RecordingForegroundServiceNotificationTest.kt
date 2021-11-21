@@ -1,4 +1,4 @@
-package org.odk.collect.audiorecorder.recording.internal
+package org.samarthya.collect.audiorecorder.recording.internal
 
 import android.app.Application
 import android.app.NotificationManager
@@ -12,7 +12,7 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.Matchers.equalTo
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.odk.collect.androidshared.data.getState
+import org.samarthya.collect.androidshared.data.getState
 import org.robolectric.Robolectric
 import org.robolectric.Shadows.shadowOf
 

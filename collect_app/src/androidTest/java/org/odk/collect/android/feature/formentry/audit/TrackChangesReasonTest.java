@@ -1,4 +1,4 @@
-package org.odk.collect.android.feature.formentry.audit;
+package org.samarthya.collect.android.feature.formentry.audit;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
@@ -7,15 +7,15 @@ import org.junit.Test;
 import org.junit.rules.RuleChain;
 import org.junit.rules.TestRule;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.R;
-import org.odk.collect.android.support.CollectTestRule;
-import org.odk.collect.android.support.CopyFormRule;
-import org.odk.collect.android.support.ResetStateRule;
-import org.odk.collect.android.support.ScreenshotOnFailureTestRule;
-import org.odk.collect.android.support.pages.ChangesReasonPromptPage;
-import org.odk.collect.android.support.pages.FormEntryPage;
-import org.odk.collect.android.support.pages.MainMenuPage;
-import org.odk.collect.android.support.pages.SaveOrIgnoreDialog;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.support.CollectTestRule;
+import org.samarthya.collect.android.support.CopyFormRule;
+import org.samarthya.collect.android.support.ResetStateRule;
+import org.samarthya.collect.android.support.ScreenshotOnFailureTestRule;
+import org.samarthya.collect.android.support.pages.ChangesReasonPromptPage;
+import org.samarthya.collect.android.support.pages.FormEntryPage;
+import org.samarthya.collect.android.support.pages.MainMenuPage;
+import org.samarthya.collect.android.support.pages.SaveOrIgnoreDialog;
 
 @RunWith(AndroidJUnit4.class)
 public class TrackChangesReasonTest {

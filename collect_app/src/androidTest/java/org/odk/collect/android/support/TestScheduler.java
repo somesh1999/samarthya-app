@@ -1,4 +1,4 @@
-package org.odk.collect.android.support;
+package org.samarthya.collect.android.support;
 
 import android.content.Context;
 
@@ -6,10 +6,10 @@ import androidx.test.core.app.ApplicationProvider;
 import androidx.work.WorkManager;
 
 import org.jetbrains.annotations.NotNull;
-import org.odk.collect.async.Cancellable;
-import org.odk.collect.async.CoroutineAndWorkManagerScheduler;
-import org.odk.collect.async.Scheduler;
-import org.odk.collect.async.TaskSpec;
+import org.samarthya.collect.async.Cancellable;
+import org.samarthya.collect.async.CoroutineAndWorkManagerScheduler;
+import org.samarthya.collect.async.Scheduler;
+import org.samarthya.collect.async.TaskSpec;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package org.odk.collect.android.activities
+package org.samarthya.collect.android.activities
 
 import android.view.View
 import androidx.lifecycle.Lifecycle
@@ -17,16 +17,16 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.kotlin.mock
 import org.mockito.kotlin.whenever
-import org.odk.collect.android.R
-import org.odk.collect.android.activities.viewmodels.SplashScreenViewModel
-import org.odk.collect.android.injection.config.AppDependencyModule
-import org.odk.collect.android.preferences.source.SettingsProvider
-import org.odk.collect.android.projects.CurrentProjectProvider
-import org.odk.collect.android.projects.ProjectImporter
-import org.odk.collect.android.rules.MainCoroutineScopeRule
-import org.odk.collect.android.storage.StoragePathProvider
-import org.odk.collect.android.support.CollectHelpers
-import org.odk.collect.projects.ProjectsRepository
+import org.samarthya.collect.android.R
+import org.samarthya.collect.android.activities.viewmodels.SplashScreenViewModel
+import org.samarthya.collect.android.injection.config.AppDependencyModule
+import org.samarthya.collect.android.preferences.source.SettingsProvider
+import org.samarthya.collect.android.projects.CurrentProjectProvider
+import org.samarthya.collect.android.projects.ProjectImporter
+import org.samarthya.collect.android.rules.MainCoroutineScopeRule
+import org.samarthya.collect.android.storage.StoragePathProvider
+import org.samarthya.collect.android.support.CollectHelpers
+import org.samarthya.collect.projects.ProjectsRepository
 
 @RunWith(AndroidJUnit4::class)
 class SplashScreenActivityTest {

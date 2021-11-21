@@ -1,4 +1,4 @@
-package org.odk.collect.android.preferences.dialogs
+package org.samarthya.collect.android.preferences.dialogs
 
 import android.text.InputType
 import androidx.appcompat.app.AlertDialog
@@ -17,13 +17,13 @@ import org.mockito.kotlin.mock
 import org.mockito.kotlin.verify
 import org.mockito.kotlin.verifyNoMoreInteractions
 import org.mockito.kotlin.whenever
-import org.odk.collect.android.injection.config.AppDependencyModule
-import org.odk.collect.android.preferences.ProjectPreferencesViewModel
-import org.odk.collect.android.preferences.source.SettingsProvider
-import org.odk.collect.android.support.CollectHelpers
-import org.odk.collect.android.utilities.AdminPasswordProvider
-import org.odk.collect.fragmentstest.DialogFragmentTest
-import org.odk.collect.testshared.RobolectricHelpers
+import org.samarthya.collect.android.injection.config.AppDependencyModule
+import org.samarthya.collect.android.preferences.ProjectPreferencesViewModel
+import org.samarthya.collect.android.preferences.source.SettingsProvider
+import org.samarthya.collect.android.support.CollectHelpers
+import org.samarthya.collect.android.utilities.AdminPasswordProvider
+import org.samarthya.collect.fragmentstest.DialogFragmentTest
+import org.samarthya.collect.testshared.RobolectricHelpers
 import javax.inject.Inject
 
 @RunWith(AndroidJUnit4::class)

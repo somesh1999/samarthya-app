@@ -1,8 +1,8 @@
-package org.odk.collect.formstest;
+package org.samarthya.collect.formstest;
 
 import org.junit.Before;
-import org.odk.collect.forms.FormsRepository;
-import org.odk.collect.shared.TempFiles;
+import org.samarthya.collect.forms.FormsRepository;
+import org.samarthya.collect.shared.TempFiles;
 
 import java.util.function.Supplier;
 

@@ -1,4 +1,4 @@
-package org.odk.collect.android.projects
+package org.samarthya.collect.android.projects
 
 import android.content.Context
 import android.graphics.Color
@@ -12,10 +12,10 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.kotlin.doReturn
 import org.mockito.kotlin.mock
-import org.odk.collect.android.R
-import org.odk.collect.android.preferences.keys.ProjectKeys
-import org.odk.collect.projects.Project
-import org.odk.collect.shared.Settings
+import org.samarthya.collect.android.R
+import org.samarthya.collect.android.preferences.keys.ProjectKeys
+import org.samarthya.collect.projects.Project
+import org.samarthya.collect.shared.Settings
 
 @RunWith(AndroidJUnit4::class)
 class ProjectListItemViewTest {

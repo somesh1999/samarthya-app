@@ -1,4 +1,4 @@
-package org.odk.collect.android.permissions;
+package org.samarthya.collect.android.permissions;
 
 import android.Manifest;
 import android.app.Activity;
@@ -8,7 +8,7 @@ import android.net.Uri;
 import org.junit.Before;
 import org.junit.Test;
 
-import org.odk.collect.android.listeners.PermissionListener;
+import org.samarthya.collect.android.listeners.PermissionListener;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;

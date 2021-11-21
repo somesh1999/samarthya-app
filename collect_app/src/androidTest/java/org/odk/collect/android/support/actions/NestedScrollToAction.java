@@ -1,4 +1,4 @@
-package org.odk.collect.android.support.actions;
+package org.samarthya.collect.android.support.actions;
 
 import android.graphics.Rect;
 import android.util.Log;
@@ -15,7 +15,7 @@ import androidx.test.espresso.matcher.ViewMatchers;
 import androidx.test.espresso.util.HumanReadables;
 
 import org.hamcrest.Matcher;
-import org.odk.collect.android.widgets.items.BaseSelectListWidget;
+import org.samarthya.collect.android.widgets.items.BaseSelectListWidget;
 
 import static androidx.test.espresso.matcher.ViewMatchers.isAssignableFrom;
 import static androidx.test.espresso.matcher.ViewMatchers.isDescendantOfA;

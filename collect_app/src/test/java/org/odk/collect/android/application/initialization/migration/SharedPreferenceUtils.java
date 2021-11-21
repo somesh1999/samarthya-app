@@ -1,7 +1,7 @@
-package org.odk.collect.android.application.initialization.migration;
+package org.samarthya.collect.android.application.initialization.migration;
 
-import org.odk.collect.android.TestSettingsProvider;
-import org.odk.collect.shared.Settings;
+import org.samarthya.collect.android.TestSettingsProvider;
+import org.samarthya.collect.shared.Settings;
 
 import static org.junit.Assert.assertEquals;
 

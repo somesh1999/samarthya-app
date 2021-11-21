@@ -1,15 +1,15 @@
-package org.odk.collect.audiorecorder.recording
+package org.samarthya.collect.audiorecorder.recording
 
 import android.app.Service
 import android.content.Intent
 import android.os.IBinder
-import org.odk.collect.async.Cancellable
-import org.odk.collect.async.Scheduler
-import org.odk.collect.audiorecorder.AudioRecorderDependencyComponentProvider
-import org.odk.collect.audiorecorder.recorder.Output
-import org.odk.collect.audiorecorder.recorder.Recorder
-import org.odk.collect.audiorecorder.recording.internal.RecordingForegroundServiceNotification
-import org.odk.collect.audiorecorder.recording.internal.RecordingRepository
+import org.samarthya.collect.async.Cancellable
+import org.samarthya.collect.async.Scheduler
+import org.samarthya.collect.audiorecorder.AudioRecorderDependencyComponentProvider
+import org.samarthya.collect.audiorecorder.recorder.Output
+import org.samarthya.collect.audiorecorder.recorder.Recorder
+import org.samarthya.collect.audiorecorder.recording.internal.RecordingForegroundServiceNotification
+import org.samarthya.collect.audiorecorder.recording.internal.RecordingRepository
 import java.io.Serializable
 import javax.inject.Inject
 

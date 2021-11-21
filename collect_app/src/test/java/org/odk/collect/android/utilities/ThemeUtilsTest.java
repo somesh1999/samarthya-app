@@ -1,4 +1,4 @@
-package org.odk.collect.android.utilities;
+package org.samarthya.collect.android.utilities;
 
 import android.content.res.Resources;
 import android.content.res.TypedArray;
@@ -8,18 +8,18 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.R;
-import org.odk.collect.android.TestSettingsProvider;
-import org.odk.collect.android.activities.MainMenuActivity;
-import org.odk.collect.android.support.CollectHelpers;
-import org.odk.collect.shared.Settings;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.TestSettingsProvider;
+import org.samarthya.collect.android.activities.MainMenuActivity;
+import org.samarthya.collect.android.support.CollectHelpers;
+import org.samarthya.collect.shared.Settings;
 import org.robolectric.Robolectric;
 
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertNotSame;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
-import static org.odk.collect.android.preferences.keys.ProjectKeys.KEY_APP_THEME;
+import static org.samarthya.collect.android.preferences.keys.ProjectKeys.KEY_APP_THEME;
 
 /**
  * Unit tests for checking the behaviour of updating themes from User Interface settings

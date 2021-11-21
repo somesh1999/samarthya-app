@@ -1,4 +1,4 @@
-package org.odk.collect.android.storage;
+package org.samarthya.collect.android.storage;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 

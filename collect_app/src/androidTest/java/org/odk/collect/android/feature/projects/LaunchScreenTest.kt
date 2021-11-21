@@ -1,18 +1,18 @@
-package org.odk.collect.android.feature.projects
+package org.samarthya.collect.android.feature.projects
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.RuleChain
 import org.junit.runner.RunWith
-import org.odk.collect.android.R
-import org.odk.collect.android.injection.config.AppDependencyModule
-import org.odk.collect.android.support.CollectTestRule
-import org.odk.collect.android.support.ResetStateRule
-import org.odk.collect.android.support.StubBarcodeViewDecoder
-import org.odk.collect.android.support.TestRuleChain
-import org.odk.collect.android.support.pages.MainMenuPage
-import org.odk.collect.android.views.BarcodeViewDecoder
+import org.samarthya.collect.android.R
+import org.samarthya.collect.android.injection.config.AppDependencyModule
+import org.samarthya.collect.android.support.CollectTestRule
+import org.samarthya.collect.android.support.ResetStateRule
+import org.samarthya.collect.android.support.StubBarcodeViewDecoder
+import org.samarthya.collect.android.support.TestRuleChain
+import org.samarthya.collect.android.support.pages.MainMenuPage
+import org.samarthya.collect.android.views.BarcodeViewDecoder
 
 @RunWith(AndroidJUnit4::class)
 class LaunchScreenTest {

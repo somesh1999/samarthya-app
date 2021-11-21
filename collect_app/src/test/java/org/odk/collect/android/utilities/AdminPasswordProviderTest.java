@@ -1,14 +1,14 @@
-package org.odk.collect.android.utilities;
+package org.samarthya.collect.android.utilities;
 
 import org.junit.Test;
-import org.odk.collect.shared.Settings;
+import org.samarthya.collect.shared.Settings;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.core.IsNull.nullValue;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import static org.odk.collect.android.preferences.keys.ProtectedProjectKeys.KEY_ADMIN_PW;
+import static org.samarthya.collect.android.preferences.keys.ProtectedProjectKeys.KEY_ADMIN_PW;
 
 public class AdminPasswordProviderTest {
 

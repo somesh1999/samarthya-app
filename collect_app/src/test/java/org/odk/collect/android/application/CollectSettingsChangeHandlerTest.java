@@ -1,11 +1,11 @@
-package org.odk.collect.android.application;
+package org.samarthya.collect.android.application;
 
 import org.junit.Test;
-import org.odk.collect.analytics.Analytics;
-import org.odk.collect.android.backgroundwork.FormUpdateScheduler;
-import org.odk.collect.android.logic.PropertyManager;
-import org.odk.collect.android.preferences.keys.ProjectKeys;
-import org.odk.collect.android.preferences.source.SettingsProvider;
+import org.samarthya.collect.analytics.Analytics;
+import org.samarthya.collect.android.backgroundwork.FormUpdateScheduler;
+import org.samarthya.collect.android.logic.PropertyManager;
+import org.samarthya.collect.android.preferences.keys.ProjectKeys;
+import org.samarthya.collect.android.preferences.source.SettingsProvider;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;

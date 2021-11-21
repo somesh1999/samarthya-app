@@ -1,4 +1,4 @@
-package org.odk.collect.location.tracker
+package org.samarthya.collect.location.tracker
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import org.hamcrest.MatcherAssert.assertThat
@@ -6,8 +6,8 @@ import org.hamcrest.Matchers.equalTo
 import org.hamcrest.Matchers.notNullValue
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.odk.collect.androidshared.ui.ReturnToAppActivity
-import org.odk.collect.testshared.ServiceScenario
+import org.samarthya.collect.androidshared.ui.ReturnToAppActivity
+import org.samarthya.collect.testshared.ServiceScenario
 
 @RunWith(AndroidJUnit4::class)
 class LocationTrackerServiceTest {

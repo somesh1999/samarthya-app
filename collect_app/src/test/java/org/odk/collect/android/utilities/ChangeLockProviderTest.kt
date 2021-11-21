@@ -1,4 +1,4 @@
-package org.odk.collect.android.utilities
+package org.samarthya.collect.android.utilities
 
 import androidx.test.espresso.matcher.ViewMatchers.assertThat
 import org.hamcrest.Matchers.equalTo

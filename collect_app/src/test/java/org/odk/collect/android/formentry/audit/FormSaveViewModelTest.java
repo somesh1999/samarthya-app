@@ -1,4 +1,4 @@
-package org.odk.collect.android.formentry.audit;
+package org.samarthya.collect.android.formentry.audit;
 
 import android.net.Uri;
 
@@ -14,20 +14,20 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InOrder;
-import org.odk.collect.analytics.Analytics;
-import org.odk.collect.android.formentry.saving.FormSaveViewModel;
-import org.odk.collect.android.formentry.saving.FormSaver;
-import org.odk.collect.android.javarosawrapper.FormController;
-import org.odk.collect.android.javarosawrapper.FormDesignException;
-import org.odk.collect.android.projects.CurrentProjectProvider;
-import org.odk.collect.android.support.MockFormEntryPromptBuilder;
-import org.odk.collect.android.tasks.SaveFormToDisk;
-import org.odk.collect.android.tasks.SaveToDiskResult;
-import org.odk.collect.android.utilities.MediaUtils;
-import org.odk.collect.audiorecorder.recording.AudioRecorder;
-import org.odk.collect.projects.Project;
-import org.odk.collect.testshared.FakeScheduler;
-import org.odk.collect.utilities.Result;
+import org.samarthya.collect.analytics.Analytics;
+import org.samarthya.collect.android.formentry.saving.FormSaveViewModel;
+import org.samarthya.collect.android.formentry.saving.FormSaver;
+import org.samarthya.collect.android.javarosawrapper.FormController;
+import org.samarthya.collect.android.javarosawrapper.FormDesignException;
+import org.samarthya.collect.android.projects.CurrentProjectProvider;
+import org.samarthya.collect.android.support.MockFormEntryPromptBuilder;
+import org.samarthya.collect.android.tasks.SaveFormToDisk;
+import org.samarthya.collect.android.tasks.SaveToDiskResult;
+import org.samarthya.collect.android.utilities.MediaUtils;
+import org.samarthya.collect.audiorecorder.recording.AudioRecorder;
+import org.samarthya.collect.projects.Project;
+import org.samarthya.collect.testshared.FakeScheduler;
+import org.samarthya.collect.utilities.Result;
 import org.robolectric.Robolectric;
 import org.robolectric.annotation.LooperMode;
 
@@ -49,13 +49,13 @@ import static org.mockito.Mockito.inOrder;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
-import static org.odk.collect.android.formentry.saving.FormSaveViewModel.SaveResult.State.CHANGE_REASON_REQUIRED;
-import static org.odk.collect.android.formentry.saving.FormSaveViewModel.SaveResult.State.CONSTRAINT_ERROR;
-import static org.odk.collect.android.formentry.saving.FormSaveViewModel.SaveResult.State.FINALIZE_ERROR;
-import static org.odk.collect.android.formentry.saving.FormSaveViewModel.SaveResult.State.SAVED;
-import static org.odk.collect.android.formentry.saving.FormSaveViewModel.SaveResult.State.SAVE_ERROR;
-import static org.odk.collect.android.formentry.saving.FormSaveViewModel.SaveResult.State.SAVING;
-import static org.odk.collect.android.formentry.saving.FormSaveViewModel.SaveResult.State.WAITING_TO_SAVE;
+import static org.samarthya.collect.android.formentry.saving.FormSaveViewModel.SaveResult.State.CHANGE_REASON_REQUIRED;
+import static org.samarthya.collect.android.formentry.saving.FormSaveViewModel.SaveResult.State.CONSTRAINT_ERROR;
+import static org.samarthya.collect.android.formentry.saving.FormSaveViewModel.SaveResult.State.FINALIZE_ERROR;
+import static org.samarthya.collect.android.formentry.saving.FormSaveViewModel.SaveResult.State.SAVED;
+import static org.samarthya.collect.android.formentry.saving.FormSaveViewModel.SaveResult.State.SAVE_ERROR;
+import static org.samarthya.collect.android.formentry.saving.FormSaveViewModel.SaveResult.State.SAVING;
+import static org.samarthya.collect.android.formentry.saving.FormSaveViewModel.SaveResult.State.WAITING_TO_SAVE;
 
 @RunWith(AndroidJUnit4.class)
 @LooperMode(LooperMode.Mode.LEGACY)

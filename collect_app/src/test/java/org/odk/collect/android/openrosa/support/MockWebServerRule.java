@@ -1,4 +1,4 @@
-package org.odk.collect.android.openrosa.support;
+package org.samarthya.collect.android.openrosa.support;
 
 import org.junit.rules.TestRule;
 import org.junit.runner.Description;

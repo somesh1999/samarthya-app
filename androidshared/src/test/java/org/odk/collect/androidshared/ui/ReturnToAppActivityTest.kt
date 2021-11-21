@@ -1,4 +1,4 @@
-package org.odk.collect.androidshared.ui
+package org.samarthya.collect.androidshared.ui
 
 import androidx.lifecycle.Lifecycle
 import androidx.test.core.app.ActivityScenario

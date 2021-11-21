@@ -1,4 +1,4 @@
-package org.odk.collect.android.utilities;
+package org.samarthya.collect.android.utilities;
 
 import org.hamcrest.Matchers;
 import org.junit.Test;
@@ -301,8 +301,8 @@ public class FileUtilsTest {
         assertThat(FileUtils.simplifyScopedStoragePath(null), is(nullValue()));
         assertThat(FileUtils.simplifyScopedStoragePath(""), is(""));
         assertThat(FileUtils.simplifyScopedStoragePath("blahblahblah"), is("blahblahblah"));
-        assertThat(FileUtils.simplifyScopedStoragePath("/storage/emulated/0/Android/data/org.odk.collect.android/files/layers"), is("/sdcard/Android/data/org.odk.collect.android/files/layers"));
-        assertThat(FileUtils.simplifyScopedStoragePath("/storage/emulated/0/Android/data/org.odk.collect.android/files/layers/countries/countries-raster.mbtiles"), is("/sdcard/Android/data/org.odk.collect.android/files/layers/countries/countries-raster.mbtiles"));
+        assertThat(FileUtils.simplifyScopedStoragePath("/storage/emulated/0/Android/data/org.samarthya.collect.android/files/layers"), is("/sdcard/Android/data/org.samarthya.collect.android/files/layers"));
+        assertThat(FileUtils.simplifyScopedStoragePath("/storage/emulated/0/Android/data/org.samarthya.collect.android/files/layers/countries/countries-raster.mbtiles"), is("/sdcard/Android/data/org.samarthya.collect.android/files/layers/countries/countries-raster.mbtiles"));
     }
 
     @Test

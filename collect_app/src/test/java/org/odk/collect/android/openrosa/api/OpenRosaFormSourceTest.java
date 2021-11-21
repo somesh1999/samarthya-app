@@ -1,13 +1,13 @@
-package org.odk.collect.android.openrosa.api;
+package org.samarthya.collect.android.openrosa.api;
 
 import org.junit.Test;
-import org.odk.collect.android.openrosa.HttpGetResult;
-import org.odk.collect.android.openrosa.OpenRosaConstants;
-import org.odk.collect.android.openrosa.OpenRosaFormSource;
-import org.odk.collect.android.openrosa.OpenRosaHttpInterface;
-import org.odk.collect.android.openrosa.OpenRosaResponseParser;
-import org.odk.collect.android.utilities.WebCredentialsUtils;
-import org.odk.collect.forms.FormSourceException;
+import org.samarthya.collect.android.openrosa.HttpGetResult;
+import org.samarthya.collect.android.openrosa.OpenRosaConstants;
+import org.samarthya.collect.android.openrosa.OpenRosaFormSource;
+import org.samarthya.collect.android.openrosa.OpenRosaHttpInterface;
+import org.samarthya.collect.android.openrosa.OpenRosaResponseParser;
+import org.samarthya.collect.android.utilities.WebCredentialsUtils;
+import org.samarthya.collect.forms.FormSourceException;
 
 import java.io.ByteArrayInputStream;
 import java.net.SocketTimeoutException;

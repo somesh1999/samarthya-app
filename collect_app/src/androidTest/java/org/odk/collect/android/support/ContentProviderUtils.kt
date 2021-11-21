@@ -1,12 +1,12 @@
-package org.odk.collect.android.support
+package org.samarthya.collect.android.support
 
 import android.app.Application
 import android.provider.BaseColumns
 import androidx.test.core.app.ApplicationProvider
-import org.odk.collect.android.database.forms.DatabaseFormColumns
-import org.odk.collect.android.database.instances.DatabaseInstanceColumns
-import org.odk.collect.android.external.FormsContract
-import org.odk.collect.android.external.InstancesContract
+import org.samarthya.collect.android.database.forms.DatabaseFormColumns
+import org.samarthya.collect.android.database.instances.DatabaseInstanceColumns
+import org.samarthya.collect.android.external.FormsContract
+import org.samarthya.collect.android.external.InstancesContract
 
 object ContentProviderUtils {
 

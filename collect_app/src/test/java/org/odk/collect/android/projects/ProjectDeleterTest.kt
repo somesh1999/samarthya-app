@@ -1,4 +1,4 @@
-package org.odk.collect.android.projects
+package org.samarthya.collect.android.projects
 
 import androidx.test.espresso.matcher.ViewMatchers.assertThat
 import org.hamcrest.Matchers.`is`
@@ -11,19 +11,19 @@ import org.mockito.kotlin.doReturn
 import org.mockito.kotlin.mock
 import org.mockito.kotlin.verify
 import org.mockito.kotlin.whenever
-import org.odk.collect.android.backgroundwork.FormUpdateScheduler
-import org.odk.collect.android.backgroundwork.InstanceSubmitScheduler
-import org.odk.collect.android.preferences.keys.MetaKeys
-import org.odk.collect.android.preferences.keys.ProjectKeys
-import org.odk.collect.android.preferences.keys.ProtectedProjectKeys
-import org.odk.collect.android.support.InMemSettingsProvider
-import org.odk.collect.android.utilities.ChangeLockProvider
-import org.odk.collect.forms.instances.Instance
-import org.odk.collect.formstest.InMemInstancesRepository
-import org.odk.collect.projects.InMemProjectsRepository
-import org.odk.collect.projects.Project
-import org.odk.collect.shared.TempFiles
-import org.odk.collect.testshared.BooleanChangeLock
+import org.samarthya.collect.android.backgroundwork.FormUpdateScheduler
+import org.samarthya.collect.android.backgroundwork.InstanceSubmitScheduler
+import org.samarthya.collect.android.preferences.keys.MetaKeys
+import org.samarthya.collect.android.preferences.keys.ProjectKeys
+import org.samarthya.collect.android.preferences.keys.ProtectedProjectKeys
+import org.samarthya.collect.android.support.InMemSettingsProvider
+import org.samarthya.collect.android.utilities.ChangeLockProvider
+import org.samarthya.collect.forms.instances.Instance
+import org.samarthya.collect.formstest.InMemInstancesRepository
+import org.samarthya.collect.projects.InMemProjectsRepository
+import org.samarthya.collect.projects.Project
+import org.samarthya.collect.shared.TempFiles
+import org.samarthya.collect.testshared.BooleanChangeLock
 import java.io.File
 
 class ProjectDeleterTest {

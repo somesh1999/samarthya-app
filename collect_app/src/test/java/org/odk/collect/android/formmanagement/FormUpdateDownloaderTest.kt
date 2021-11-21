@@ -1,4 +1,4 @@
-package org.odk.collect.android.formmanagement
+package org.samarthya.collect.android.formmanagement
 
 import androidx.test.espresso.matcher.ViewMatchers.assertThat
 import org.hamcrest.Matchers.`is`
@@ -10,8 +10,8 @@ import org.mockito.invocation.InvocationOnMock
 import org.mockito.kotlin.mock
 import org.mockito.kotlin.verify
 import org.mockito.stubbing.Answer
-import org.odk.collect.forms.ManifestFile
-import org.odk.collect.testshared.BooleanChangeLock
+import org.samarthya.collect.forms.ManifestFile
+import org.samarthya.collect.testshared.BooleanChangeLock
 
 class FormUpdateDownloaderTest {
 

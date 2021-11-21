@@ -1,4 +1,4 @@
-package org.odk.collect.android.support
+package org.samarthya.collect.android.support
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -6,8 +6,8 @@ import com.google.zxing.BarcodeFormat
 import com.google.zxing.Result
 import com.journeyapps.barcodescanner.BarcodeResult
 import com.journeyapps.barcodescanner.DecoratedBarcodeView
-import org.odk.collect.android.utilities.CompressionUtils
-import org.odk.collect.android.views.BarcodeViewDecoder
+import org.samarthya.collect.android.utilities.CompressionUtils
+import org.samarthya.collect.android.views.BarcodeViewDecoder
 import java.io.IOException
 
 class StubBarcodeViewDecoder : BarcodeViewDecoder() {

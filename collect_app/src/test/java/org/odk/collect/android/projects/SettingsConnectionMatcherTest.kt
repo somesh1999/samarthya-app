@@ -1,13 +1,13 @@
-package org.odk.collect.android.projects
+package org.samarthya.collect.android.projects
 
 import org.hamcrest.CoreMatchers.`is`
 import org.hamcrest.CoreMatchers.nullValue
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.Test
-import org.odk.collect.android.preferences.keys.ProjectKeys
-import org.odk.collect.android.support.InMemSettingsProvider
-import org.odk.collect.projects.InMemProjectsRepository
-import org.odk.collect.projects.Project
+import org.samarthya.collect.android.preferences.keys.ProjectKeys
+import org.samarthya.collect.android.support.InMemSettingsProvider
+import org.samarthya.collect.projects.InMemProjectsRepository
+import org.samarthya.collect.projects.Project
 
 class SettingsConnectionMatcherTest {
     private val inMemProjectsRepository = InMemProjectsRepository()

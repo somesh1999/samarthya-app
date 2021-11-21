@@ -1,4 +1,4 @@
-package org.odk.collect.android.formmanagement;
+package org.samarthya.collect.android.formmanagement;
 
 import android.view.Menu;
 
@@ -12,9 +12,9 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.R;
-import org.odk.collect.android.network.NetworkStateProvider;
-import org.odk.collect.android.support.CollectHelpers;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.network.NetworkStateProvider;
+import org.samarthya.collect.android.support.CollectHelpers;
 import org.robolectric.fakes.RoboMenuItem;
 import org.robolectric.shadows.ShadowToast;
 

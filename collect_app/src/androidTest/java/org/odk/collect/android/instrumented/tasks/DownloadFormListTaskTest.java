@@ -1,9 +1,9 @@
-package org.odk.collect.android.instrumented.tasks;
+package org.samarthya.collect.android.instrumented.tasks;
 
 import org.junit.Test;
-import org.odk.collect.android.formmanagement.ServerFormsDetailsFetcher;
-import org.odk.collect.android.tasks.DownloadFormListTask;
-import org.odk.collect.android.utilities.WebCredentialsUtils;
+import org.samarthya.collect.android.formmanagement.ServerFormsDetailsFetcher;
+import org.samarthya.collect.android.tasks.DownloadFormListTask;
+import org.samarthya.collect.android.utilities.WebCredentialsUtils;
 
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.mock;

@@ -1,6 +1,6 @@
-package org.odk.collect.android.support.pages;
+package org.samarthya.collect.android.support.pages;
 
-import org.odk.collect.android.R;
+import org.samarthya.collect.android.R;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;

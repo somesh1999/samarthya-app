@@ -1,12 +1,12 @@
-package org.odk.collect.audiorecorder.testsupport
+package org.samarthya.collect.audiorecorder.testsupport
 
 import android.app.Application
-import org.odk.collect.androidshared.data.AppState
-import org.odk.collect.androidshared.data.StateStore
-import org.odk.collect.audiorecorder.AudioRecorderDependencyComponent
-import org.odk.collect.audiorecorder.AudioRecorderDependencyComponentProvider
-import org.odk.collect.audiorecorder.AudioRecorderDependencyModule
-import org.odk.collect.audiorecorder.DaggerAudioRecorderDependencyComponent
+import org.samarthya.collect.androidshared.data.AppState
+import org.samarthya.collect.androidshared.data.StateStore
+import org.samarthya.collect.audiorecorder.AudioRecorderDependencyComponent
+import org.samarthya.collect.audiorecorder.AudioRecorderDependencyComponentProvider
+import org.samarthya.collect.audiorecorder.AudioRecorderDependencyModule
+import org.samarthya.collect.audiorecorder.DaggerAudioRecorderDependencyComponent
 
 /**
  * Used as the Application in tests in in the `test/src` root. This is setup in `robolectric.properties`

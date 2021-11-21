@@ -1,4 +1,4 @@
-package org.odk.collect.android.preferences.source
+package org.samarthya.collect.android.preferences.source
 
 import org.hamcrest.CoreMatchers.`is`
 import org.hamcrest.MatcherAssert.assertThat
@@ -7,7 +7,7 @@ import org.junit.Test
 import org.mockito.Mockito.`when`
 import org.mockito.Mockito.mock
 import org.mockito.Mockito.verify
-import org.odk.collect.shared.Settings
+import org.samarthya.collect.shared.Settings
 
 class SettingsStoreTest {
     private lateinit var settingsStore: SettingsStore

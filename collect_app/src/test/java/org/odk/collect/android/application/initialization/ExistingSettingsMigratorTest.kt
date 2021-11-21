@@ -1,4 +1,4 @@
-package org.odk.collect.android.application.initialization
+package org.samarthya.collect.android.application.initialization
 
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.Matchers.`is`
@@ -6,9 +6,9 @@ import org.hamcrest.Matchers.nullValue
 import org.junit.Test
 import org.mockito.kotlin.mock
 import org.mockito.kotlin.verify
-import org.odk.collect.android.support.InMemSettingsProvider
-import org.odk.collect.projects.InMemProjectsRepository
-import org.odk.collect.projects.Project
+import org.samarthya.collect.android.support.InMemSettingsProvider
+import org.samarthya.collect.projects.InMemProjectsRepository
+import org.samarthya.collect.projects.Project
 
 class ExistingSettingsMigratorTest {
 

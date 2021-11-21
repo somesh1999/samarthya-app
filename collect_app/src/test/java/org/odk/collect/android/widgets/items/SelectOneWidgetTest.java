@@ -1,4 +1,4 @@
-package org.odk.collect.android.widgets.items;
+package org.samarthya.collect.android.widgets.items;
 
 import android.app.Application;
 import android.view.View;
@@ -21,23 +21,23 @@ import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
-import org.odk.collect.analytics.Analytics;
-import org.odk.collect.android.audio.AudioButton;
-import org.odk.collect.android.audio.AudioHelper;
-import org.odk.collect.android.formentry.media.AudioHelperFactory;
-import org.odk.collect.android.formentry.questions.AudioVideoImageTextLabel;
-import org.odk.collect.android.formentry.questions.NoButtonsItem;
-import org.odk.collect.android.formentry.questions.QuestionDetails;
-import org.odk.collect.android.formentry.questions.QuestionTextSizeHelper;
-import org.odk.collect.android.injection.config.AppDependencyModule;
-import org.odk.collect.android.listeners.AdvanceToNextListener;
-import org.odk.collect.android.support.CollectHelpers;
-import org.odk.collect.android.support.MockFormEntryPromptBuilder;
-import org.odk.collect.android.utilities.Appearances;
-import org.odk.collect.android.utilities.SoftKeyboardController;
-import org.odk.collect.android.widgets.base.GeneralSelectOneWidgetTest;
-import org.odk.collect.async.Scheduler;
-import org.odk.collect.audioclips.Clip;
+import org.samarthya.collect.analytics.Analytics;
+import org.samarthya.collect.android.audio.AudioButton;
+import org.samarthya.collect.android.audio.AudioHelper;
+import org.samarthya.collect.android.formentry.media.AudioHelperFactory;
+import org.samarthya.collect.android.formentry.questions.AudioVideoImageTextLabel;
+import org.samarthya.collect.android.formentry.questions.NoButtonsItem;
+import org.samarthya.collect.android.formentry.questions.QuestionDetails;
+import org.samarthya.collect.android.formentry.questions.QuestionTextSizeHelper;
+import org.samarthya.collect.android.injection.config.AppDependencyModule;
+import org.samarthya.collect.android.listeners.AdvanceToNextListener;
+import org.samarthya.collect.android.support.CollectHelpers;
+import org.samarthya.collect.android.support.MockFormEntryPromptBuilder;
+import org.samarthya.collect.android.utilities.Appearances;
+import org.samarthya.collect.android.utilities.SoftKeyboardController;
+import org.samarthya.collect.android.widgets.base.GeneralSelectOneWidgetTest;
+import org.samarthya.collect.async.Scheduler;
+import org.samarthya.collect.audioclips.Clip;
 
 import java.util.List;
 
@@ -52,8 +52,8 @@ import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
-import static org.odk.collect.android.support.CollectHelpers.setupFakeReferenceManager;
-import static org.odk.collect.testshared.RobolectricHelpers.populateRecyclerView;
+import static org.samarthya.collect.android.support.CollectHelpers.setupFakeReferenceManager;
+import static org.samarthya.collect.testshared.RobolectricHelpers.populateRecyclerView;
 
 /**
  * @author James Knight

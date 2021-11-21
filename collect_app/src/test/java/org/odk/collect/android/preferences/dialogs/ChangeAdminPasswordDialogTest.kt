@@ -1,4 +1,4 @@
-package org.odk.collect.android.preferences.dialogs
+package org.samarthya.collect.android.preferences.dialogs
 
 import android.content.Context
 import android.text.InputType
@@ -17,15 +17,15 @@ import org.junit.runner.RunWith
 import org.mockito.kotlin.mock
 import org.mockito.kotlin.verify
 import org.mockito.kotlin.verifyNoMoreInteractions
-import org.odk.collect.android.injection.config.AppDependencyModule
-import org.odk.collect.android.preferences.ProjectPreferencesViewModel
-import org.odk.collect.android.preferences.keys.ProtectedProjectKeys
-import org.odk.collect.android.preferences.source.SettingsProvider
-import org.odk.collect.android.support.CollectHelpers
-import org.odk.collect.android.support.InMemSettingsProvider
-import org.odk.collect.android.utilities.AdminPasswordProvider
-import org.odk.collect.fragmentstest.DialogFragmentTest
-import org.odk.collect.testshared.RobolectricHelpers
+import org.samarthya.collect.android.injection.config.AppDependencyModule
+import org.samarthya.collect.android.preferences.ProjectPreferencesViewModel
+import org.samarthya.collect.android.preferences.keys.ProtectedProjectKeys
+import org.samarthya.collect.android.preferences.source.SettingsProvider
+import org.samarthya.collect.android.support.CollectHelpers
+import org.samarthya.collect.android.support.InMemSettingsProvider
+import org.samarthya.collect.android.utilities.AdminPasswordProvider
+import org.samarthya.collect.fragmentstest.DialogFragmentTest
+import org.samarthya.collect.testshared.RobolectricHelpers
 import javax.inject.Inject
 
 @RunWith(AndroidJUnit4::class)

@@ -1,4 +1,4 @@
-package org.odk.collect.android.widgets.items;
+package org.samarthya.collect.android.widgets.items;
 
 import android.view.View;
 import android.widget.RadioButton;
@@ -6,8 +6,8 @@ import android.widget.RadioButton;
 import androidx.annotation.NonNull;
 
 import org.junit.Test;
-import org.odk.collect.android.formentry.questions.QuestionDetails;
-import org.odk.collect.android.widgets.base.GeneralSelectOneWidgetTest;
+import org.samarthya.collect.android.formentry.questions.QuestionDetails;
+import org.samarthya.collect.android.widgets.base.GeneralSelectOneWidgetTest;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;

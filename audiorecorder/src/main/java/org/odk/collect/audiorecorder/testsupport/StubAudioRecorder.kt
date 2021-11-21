@@ -1,11 +1,11 @@
-package org.odk.collect.audiorecorder.testsupport
+package org.samarthya.collect.audiorecorder.testsupport
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import org.odk.collect.androidshared.data.Consumable
-import org.odk.collect.audiorecorder.recorder.Output
-import org.odk.collect.audiorecorder.recording.AudioRecorder
-import org.odk.collect.audiorecorder.recording.RecordingSession
+import org.samarthya.collect.androidshared.data.Consumable
+import org.samarthya.collect.audiorecorder.recorder.Output
+import org.samarthya.collect.audiorecorder.recording.AudioRecorder
+import org.samarthya.collect.audiorecorder.recording.RecordingSession
 import java.io.File
 import java.io.Serializable
 

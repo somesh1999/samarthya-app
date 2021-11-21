@@ -1,4 +1,4 @@
-package org.odk.collect.fragmentstest
+package org.samarthya.collect.fragmentstest
 
 import android.os.Bundle
 import android.view.View

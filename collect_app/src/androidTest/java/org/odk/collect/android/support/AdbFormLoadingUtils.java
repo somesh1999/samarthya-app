@@ -14,23 +14,23 @@
  * limitations under the License.
  */
 
-package org.odk.collect.android.support;
+package org.samarthya.collect.android.support;
 
 import android.app.Application;
 
 import androidx.test.core.app.ApplicationProvider;
 
 import org.jetbrains.annotations.NotNull;
-import org.odk.collect.android.injection.DaggerUtils;
-import org.odk.collect.android.tasks.FormLoaderTask;
-import org.odk.collect.android.utilities.FileUtils;
-import org.odk.collect.android.utilities.FormsDirDiskFormsSynchronizer;
+import org.samarthya.collect.android.injection.DaggerUtils;
+import org.samarthya.collect.android.tasks.FormLoaderTask;
+import org.samarthya.collect.android.utilities.FileUtils;
+import org.samarthya.collect.android.utilities.FormsDirDiskFormsSynchronizer;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-import static org.odk.collect.android.support.FileUtils.copyFileFromAssets;
+import static org.samarthya.collect.android.support.FileUtils.copyFileFromAssets;
 
 /**
  * Emulates the process of copying a form via ADB

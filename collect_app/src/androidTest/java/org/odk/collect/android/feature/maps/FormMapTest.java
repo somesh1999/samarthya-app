@@ -1,4 +1,4 @@
-package org.odk.collect.android.feature.maps;
+package org.samarthya.collect.android.feature.maps;
 
 import android.Manifest;
 import android.app.Activity;
@@ -13,14 +13,14 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.RuleChain;
-import org.odk.collect.android.R;
-import org.odk.collect.android.RecordedIntentsRule;
-import org.odk.collect.android.activities.FormEntryActivity;
-import org.odk.collect.android.support.CollectTestRule;
-import org.odk.collect.android.support.CopyFormRule;
-import org.odk.collect.android.support.ResetStateRule;
-import org.odk.collect.android.support.pages.MainMenuPage;
-import org.odk.collect.android.utilities.GeoUtils;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.RecordedIntentsRule;
+import org.samarthya.collect.android.activities.FormEntryActivity;
+import org.samarthya.collect.android.support.CollectTestRule;
+import org.samarthya.collect.android.support.CopyFormRule;
+import org.samarthya.collect.android.support.ResetStateRule;
+import org.samarthya.collect.android.support.pages.MainMenuPage;
+import org.samarthya.collect.android.utilities.GeoUtils;
 
 import static androidx.test.espresso.intent.Intents.intending;
 import static androidx.test.espresso.intent.matcher.IntentMatchers.hasComponent;
@@ -52,7 +52,7 @@ public class FormMapTest {
         intent.putExtra(FormEntryActivity.ANSWER_KEY, GeoUtils.formatLocationResultString(location));
         Instrumentation.ActivityResult result = new Instrumentation.ActivityResult(Activity.RESULT_OK, intent);
 
-        intending(hasComponent("org.odk.collect.android.activities.GeoPointActivity"))
+        intending(hasComponent("org.samarthya.collect.android.activities.GeoPointActivity"))
                 .respondWith(result);
     }
 

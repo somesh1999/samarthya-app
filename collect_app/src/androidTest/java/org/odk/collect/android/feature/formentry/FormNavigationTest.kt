@@ -13,19 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.odk.collect.android.feature.formentry
+package org.samarthya.collect.android.feature.formentry
 
 import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.RuleChain
-import org.odk.collect.android.R
-import org.odk.collect.android.support.CollectTestRule
-import org.odk.collect.android.support.ResetStateRule
-import org.odk.collect.android.support.TestRuleChain
-import org.odk.collect.android.support.pages.AccessControlPage
-import org.odk.collect.android.support.pages.FormEntryPage
-import org.odk.collect.android.support.pages.MainMenuPage
-import org.odk.collect.android.support.pages.ProjectSettingsPage
+import org.samarthya.collect.android.R
+import org.samarthya.collect.android.support.CollectTestRule
+import org.samarthya.collect.android.support.ResetStateRule
+import org.samarthya.collect.android.support.TestRuleChain
+import org.samarthya.collect.android.support.pages.AccessControlPage
+import org.samarthya.collect.android.support.pages.FormEntryPage
+import org.samarthya.collect.android.support.pages.MainMenuPage
+import org.samarthya.collect.android.support.pages.ProjectSettingsPage
 
 class FormNavigationTest {
     var rule = CollectTestRule()

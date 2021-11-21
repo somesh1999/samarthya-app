@@ -1,4 +1,4 @@
-package org.odk.collect.androidshared.ui
+package org.samarthya.collect.androidshared.ui
 
 import android.app.Activity
 import android.os.Bundle

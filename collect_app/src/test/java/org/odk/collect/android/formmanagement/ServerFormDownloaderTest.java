@@ -1,19 +1,19 @@
-package org.odk.collect.android.formmanagement;
+package org.samarthya.collect.android.formmanagement;
 
 import com.google.common.io.Files;
 
 import org.junit.Test;
-import org.odk.collect.analytics.Analytics;
-import org.odk.collect.forms.Form;
-import org.odk.collect.forms.FormListItem;
-import org.odk.collect.forms.FormSource;
-import org.odk.collect.forms.FormSourceException;
-import org.odk.collect.forms.FormsRepository;
-import org.odk.collect.forms.ManifestFile;
-import org.odk.collect.forms.MediaFile;
-import org.odk.collect.formstest.FormUtils;
-import org.odk.collect.formstest.InMemFormsRepository;
-import org.odk.collect.shared.strings.Md5;
+import org.samarthya.collect.analytics.Analytics;
+import org.samarthya.collect.forms.Form;
+import org.samarthya.collect.forms.FormListItem;
+import org.samarthya.collect.forms.FormSource;
+import org.samarthya.collect.forms.FormSourceException;
+import org.samarthya.collect.forms.FormsRepository;
+import org.samarthya.collect.forms.ManifestFile;
+import org.samarthya.collect.forms.MediaFile;
+import org.samarthya.collect.formstest.FormUtils;
+import org.samarthya.collect.formstest.InMemFormsRepository;
+import org.samarthya.collect.shared.strings.Md5;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -36,11 +36,11 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.when;
-import static org.odk.collect.android.analytics.AnalyticsEvents.DOWNLOAD_SAME_FORMID_VERSION_DIFFERENT_HASH;
-import static org.odk.collect.android.utilities.FileUtils.read;
-import static org.odk.collect.formstest.FormUtils.buildForm;
-import static org.odk.collect.formstest.FormUtils.createXFormBody;
-import static org.odk.collect.shared.PathUtils.getAbsoluteFilePath;
+import static org.samarthya.collect.android.analytics.AnalyticsEvents.DOWNLOAD_SAME_FORMID_VERSION_DIFFERENT_HASH;
+import static org.samarthya.collect.android.utilities.FileUtils.read;
+import static org.samarthya.collect.formstest.FormUtils.buildForm;
+import static org.samarthya.collect.formstest.FormUtils.createXFormBody;
+import static org.samarthya.collect.shared.PathUtils.getAbsoluteFilePath;
 
 @SuppressWarnings("PMD.DoubleBraceInitialization")
 public class ServerFormDownloaderTest {

@@ -1,4 +1,4 @@
-package org.odk.collect.android.widgets;
+package org.samarthya.collect.android.widgets;
 
 import androidx.annotation.NonNull;
 
@@ -7,8 +7,8 @@ import org.javarosa.core.model.data.DecimalData;
 import org.javarosa.core.model.data.IAnswerData;
 import org.junit.Test;
 import org.mockito.Mock;
-import org.odk.collect.android.formentry.questions.QuestionDetails;
-import org.odk.collect.android.widgets.base.GeneralStringWidgetTest;
+import org.samarthya.collect.android.formentry.questions.QuestionDetails;
+import org.samarthya.collect.android.widgets.base.GeneralStringWidgetTest;
 
 import java.text.NumberFormat;
 import java.util.Locale;
@@ -20,7 +20,7 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertThat;
 import static org.mockito.Mockito.when;
-import static org.odk.collect.android.utilities.Appearances.THOUSANDS_SEP;
+import static org.samarthya.collect.android.utilities.Appearances.THOUSANDS_SEP;
 
 public class DecimalWidgetTest extends GeneralStringWidgetTest<DecimalWidget, DecimalData> {
 

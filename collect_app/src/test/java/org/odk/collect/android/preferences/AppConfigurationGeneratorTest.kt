@@ -1,4 +1,4 @@
-package org.odk.collect.android.preferences
+package org.samarthya.collect.android.preferences
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import org.hamcrest.MatcherAssert.assertThat
@@ -9,13 +9,13 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.kotlin.doReturn
 import org.mockito.kotlin.mock
-import org.odk.collect.android.configure.qr.AppConfigurationGenerator
-import org.odk.collect.android.configure.qr.AppConfigurationKeys
-import org.odk.collect.android.preferences.keys.ProjectKeys
-import org.odk.collect.android.preferences.keys.ProtectedProjectKeys
-import org.odk.collect.android.projects.CurrentProjectProvider
-import org.odk.collect.android.support.InMemSettingsProvider
-import org.odk.collect.projects.Project
+import org.samarthya.collect.android.configure.qr.AppConfigurationGenerator
+import org.samarthya.collect.android.configure.qr.AppConfigurationKeys
+import org.samarthya.collect.android.preferences.keys.ProjectKeys
+import org.samarthya.collect.android.preferences.keys.ProtectedProjectKeys
+import org.samarthya.collect.android.projects.CurrentProjectProvider
+import org.samarthya.collect.android.support.InMemSettingsProvider
+import org.samarthya.collect.projects.Project
 
 @RunWith(AndroidJUnit4::class)
 class AppConfigurationGeneratorTest {

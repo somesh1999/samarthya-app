@@ -1,4 +1,4 @@
-package org.odk.collect.async
+package org.samarthya.collect.async
 
 interface Cancellable {
     fun cancel(): Boolean

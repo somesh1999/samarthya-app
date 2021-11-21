@@ -1,4 +1,4 @@
-package org.odk.collect.android.configure;
+package org.samarthya.collect.android.configure;
 
 import android.content.Context;
 
@@ -6,10 +6,10 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.TestSettingsProvider;
-import org.odk.collect.android.preferences.FormUpdateMode;
-import org.odk.collect.android.preferences.keys.ProjectKeys;
-import org.odk.collect.shared.Settings;
+import org.samarthya.collect.android.TestSettingsProvider;
+import org.samarthya.collect.android.preferences.FormUpdateMode;
+import org.samarthya.collect.android.preferences.keys.ProjectKeys;
+import org.samarthya.collect.shared.Settings;
 
 import static androidx.test.core.app.ApplicationProvider.getApplicationContext;
 import static org.hamcrest.MatcherAssert.assertThat;

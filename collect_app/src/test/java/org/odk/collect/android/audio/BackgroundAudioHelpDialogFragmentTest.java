@@ -1,4 +1,4 @@
-package org.odk.collect.android.audio;
+package org.samarthya.collect.android.audio;
 
 import android.content.DialogInterface;
 import android.widget.Button;
@@ -9,11 +9,11 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.R;
+import org.samarthya.collect.android.R;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
-import static org.odk.collect.testshared.RobolectricHelpers.launchDialogFragment;
+import static org.samarthya.collect.testshared.RobolectricHelpers.launchDialogFragment;
 
 @RunWith(AndroidJUnit4.class)
 public class BackgroundAudioHelpDialogFragmentTest {

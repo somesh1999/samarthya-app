@@ -1,4 +1,4 @@
-package org.odk.collect.audiorecorder.mediarecorder
+package org.samarthya.collect.audiorecorder.mediarecorder
 
 import android.media.MediaRecorder
 import org.junit.Test

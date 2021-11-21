@@ -1,4 +1,4 @@
-package org.odk.collect.android.widgets;
+package org.samarthya.collect.android.widgets;
 
 import android.view.View;
 
@@ -7,20 +7,20 @@ import androidx.annotation.NonNull;
 import org.javarosa.core.model.data.StringData;
 import org.junit.Test;
 import org.mockito.Mock;
-import org.odk.collect.android.formentry.questions.QuestionDetails;
-import org.odk.collect.android.utilities.ApplicationConstants;
-import org.odk.collect.android.utilities.MediaUtils;
-import org.odk.collect.android.widgets.base.FileWidgetTest;
-import org.odk.collect.android.widgets.support.FakeQuestionMediaManager;
-import org.odk.collect.android.widgets.support.FakeWaitingForDataRegistry;
+import org.samarthya.collect.android.formentry.questions.QuestionDetails;
+import org.samarthya.collect.android.utilities.ApplicationConstants;
+import org.samarthya.collect.android.utilities.MediaUtils;
+import org.samarthya.collect.android.widgets.base.FileWidgetTest;
+import org.samarthya.collect.android.widgets.support.FakeQuestionMediaManager;
+import org.samarthya.collect.android.widgets.support.FakeWaitingForDataRegistry;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.nullValue;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
-import static org.odk.collect.android.preferences.keys.ProjectKeys.KEY_FONT_SIZE;
-import static org.odk.collect.android.utilities.QuestionFontSizeUtils.DEFAULT_FONT_SIZE;
+import static org.samarthya.collect.android.preferences.keys.ProjectKeys.KEY_FONT_SIZE;
+import static org.samarthya.collect.android.utilities.QuestionFontSizeUtils.DEFAULT_FONT_SIZE;
 
 public class ArbitraryFileWidgetTest extends FileWidgetTest<ArbitraryFileWidget> {
     @Mock

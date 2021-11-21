@@ -1,4 +1,4 @@
-package org.odk.collect.android.geo;
+package org.samarthya.collect.android.geo;
 
 import android.content.DialogInterface;
 import android.view.View;
@@ -15,9 +15,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InOrder;
 import org.mockito.Mockito;
-import org.odk.collect.android.R;
-import org.odk.collect.android.support.CollectHelpers;
-import org.odk.collect.testshared.RobolectricHelpers;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.support.CollectHelpers;
+import org.samarthya.collect.testshared.RobolectricHelpers;
 import org.robolectric.shadows.ShadowDialog;
 
 import static android.view.View.GONE;

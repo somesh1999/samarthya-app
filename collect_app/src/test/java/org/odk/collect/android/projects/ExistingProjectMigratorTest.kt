@@ -1,4 +1,4 @@
-package org.odk.collect.android.projects
+package org.samarthya.collect.android.projects
 
 import android.app.Application
 import android.content.Context
@@ -9,10 +9,10 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import org.hamcrest.Matchers.`is`
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.odk.collect.android.injection.DaggerUtils
-import org.odk.collect.android.preferences.keys.MetaKeys
-import org.odk.collect.android.preferences.keys.ProjectKeys
-import org.odk.collect.shared.TempFiles
+import org.samarthya.collect.android.injection.DaggerUtils
+import org.samarthya.collect.android.preferences.keys.MetaKeys
+import org.samarthya.collect.android.preferences.keys.ProjectKeys
+import org.samarthya.collect.shared.TempFiles
 import java.io.File
 
 @RunWith(AndroidJUnit4::class)

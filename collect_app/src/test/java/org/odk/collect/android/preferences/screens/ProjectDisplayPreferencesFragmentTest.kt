@@ -1,4 +1,4 @@
-package org.odk.collect.android.preferences.screens
+package org.samarthya.collect.android.preferences.screens
 
 import androidx.preference.EditTextPreference
 import androidx.preference.Preference
@@ -12,17 +12,17 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mockito.`when`
 import org.mockito.Mockito.mock
-import org.odk.collect.android.R
-import org.odk.collect.android.application.Collect
-import org.odk.collect.android.injection.config.AppDependencyModule
-import org.odk.collect.android.preferences.source.SettingsProvider
-import org.odk.collect.android.projects.CurrentProjectProvider
-import org.odk.collect.android.support.CollectHelpers
-import org.odk.collect.android.utilities.TranslationHandler
-import org.odk.collect.projects.Project
-import org.odk.collect.projects.ProjectsRepository
-import org.odk.collect.shared.strings.UUIDGenerator
-import org.odk.collect.testshared.RobolectricHelpers
+import org.samarthya.collect.android.R
+import org.samarthya.collect.android.application.Collect
+import org.samarthya.collect.android.injection.config.AppDependencyModule
+import org.samarthya.collect.android.preferences.source.SettingsProvider
+import org.samarthya.collect.android.projects.CurrentProjectProvider
+import org.samarthya.collect.android.support.CollectHelpers
+import org.samarthya.collect.android.utilities.TranslationHandler
+import org.samarthya.collect.projects.Project
+import org.samarthya.collect.projects.ProjectsRepository
+import org.samarthya.collect.shared.strings.UUIDGenerator
+import org.samarthya.collect.testshared.RobolectricHelpers
 
 @RunWith(AndroidJUnit4::class)
 class ProjectDisplayPreferencesFragmentTest {

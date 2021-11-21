@@ -1,4 +1,4 @@
-package org.odk.collect.android.formentry;
+package org.samarthya.collect.android.formentry;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
@@ -8,12 +8,12 @@ import org.javarosa.core.model.instance.TreeReference;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.analytics.Analytics;
-import org.odk.collect.android.exception.JavaRosaException;
-import org.odk.collect.android.formentry.audit.AuditEvent;
-import org.odk.collect.android.formentry.audit.AuditEventLogger;
-import org.odk.collect.android.javarosawrapper.FormController;
-import org.odk.collect.utilities.Clock;
+import org.samarthya.collect.analytics.Analytics;
+import org.samarthya.collect.android.exception.JavaRosaException;
+import org.samarthya.collect.android.formentry.audit.AuditEvent;
+import org.samarthya.collect.android.formentry.audit.AuditEventLogger;
+import org.samarthya.collect.android.javarosawrapper.FormController;
+import org.samarthya.collect.utilities.Clock;
 
 import java.io.IOException;
 
@@ -25,7 +25,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
-import static org.odk.collect.android.formentry.FormEntryViewModel.NonFatal;
+import static org.samarthya.collect.android.formentry.FormEntryViewModel.NonFatal;
 
 @RunWith(AndroidJUnit4.class)
 @SuppressWarnings("PMD.DoubleBraceInitialization")

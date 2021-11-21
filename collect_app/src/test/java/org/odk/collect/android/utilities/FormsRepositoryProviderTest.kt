@@ -1,4 +1,4 @@
-package org.odk.collect.android.utilities
+package org.samarthya.collect.android.utilities
 
 import android.app.Application
 import androidx.test.core.app.ApplicationProvider
@@ -9,12 +9,12 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.kotlin.doReturn
 import org.mockito.kotlin.mock
-import org.odk.collect.android.storage.StoragePathProvider
-import org.odk.collect.android.storage.StorageSubdirectory.CACHE
-import org.odk.collect.android.storage.StorageSubdirectory.FORMS
-import org.odk.collect.android.storage.StorageSubdirectory.METADATA
-import org.odk.collect.formstest.FormUtils.buildForm
-import org.odk.collect.shared.TempFiles.createTempDir
+import org.samarthya.collect.android.storage.StoragePathProvider
+import org.samarthya.collect.android.storage.StorageSubdirectory.CACHE
+import org.samarthya.collect.android.storage.StorageSubdirectory.FORMS
+import org.samarthya.collect.android.storage.StorageSubdirectory.METADATA
+import org.samarthya.collect.formstest.FormUtils.buildForm
+import org.samarthya.collect.shared.TempFiles.createTempDir
 
 @RunWith(AndroidJUnit4::class)
 class FormsRepositoryProviderTest {

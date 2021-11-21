@@ -1,4 +1,4 @@
-package org.odk.collect.android.support.pages
+package org.samarthya.collect.android.support.pages
 
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions
@@ -6,7 +6,7 @@ import androidx.test.espresso.action.ViewActions.replaceText
 import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.espresso.matcher.ViewMatchers.withContentDescription
 import org.hamcrest.core.StringEndsWith
-import org.odk.collect.android.R
+import org.samarthya.collect.android.R
 
 class ProjectDisplayPage : Page<ProjectDisplayPage>() {
     override fun assertOnPage(): ProjectDisplayPage {

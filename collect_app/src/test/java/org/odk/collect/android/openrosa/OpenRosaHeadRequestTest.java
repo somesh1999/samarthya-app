@@ -1,9 +1,9 @@
-package org.odk.collect.android.openrosa;
+package org.samarthya.collect.android.openrosa;
 
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
-import org.odk.collect.android.openrosa.support.MockWebServerRule;
+import org.samarthya.collect.android.openrosa.support.MockWebServerRule;
 
 import java.net.URI;
 

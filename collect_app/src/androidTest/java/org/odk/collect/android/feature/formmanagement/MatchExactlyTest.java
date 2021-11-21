@@ -1,4 +1,4 @@
-package org.odk.collect.android.feature.formmanagement;
+package org.samarthya.collect.android.feature.formmanagement;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
@@ -6,14 +6,14 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.RuleChain;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.R;
-import org.odk.collect.android.support.CollectTestRule;
-import org.odk.collect.android.support.CopyFormRule;
-import org.odk.collect.android.support.NotificationDrawerRule;
-import org.odk.collect.android.support.TestDependencies;
-import org.odk.collect.android.support.TestRuleChain;
-import org.odk.collect.android.support.pages.FillBlankFormPage;
-import org.odk.collect.android.support.pages.MainMenuPage;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.support.CollectTestRule;
+import org.samarthya.collect.android.support.CopyFormRule;
+import org.samarthya.collect.android.support.NotificationDrawerRule;
+import org.samarthya.collect.android.support.TestDependencies;
+import org.samarthya.collect.android.support.TestRuleChain;
+import org.samarthya.collect.android.support.pages.FillBlankFormPage;
+import org.samarthya.collect.android.support.pages.MainMenuPage;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.empty;

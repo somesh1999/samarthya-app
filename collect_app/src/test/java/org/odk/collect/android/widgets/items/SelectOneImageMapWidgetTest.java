@@ -1,11 +1,11 @@
-package org.odk.collect.android.widgets.items;
+package org.samarthya.collect.android.widgets.items;
 
 import androidx.annotation.NonNull;
 
 import org.javarosa.core.model.SelectChoice;
 import org.javarosa.core.model.data.SelectOneData;
 import org.javarosa.core.model.data.helper.Selection;
-import org.odk.collect.android.formentry.questions.QuestionDetails;
+import org.samarthya.collect.android.formentry.questions.QuestionDetails;
 
 import java.util.List;
 

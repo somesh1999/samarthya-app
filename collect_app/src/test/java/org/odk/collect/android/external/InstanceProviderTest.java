@@ -1,4 +1,4 @@
-package org.odk.collect.android.external;
+package org.samarthya.collect.android.external;
 
 import android.content.ContentResolver;
 import android.content.ContentValues;
@@ -12,13 +12,13 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.database.forms.DatabaseFormColumns;
-import org.odk.collect.android.injection.DaggerUtils;
-import org.odk.collect.android.storage.StoragePathProvider;
-import org.odk.collect.android.storage.StorageSubdirectory;
-import org.odk.collect.android.support.CollectHelpers;
-import org.odk.collect.formstest.InstanceUtils;
-import org.odk.collect.projects.Project;
+import org.samarthya.collect.android.database.forms.DatabaseFormColumns;
+import org.samarthya.collect.android.injection.DaggerUtils;
+import org.samarthya.collect.android.storage.StoragePathProvider;
+import org.samarthya.collect.android.storage.StorageSubdirectory;
+import org.samarthya.collect.android.support.CollectHelpers;
+import org.samarthya.collect.formstest.InstanceUtils;
+import org.samarthya.collect.projects.Project;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -30,21 +30,21 @@ import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.not;
 import static org.hamcrest.Matchers.notNullValue;
 import static org.hamcrest.Matchers.nullValue;
-import static org.odk.collect.android.database.instances.DatabaseInstanceColumns.DELETED_DATE;
-import static org.odk.collect.android.database.instances.DatabaseInstanceColumns.DISPLAY_NAME;
-import static org.odk.collect.android.database.instances.DatabaseInstanceColumns.GEOMETRY;
-import static org.odk.collect.android.database.instances.DatabaseInstanceColumns.GEOMETRY_TYPE;
-import static org.odk.collect.android.database.instances.DatabaseInstanceColumns.INSTANCE_FILE_PATH;
-import static org.odk.collect.android.database.instances.DatabaseInstanceColumns.JR_FORM_ID;
-import static org.odk.collect.android.database.instances.DatabaseInstanceColumns.JR_VERSION;
-import static org.odk.collect.android.database.instances.DatabaseInstanceColumns.LAST_STATUS_CHANGE_DATE;
-import static org.odk.collect.android.database.instances.DatabaseInstanceColumns.STATUS;
-import static org.odk.collect.android.external.InstancesContract.CONTENT_ITEM_TYPE;
-import static org.odk.collect.android.external.InstancesContract.CONTENT_TYPE;
-import static org.odk.collect.android.external.InstancesContract.getUri;
-import static org.odk.collect.forms.instances.Instance.STATUS_COMPLETE;
-import static org.odk.collect.forms.instances.Instance.STATUS_INCOMPLETE;
-import static org.odk.collect.forms.instances.Instance.STATUS_SUBMITTED;
+import static org.samarthya.collect.android.database.instances.DatabaseInstanceColumns.DELETED_DATE;
+import static org.samarthya.collect.android.database.instances.DatabaseInstanceColumns.DISPLAY_NAME;
+import static org.samarthya.collect.android.database.instances.DatabaseInstanceColumns.GEOMETRY;
+import static org.samarthya.collect.android.database.instances.DatabaseInstanceColumns.GEOMETRY_TYPE;
+import static org.samarthya.collect.android.database.instances.DatabaseInstanceColumns.INSTANCE_FILE_PATH;
+import static org.samarthya.collect.android.database.instances.DatabaseInstanceColumns.JR_FORM_ID;
+import static org.samarthya.collect.android.database.instances.DatabaseInstanceColumns.JR_VERSION;
+import static org.samarthya.collect.android.database.instances.DatabaseInstanceColumns.LAST_STATUS_CHANGE_DATE;
+import static org.samarthya.collect.android.database.instances.DatabaseInstanceColumns.STATUS;
+import static org.samarthya.collect.android.external.InstancesContract.CONTENT_ITEM_TYPE;
+import static org.samarthya.collect.android.external.InstancesContract.CONTENT_TYPE;
+import static org.samarthya.collect.android.external.InstancesContract.getUri;
+import static org.samarthya.collect.forms.instances.Instance.STATUS_COMPLETE;
+import static org.samarthya.collect.forms.instances.Instance.STATUS_INCOMPLETE;
+import static org.samarthya.collect.forms.instances.Instance.STATUS_SUBMITTED;
 
 @RunWith(AndroidJUnit4.class)
 public class InstanceProviderTest {

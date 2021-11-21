@@ -1,4 +1,4 @@
-package org.odk.collect.android.feature.settings;
+package org.samarthya.collect.android.feature.settings;
 
 import android.Manifest;
 
@@ -9,17 +9,17 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.RuleChain;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.R;
-import org.odk.collect.android.RecordedIntentsRule;
-import org.odk.collect.android.support.CollectTestRule;
-import org.odk.collect.android.support.AdbFormLoadingUtils;
-import org.odk.collect.android.support.NotificationDrawerRule;
-import org.odk.collect.android.support.TestDependencies;
-import org.odk.collect.android.support.TestRuleChain;
-import org.odk.collect.android.support.TestScheduler;
-import org.odk.collect.android.support.pages.FormManagementPage;
-import org.odk.collect.android.support.pages.ProjectSettingsPage;
-import org.odk.collect.android.support.pages.MainMenuPage;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.RecordedIntentsRule;
+import org.samarthya.collect.android.support.CollectTestRule;
+import org.samarthya.collect.android.support.AdbFormLoadingUtils;
+import org.samarthya.collect.android.support.NotificationDrawerRule;
+import org.samarthya.collect.android.support.TestDependencies;
+import org.samarthya.collect.android.support.TestRuleChain;
+import org.samarthya.collect.android.support.TestScheduler;
+import org.samarthya.collect.android.support.pages.FormManagementPage;
+import org.samarthya.collect.android.support.pages.ProjectSettingsPage;
+import org.samarthya.collect.android.support.pages.MainMenuPage;
 
 import java.util.List;
 

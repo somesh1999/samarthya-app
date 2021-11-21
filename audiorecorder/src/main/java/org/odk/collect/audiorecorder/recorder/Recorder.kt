@@ -1,7 +1,7 @@
-package org.odk.collect.audiorecorder.recorder
+package org.samarthya.collect.audiorecorder.recorder
 
-import org.odk.collect.audiorecorder.recording.MicInUseException
-import org.odk.collect.audiorecorder.recording.SetupException
+import org.samarthya.collect.audiorecorder.recording.MicInUseException
+import org.samarthya.collect.audiorecorder.recording.SetupException
 import java.io.File
 
 interface Recorder {

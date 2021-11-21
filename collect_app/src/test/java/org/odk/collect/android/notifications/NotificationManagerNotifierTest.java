@@ -1,4 +1,4 @@
-package org.odk.collect.android.notifications;
+package org.samarthya.collect.android.notifications;
 
 import android.app.Application;
 import android.app.NotificationManager;
@@ -11,10 +11,10 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.odk.collect.android.TestSettingsProvider;
-import org.odk.collect.android.formmanagement.ServerFormDetails;
-import org.odk.collect.forms.FormSourceException;
-import org.odk.collect.forms.ManifestFile;
+import org.samarthya.collect.android.TestSettingsProvider;
+import org.samarthya.collect.android.formmanagement.ServerFormDetails;
+import org.samarthya.collect.forms.FormSourceException;
+import org.samarthya.collect.forms.ManifestFile;
 
 import java.util.List;
 

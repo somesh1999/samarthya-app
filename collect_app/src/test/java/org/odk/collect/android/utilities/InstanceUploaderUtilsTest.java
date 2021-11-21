@@ -1,22 +1,22 @@
-package org.odk.collect.android.utilities;
+package org.samarthya.collect.android.utilities;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.forms.Form;
-import org.odk.collect.forms.instances.Instance;
-import org.odk.collect.formstest.FormUtils;
-import org.odk.collect.formstest.InMemFormsRepository;
-import org.odk.collect.formstest.InMemInstancesRepository;
+import org.samarthya.collect.forms.Form;
+import org.samarthya.collect.forms.instances.Instance;
+import org.samarthya.collect.formstest.FormUtils;
+import org.samarthya.collect.formstest.InMemFormsRepository;
+import org.samarthya.collect.formstest.InMemInstancesRepository;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
-import static org.odk.collect.android.utilities.InstanceUploaderUtils.shouldFormBeSent;
-import static org.odk.collect.formstest.FormUtils.createXFormFile;
+import static org.samarthya.collect.android.utilities.InstanceUploaderUtils.shouldFormBeSent;
+import static org.samarthya.collect.formstest.FormUtils.createXFormFile;
 
 @RunWith(AndroidJUnit4.class)
 public class InstanceUploaderUtilsTest {
@@ -104,7 +104,7 @@ public class InstanceUploaderUtilsTest {
                 .dbId(1L)
                 .formId("1")
                 .version("1")
-                .formFilePath(org.odk.collect.formstest.FormUtils.createXFormFile("1", "1").getAbsolutePath())
+                .formFilePath(org.samarthya.collect.formstest.FormUtils.createXFormFile("1", "1").getAbsolutePath())
                 .build());
 
         assertThat(shouldFormBeSent(formsRepository, "1", "1", false), is(false));
@@ -118,7 +118,7 @@ public class InstanceUploaderUtilsTest {
                 .dbId(1L)
                 .formId("1")
                 .version("1")
-                .formFilePath(org.odk.collect.formstest.FormUtils.createXFormFile("1", "1").getAbsolutePath())
+                .formFilePath(org.samarthya.collect.formstest.FormUtils.createXFormFile("1", "1").getAbsolutePath())
                 .build());
 
         assertThat(shouldFormBeSent(formsRepository, "1", "1", true), is(true));
@@ -133,7 +133,7 @@ public class InstanceUploaderUtilsTest {
                 .formId("1")
                 .version("1")
                 .autoSend("false")
-                .formFilePath(org.odk.collect.formstest.FormUtils.createXFormFile("1", "1").getAbsolutePath())
+                .formFilePath(org.samarthya.collect.formstest.FormUtils.createXFormFile("1", "1").getAbsolutePath())
                 .build());
 
         assertThat(shouldFormBeSent(formsRepository, "1", "1", true), is(false));

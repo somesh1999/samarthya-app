@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package org.odk.collect.android.instrumented.utilities;
+package org.samarthya.collect.android.instrumented.utilities;
 
 import org.javarosa.core.model.FormIndex;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
-import org.odk.collect.android.application.Collect;
-import org.odk.collect.android.javarosawrapper.FormController;
-import org.odk.collect.android.storage.StoragePathProvider;
-import org.odk.collect.android.storage.StorageSubdirectory;
-import org.odk.collect.android.tasks.SaveFormIndexTask;
-import org.odk.collect.android.tasks.SaveFormToDisk;
+import org.samarthya.collect.android.application.Collect;
+import org.samarthya.collect.android.javarosawrapper.FormController;
+import org.samarthya.collect.android.storage.StoragePathProvider;
+import org.samarthya.collect.android.storage.StorageSubdirectory;
+import org.samarthya.collect.android.tasks.SaveFormIndexTask;
+import org.samarthya.collect.android.tasks.SaveFormToDisk;
 
 import java.io.File;
 

@@ -1,4 +1,4 @@
-package org.odk.collect.android
+package org.samarthya.collect.android
 
 import androidx.test.espresso.intent.Intents
 import org.junit.rules.TestRule

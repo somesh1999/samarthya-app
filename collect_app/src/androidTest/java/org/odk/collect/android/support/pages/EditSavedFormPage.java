@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.odk.collect.android.support.pages;
+package org.samarthya.collect.android.support.pages;
 
 import android.widget.RelativeLayout;
 
 import androidx.appcompat.widget.Toolbar;
 
-import org.odk.collect.android.R;
-import org.odk.collect.android.adapters.InstanceListCursorAdapter;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.adapters.InstanceListCursorAdapter;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;

@@ -1,4 +1,4 @@
-package org.odk.collect.android.audio;
+package org.samarthya.collect.android.audio;
 
 import android.app.Application;
 import android.view.View;
@@ -12,20 +12,20 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.analytics.Analytics;
-import org.odk.collect.android.R;
-import org.odk.collect.android.formentry.BackgroundAudioViewModel;
-import org.odk.collect.android.formentry.FormEntryViewModel;
-import org.odk.collect.android.injection.config.AppDependencyModule;
-import org.odk.collect.android.permissions.PermissionsChecker;
-import org.odk.collect.android.preferences.source.SettingsProvider;
-import org.odk.collect.android.support.CollectHelpers;
-import org.odk.collect.android.utilities.ExternalWebPageHelper;
-import org.odk.collect.audiorecorder.recorder.Output;
-import org.odk.collect.audiorecorder.recording.AudioRecorder;
-import org.odk.collect.audiorecorder.testsupport.StubAudioRecorder;
-import org.odk.collect.androidshared.livedata.MutableNonNullLiveData;
-import org.odk.collect.utilities.Clock;
+import org.samarthya.collect.analytics.Analytics;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.formentry.BackgroundAudioViewModel;
+import org.samarthya.collect.android.formentry.FormEntryViewModel;
+import org.samarthya.collect.android.injection.config.AppDependencyModule;
+import org.samarthya.collect.android.permissions.PermissionsChecker;
+import org.samarthya.collect.android.preferences.source.SettingsProvider;
+import org.samarthya.collect.android.support.CollectHelpers;
+import org.samarthya.collect.android.utilities.ExternalWebPageHelper;
+import org.samarthya.collect.audiorecorder.recorder.Output;
+import org.samarthya.collect.audiorecorder.recording.AudioRecorder;
+import org.samarthya.collect.audiorecorder.testsupport.StubAudioRecorder;
+import org.samarthya.collect.androidshared.livedata.MutableNonNullLiveData;
+import org.samarthya.collect.utilities.Clock;
 import org.robolectric.annotation.Config;
 
 import java.io.File;
@@ -37,7 +37,7 @@ import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.notNullValue;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import static org.odk.collect.testshared.RobolectricHelpers.getFragmentByClass;
+import static org.samarthya.collect.testshared.RobolectricHelpers.getFragmentByClass;
 import static org.robolectric.Shadows.shadowOf;
 
 @RunWith(AndroidJUnit4.class)

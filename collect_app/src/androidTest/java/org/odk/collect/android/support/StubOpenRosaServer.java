@@ -1,4 +1,4 @@
-package org.odk.collect.android.support;
+package org.samarthya.collect.android.support;
 
 import android.content.res.AssetManager;
 
@@ -7,14 +7,14 @@ import androidx.annotation.Nullable;
 import androidx.test.platform.app.InstrumentationRegistry;
 
 import org.jetbrains.annotations.NotNull;
-import org.odk.collect.android.openrosa.CaseInsensitiveEmptyHeaders;
-import org.odk.collect.android.openrosa.CaseInsensitiveHeaders;
-import org.odk.collect.android.openrosa.HttpCredentialsInterface;
-import org.odk.collect.android.openrosa.HttpGetResult;
-import org.odk.collect.android.openrosa.HttpHeadResult;
-import org.odk.collect.android.openrosa.HttpPostResult;
-import org.odk.collect.android.openrosa.OpenRosaHttpInterface;
-import org.odk.collect.shared.strings.Md5;
+import org.samarthya.collect.android.openrosa.CaseInsensitiveEmptyHeaders;
+import org.samarthya.collect.android.openrosa.CaseInsensitiveHeaders;
+import org.samarthya.collect.android.openrosa.HttpCredentialsInterface;
+import org.samarthya.collect.android.openrosa.HttpGetResult;
+import org.samarthya.collect.android.openrosa.HttpHeadResult;
+import org.samarthya.collect.android.openrosa.HttpPostResult;
+import org.samarthya.collect.android.openrosa.OpenRosaHttpInterface;
+import org.samarthya.collect.shared.strings.Md5;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;

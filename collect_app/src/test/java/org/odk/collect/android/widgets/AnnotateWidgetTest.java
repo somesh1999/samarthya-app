@@ -1,4 +1,4 @@
-package org.odk.collect.android.widgets;
+package org.samarthya.collect.android.widgets;
 
 import android.content.Intent;
 import android.graphics.drawable.BitmapDrawable;
@@ -16,15 +16,15 @@ import org.javarosa.core.model.data.StringData;
 import org.jetbrains.annotations.NotNull;
 import org.junit.Test;
 import org.mockito.Mock;
-import org.odk.collect.android.R;
-import org.odk.collect.android.activities.DrawActivity;
-import org.odk.collect.android.formentry.questions.QuestionDetails;
-import org.odk.collect.android.support.MockFormEntryPromptBuilder;
-import org.odk.collect.android.utilities.QuestionMediaManager;
-import org.odk.collect.android.widgets.base.FileWidgetTest;
-import org.odk.collect.android.widgets.support.FakeQuestionMediaManager;
-import org.odk.collect.android.widgets.support.FakeWaitingForDataRegistry;
-import org.odk.collect.shared.TempFiles;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.activities.DrawActivity;
+import org.samarthya.collect.android.formentry.questions.QuestionDetails;
+import org.samarthya.collect.android.support.MockFormEntryPromptBuilder;
+import org.samarthya.collect.android.utilities.QuestionMediaManager;
+import org.samarthya.collect.android.widgets.base.FileWidgetTest;
+import org.samarthya.collect.android.widgets.support.FakeQuestionMediaManager;
+import org.samarthya.collect.android.widgets.support.FakeWaitingForDataRegistry;
+import org.samarthya.collect.shared.TempFiles;
 
 import java.io.File;
 
@@ -34,8 +34,8 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.notNullValue;
 import static org.mockito.Mockito.when;
-import static org.odk.collect.android.support.CollectHelpers.overrideReferenceManager;
-import static org.odk.collect.android.support.CollectHelpers.setupFakeReferenceManager;
+import static org.samarthya.collect.android.support.CollectHelpers.overrideReferenceManager;
+import static org.samarthya.collect.android.support.CollectHelpers.setupFakeReferenceManager;
 import static org.robolectric.Shadows.shadowOf;
 
 /**

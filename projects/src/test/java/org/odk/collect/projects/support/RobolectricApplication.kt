@@ -1,9 +1,9 @@
-package org.odk.collect.projects.support
+package org.samarthya.collect.projects.support
 
 import android.app.Application
-import org.odk.collect.projects.DaggerProjectsDependencyComponent
-import org.odk.collect.projects.ProjectsDependencyComponent
-import org.odk.collect.projects.ProjectsDependencyComponentProvider
+import org.samarthya.collect.projects.DaggerProjectsDependencyComponent
+import org.samarthya.collect.projects.ProjectsDependencyComponent
+import org.samarthya.collect.projects.ProjectsDependencyComponentProvider
 
 class RobolectricApplication : Application(), ProjectsDependencyComponentProvider {
 

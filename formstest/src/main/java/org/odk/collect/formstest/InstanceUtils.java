@@ -1,7 +1,7 @@
-package org.odk.collect.formstest;
+package org.samarthya.collect.formstest;
 
-import org.odk.collect.forms.instances.Instance;
-import org.odk.collect.shared.TempFiles;
+import org.samarthya.collect.forms.instances.Instance;
+import org.samarthya.collect.shared.TempFiles;
 
 import java.io.File;
 

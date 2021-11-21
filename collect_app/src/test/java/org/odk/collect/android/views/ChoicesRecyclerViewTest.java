@@ -1,4 +1,4 @@
-package org.odk.collect.android.views;
+package org.samarthya.collect.android.views;
 
 import android.app.Activity;
 import android.view.View;
@@ -24,19 +24,19 @@ import org.javarosa.form.api.FormEntryPrompt;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.R;
-import org.odk.collect.android.adapters.AbstractSelectListAdapter;
-import org.odk.collect.android.adapters.SelectMultipleListAdapter;
-import org.odk.collect.android.adapters.SelectOneListAdapter;
-import org.odk.collect.android.audio.AudioButton;
-import org.odk.collect.android.audio.AudioHelper;
-import org.odk.collect.android.formentry.questions.AudioVideoImageTextLabel;
-import org.odk.collect.android.listeners.SelectItemClickListener;
-import org.odk.collect.android.support.CollectHelpers;
-import org.odk.collect.android.support.MockFormEntryPromptBuilder;
-import org.odk.collect.android.support.TestScreenContextActivity;
-import org.odk.collect.android.utilities.Appearances;
-import org.odk.collect.testshared.RobolectricHelpers;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.adapters.AbstractSelectListAdapter;
+import org.samarthya.collect.android.adapters.SelectMultipleListAdapter;
+import org.samarthya.collect.android.adapters.SelectOneListAdapter;
+import org.samarthya.collect.android.audio.AudioButton;
+import org.samarthya.collect.android.audio.AudioHelper;
+import org.samarthya.collect.android.formentry.questions.AudioVideoImageTextLabel;
+import org.samarthya.collect.android.listeners.SelectItemClickListener;
+import org.samarthya.collect.android.support.CollectHelpers;
+import org.samarthya.collect.android.support.MockFormEntryPromptBuilder;
+import org.samarthya.collect.android.support.TestScreenContextActivity;
+import org.samarthya.collect.android.utilities.Appearances;
+import org.samarthya.collect.testshared.RobolectricHelpers;
 import org.robolectric.android.controller.ActivityController;
 
 import java.io.File;
@@ -54,7 +54,7 @@ import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
-import static org.odk.collect.testshared.RobolectricHelpers.populateRecyclerView;
+import static org.samarthya.collect.testshared.RobolectricHelpers.populateRecyclerView;
 
 @RunWith(AndroidJUnit4.class)
 public class ChoicesRecyclerViewTest {

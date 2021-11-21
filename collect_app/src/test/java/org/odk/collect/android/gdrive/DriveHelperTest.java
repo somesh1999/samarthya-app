@@ -1,4 +1,4 @@
-package org.odk.collect.android.gdrive;
+package org.samarthya.collect.android.gdrive;
 
 import com.google.api.services.drive.Drive;
 import com.google.api.services.drive.model.File;
@@ -9,7 +9,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentMatchers;
 import org.mockito.Mock;
-import org.odk.collect.android.gdrive.sheets.DriveHelper;
+import org.samarthya.collect.android.gdrive.sheets.DriveHelper;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 

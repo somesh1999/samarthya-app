@@ -1,4 +1,4 @@
-package org.odk.collect.location;
+package org.samarthya.collect.location;
 
 import android.location.Location;
 

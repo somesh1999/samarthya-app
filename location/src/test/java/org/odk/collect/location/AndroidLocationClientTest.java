@@ -1,4 +1,4 @@
-package org.odk.collect.location;
+package org.samarthya.collect.location;
 
 import android.location.Location;
 import android.location.LocationManager;
@@ -24,11 +24,11 @@ import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import static org.odk.collect.location.LocationClient.Priority.PRIORITY_BALANCED_POWER_ACCURACY;
-import static org.odk.collect.location.LocationClient.Priority.PRIORITY_HIGH_ACCURACY;
-import static org.odk.collect.location.LocationClient.Priority.PRIORITY_LOW_POWER;
-import static org.odk.collect.location.LocationClient.Priority.PRIORITY_NO_POWER;
-import static org.odk.collect.testshared.LocationTestUtils.createLocation;
+import static org.samarthya.collect.location.LocationClient.Priority.PRIORITY_BALANCED_POWER_ACCURACY;
+import static org.samarthya.collect.location.LocationClient.Priority.PRIORITY_HIGH_ACCURACY;
+import static org.samarthya.collect.location.LocationClient.Priority.PRIORITY_LOW_POWER;
+import static org.samarthya.collect.location.LocationClient.Priority.PRIORITY_NO_POWER;
+import static org.samarthya.collect.testshared.LocationTestUtils.createLocation;
 
 @RunWith(AndroidJUnit4.class)
 public class AndroidLocationClientTest {

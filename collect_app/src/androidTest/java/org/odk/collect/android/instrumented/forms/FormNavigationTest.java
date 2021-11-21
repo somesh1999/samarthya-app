@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.odk.collect.android.instrumented.forms;
+package org.samarthya.collect.android.instrumented.forms;
 
 import android.app.Application;
 
@@ -27,17 +27,17 @@ import org.junit.rules.RuleChain;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
-import org.odk.collect.android.injection.DaggerUtils;
-import org.odk.collect.android.injection.config.AppDependencyComponent;
-import org.odk.collect.android.javarosawrapper.FormController;
-import org.odk.collect.android.listeners.FormLoaderListener;
-import org.odk.collect.android.storage.StoragePathProvider;
-import org.odk.collect.android.storage.StorageSubdirectory;
-import org.odk.collect.android.support.AdbFormLoadingUtils;
-import org.odk.collect.android.support.ResetStateRule;
-import org.odk.collect.android.support.RunnableRule;
-import org.odk.collect.android.tasks.FormLoaderTask;
-import org.odk.collect.projects.Project;
+import org.samarthya.collect.android.injection.DaggerUtils;
+import org.samarthya.collect.android.injection.config.AppDependencyComponent;
+import org.samarthya.collect.android.javarosawrapper.FormController;
+import org.samarthya.collect.android.listeners.FormLoaderListener;
+import org.samarthya.collect.android.storage.StoragePathProvider;
+import org.samarthya.collect.android.storage.StorageSubdirectory;
+import org.samarthya.collect.android.support.AdbFormLoadingUtils;
+import org.samarthya.collect.android.support.ResetStateRule;
+import org.samarthya.collect.android.support.RunnableRule;
+import org.samarthya.collect.android.tasks.FormLoaderTask;
+import org.samarthya.collect.projects.Project;
 
 import java.io.File;
 import java.io.IOException;

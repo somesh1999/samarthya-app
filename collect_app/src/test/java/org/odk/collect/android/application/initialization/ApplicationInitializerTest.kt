@@ -1,4 +1,4 @@
-package org.odk.collect.android.application.initialization
+package org.samarthya.collect.android.application.initialization
 
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -8,8 +8,8 @@ import org.mockito.kotlin.doReturn
 import org.mockito.kotlin.mock
 import org.mockito.kotlin.never
 import org.mockito.kotlin.verify
-import org.odk.collect.android.application.initialization.upgrade.AppUpgrader
-import org.odk.collect.android.utilities.LaunchState
+import org.samarthya.collect.android.application.initialization.upgrade.AppUpgrader
+import org.samarthya.collect.android.utilities.LaunchState
 
 @RunWith(AndroidJUnit4::class)
 class ApplicationInitializerTest {

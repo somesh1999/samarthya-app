@@ -1,4 +1,4 @@
-package org.odk.collect.android.widgets.utilities;
+package org.samarthya.collect.android.widgets.utilities;
 
 import android.content.ComponentName;
 import android.content.Intent;
@@ -12,13 +12,13 @@ import org.javarosa.form.api.FormEntryPrompt;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.activities.GeoPointActivity;
-import org.odk.collect.android.activities.GeoPointMapActivity;
-import org.odk.collect.android.activities.GeoPolyActivity;
-import org.odk.collect.android.fakes.FakePermissionsProvider;
-import org.odk.collect.android.support.TestScreenContextActivity;
-import org.odk.collect.android.utilities.Appearances;
-import org.odk.collect.android.widgets.support.FakeWaitingForDataRegistry;
+import org.samarthya.collect.android.activities.GeoPointActivity;
+import org.samarthya.collect.android.activities.GeoPointMapActivity;
+import org.samarthya.collect.android.activities.GeoPolyActivity;
+import org.samarthya.collect.android.fakes.FakePermissionsProvider;
+import org.samarthya.collect.android.support.TestScreenContextActivity;
+import org.samarthya.collect.android.utilities.Appearances;
+import org.samarthya.collect.android.widgets.support.FakeWaitingForDataRegistry;
 import org.robolectric.shadows.ShadowActivity;
 
 import static junit.framework.TestCase.assertEquals;
@@ -26,15 +26,15 @@ import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertNull;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import static org.odk.collect.android.utilities.ApplicationConstants.RequestCodes.GEOSHAPE_CAPTURE;
-import static org.odk.collect.android.utilities.ApplicationConstants.RequestCodes.GEOTRACE_CAPTURE;
-import static org.odk.collect.android.utilities.ApplicationConstants.RequestCodes.LOCATION_CAPTURE;
-import static org.odk.collect.android.widgets.support.GeoWidgetHelpers.assertGeoPointBundleArgumentEquals;
-import static org.odk.collect.android.widgets.support.GeoWidgetHelpers.assertGeoPolyBundleArgumentEquals;
-import static org.odk.collect.android.widgets.support.GeoWidgetHelpers.getRandomDoubleArray;
-import static org.odk.collect.android.widgets.support.QuestionWidgetHelpers.promptWithAnswer;
-import static org.odk.collect.android.widgets.support.QuestionWidgetHelpers.widgetTestActivity;
-import static org.odk.collect.android.widgets.utilities.ActivityGeoDataRequester.ACCURACY_THRESHOLD;
+import static org.samarthya.collect.android.utilities.ApplicationConstants.RequestCodes.GEOSHAPE_CAPTURE;
+import static org.samarthya.collect.android.utilities.ApplicationConstants.RequestCodes.GEOTRACE_CAPTURE;
+import static org.samarthya.collect.android.utilities.ApplicationConstants.RequestCodes.LOCATION_CAPTURE;
+import static org.samarthya.collect.android.widgets.support.GeoWidgetHelpers.assertGeoPointBundleArgumentEquals;
+import static org.samarthya.collect.android.widgets.support.GeoWidgetHelpers.assertGeoPolyBundleArgumentEquals;
+import static org.samarthya.collect.android.widgets.support.GeoWidgetHelpers.getRandomDoubleArray;
+import static org.samarthya.collect.android.widgets.support.QuestionWidgetHelpers.promptWithAnswer;
+import static org.samarthya.collect.android.widgets.support.QuestionWidgetHelpers.widgetTestActivity;
+import static org.samarthya.collect.android.widgets.utilities.ActivityGeoDataRequester.ACCURACY_THRESHOLD;
 import static org.robolectric.Shadows.shadowOf;
 
 @RunWith(AndroidJUnit4.class)

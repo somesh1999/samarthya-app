@@ -1,11 +1,11 @@
-package org.odk.collect.android.application;
+package org.samarthya.collect.android.application;
 
 import androidx.test.core.app.ApplicationProvider;
 import androidx.work.Configuration;
 import androidx.work.WorkManager;
 
-import org.odk.collect.android.database.DatabaseConnection;
-import org.odk.collect.android.utilities.MultiClickGuard;
+import org.samarthya.collect.android.database.DatabaseConnection;
+import org.samarthya.collect.android.utilities.MultiClickGuard;
 import org.robolectric.shadows.ShadowApplication;
 import org.robolectric.shadows.ShadowEnvironment;
 

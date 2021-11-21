@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.odk.collect.android.instrumented.utilities;
+package org.samarthya.collect.android.instrumented.utilities;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -25,8 +25,8 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.RuleChain;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.support.RunnableRule;
-import org.odk.collect.android.utilities.CustomSQLiteQueryExecutor;
+import org.samarthya.collect.android.support.RunnableRule;
+import org.samarthya.collect.android.utilities.CustomSQLiteQueryExecutor;
 
 import java.io.File;
 import java.io.IOException;

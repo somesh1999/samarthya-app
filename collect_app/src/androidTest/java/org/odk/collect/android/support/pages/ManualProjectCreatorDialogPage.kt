@@ -1,4 +1,4 @@
-package org.odk.collect.android.support.pages
+package org.samarthya.collect.android.support.pages
 
 import android.accounts.AccountManager
 import android.app.Activity
@@ -10,7 +10,7 @@ import androidx.test.espresso.action.ViewActions.scrollTo
 import androidx.test.espresso.intent.Intents.intending
 import androidx.test.espresso.intent.matcher.IntentMatchers.hasAction
 import androidx.test.espresso.matcher.ViewMatchers.withText
-import org.odk.collect.android.R
+import org.samarthya.collect.android.R
 
 class ManualProjectCreatorDialogPage : Page<ManualProjectCreatorDialogPage>() {
     override fun assertOnPage(): ManualProjectCreatorDialogPage {

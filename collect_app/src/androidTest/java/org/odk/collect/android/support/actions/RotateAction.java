@@ -1,4 +1,4 @@
-package org.odk.collect.android.support.actions;
+package org.samarthya.collect.android.support.actions;
 
 import android.app.Activity;
 import android.app.Application;

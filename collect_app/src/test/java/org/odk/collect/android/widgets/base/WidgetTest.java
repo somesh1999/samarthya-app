@@ -1,4 +1,4 @@
-package org.odk.collect.android.widgets.base;
+package org.samarthya.collect.android.widgets.base;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
@@ -13,8 +13,8 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 
-import org.odk.collect.android.TestSettingsProvider;
-import org.odk.collect.android.preferences.source.SettingsProvider;
+import org.samarthya.collect.android.TestSettingsProvider;
+import org.samarthya.collect.android.preferences.source.SettingsProvider;
 
 import javax.annotation.OverridingMethodsMustInvokeSuper;
 

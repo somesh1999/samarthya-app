@@ -1,12 +1,12 @@
-package org.odk.collect.android.widgets.warnings;
+package org.samarthya.collect.android.widgets.warnings;
 
 import com.google.common.collect.Lists;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.odk.collect.android.widgets.warnings.SpacesInUnderlyingValuesWarning.UnderlyingValuesChecker;
-import org.odk.collect.android.widgets.warnings.SpacesInUnderlyingValuesWarning.WarningRenderer;
+import org.samarthya.collect.android.widgets.warnings.SpacesInUnderlyingValuesWarning.UnderlyingValuesChecker;
+import org.samarthya.collect.android.widgets.warnings.SpacesInUnderlyingValuesWarning.WarningRenderer;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.never;

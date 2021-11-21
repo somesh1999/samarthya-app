@@ -1,4 +1,4 @@
-package org.odk.collect.android.utilities;
+package org.samarthya.collect.android.utilities;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,8 +12,8 @@ import org.javarosa.xpath.parser.XPathSyntaxException;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.R;
-import org.odk.collect.android.exception.ExternalParamsException;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.exception.ExternalParamsException;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;

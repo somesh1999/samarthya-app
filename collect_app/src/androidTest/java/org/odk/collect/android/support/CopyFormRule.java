@@ -1,4 +1,4 @@
-package org.odk.collect.android.support;
+package org.samarthya.collect.android.support;
 
 import android.app.Application;
 
@@ -7,9 +7,9 @@ import androidx.test.core.app.ApplicationProvider;
 import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
-import org.odk.collect.android.injection.DaggerUtils;
-import org.odk.collect.android.injection.config.AppDependencyComponent;
-import org.odk.collect.projects.Project;
+import org.samarthya.collect.android.injection.DaggerUtils;
+import org.samarthya.collect.android.injection.config.AppDependencyComponent;
+import org.samarthya.collect.projects.Project;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package org.odk.collect.android.support.pages;
+package org.samarthya.collect.android.support.pages;
 
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
@@ -16,12 +16,12 @@ import androidx.test.runner.lifecycle.Stage;
 
 import junit.framework.AssertionFailedError;
 
-import org.odk.collect.android.R;
-import org.odk.collect.android.storage.StoragePathProvider;
-import org.odk.collect.android.support.AdbFormLoadingUtils;
-import org.odk.collect.android.support.actions.RotateAction;
-import org.odk.collect.android.support.matchers.RecyclerViewMatcher;
-import org.odk.collect.android.support.matchers.ToastMatcher;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.storage.StoragePathProvider;
+import org.samarthya.collect.android.support.AdbFormLoadingUtils;
+import org.samarthya.collect.android.support.actions.RotateAction;
+import org.samarthya.collect.android.support.matchers.RecyclerViewMatcher;
+import org.samarthya.collect.android.support.matchers.ToastMatcher;
 
 import java.io.File;
 import java.io.IOException;
@@ -58,9 +58,9 @@ import static org.hamcrest.core.StringContains.containsString;
 import static org.hamcrest.core.StringEndsWith.endsWith;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-import static org.odk.collect.android.support.CustomMatchers.withIndex;
-import static org.odk.collect.android.support.actions.NestedScrollToAction.nestedScrollTo;
-import static org.odk.collect.android.support.matchers.RecyclerViewMatcher.withRecyclerView;
+import static org.samarthya.collect.android.support.CustomMatchers.withIndex;
+import static org.samarthya.collect.android.support.actions.NestedScrollToAction.nestedScrollTo;
+import static org.samarthya.collect.android.support.matchers.RecyclerViewMatcher.withRecyclerView;
 
 /**
  * Base class for Page Objects used in Espresso tests. Provides shared helpers/setup.

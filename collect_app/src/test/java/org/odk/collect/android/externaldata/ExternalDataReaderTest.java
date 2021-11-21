@@ -1,4 +1,4 @@
-package org.odk.collect.android.externaldata;
+package org.samarthya.collect.android.externaldata;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -9,13 +9,13 @@ import org.apache.commons.io.IOUtils;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.storage.StoragePathProvider;
-import org.odk.collect.android.storage.StorageSubdirectory;
-import org.odk.collect.android.support.CollectHelpers;
-import org.odk.collect.android.utilities.CustomSQLiteQueryBuilder;
-import org.odk.collect.android.utilities.FileUtils;
-import org.odk.collect.android.utilities.SQLiteUtils;
-import org.odk.collect.shared.strings.Md5;
+import org.samarthya.collect.android.storage.StoragePathProvider;
+import org.samarthya.collect.android.storage.StorageSubdirectory;
+import org.samarthya.collect.android.support.CollectHelpers;
+import org.samarthya.collect.android.utilities.CustomSQLiteQueryBuilder;
+import org.samarthya.collect.android.utilities.FileUtils;
+import org.samarthya.collect.android.utilities.SQLiteUtils;
+import org.samarthya.collect.shared.strings.Md5;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -32,10 +32,10 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.odk.collect.android.externaldata.ExternalDataUtil.COLUMN_DATASET_FILENAME;
-import static org.odk.collect.android.externaldata.ExternalDataUtil.COLUMN_MD5_HASH;
-import static org.odk.collect.android.externaldata.ExternalDataUtil.EXTERNAL_DATA_TABLE_NAME;
-import static org.odk.collect.android.externaldata.ExternalDataUtil.EXTERNAL_METADATA_TABLE_NAME;
+import static org.samarthya.collect.android.externaldata.ExternalDataUtil.COLUMN_DATASET_FILENAME;
+import static org.samarthya.collect.android.externaldata.ExternalDataUtil.COLUMN_MD5_HASH;
+import static org.samarthya.collect.android.externaldata.ExternalDataUtil.EXTERNAL_DATA_TABLE_NAME;
+import static org.samarthya.collect.android.externaldata.ExternalDataUtil.EXTERNAL_METADATA_TABLE_NAME;
 
 @RunWith(AndroidJUnit4.class)
 public class ExternalDataReaderTest {

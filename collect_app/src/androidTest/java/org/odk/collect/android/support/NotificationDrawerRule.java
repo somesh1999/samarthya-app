@@ -1,9 +1,9 @@
-package org.odk.collect.android.support;
+package org.samarthya.collect.android.support;
 
 import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
-import org.odk.collect.android.support.pages.NotificationDrawer;
+import org.samarthya.collect.android.support.pages.NotificationDrawer;
 
 public class NotificationDrawerRule implements TestRule {
 

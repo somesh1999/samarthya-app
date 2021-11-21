@@ -1,4 +1,4 @@
-package org.odk.collect.android.feature.formentry;
+package org.samarthya.collect.android.feature.formentry;
 
 import android.Manifest;
 import android.app.Activity;
@@ -15,21 +15,21 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.RuleChain;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.R;
-import org.odk.collect.android.RecordedIntentsRule;
-import org.odk.collect.android.support.CollectTestRule;
-import org.odk.collect.android.support.RunnableRule;
-import org.odk.collect.android.support.TestDependencies;
-import org.odk.collect.android.support.TestRuleChain;
-import org.odk.collect.android.support.pages.MainMenuPage;
-import org.odk.collect.android.utilities.ActivityAvailability;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.RecordedIntentsRule;
+import org.samarthya.collect.android.support.CollectTestRule;
+import org.samarthya.collect.android.support.RunnableRule;
+import org.samarthya.collect.android.support.TestDependencies;
+import org.samarthya.collect.android.support.TestRuleChain;
+import org.samarthya.collect.android.support.pages.MainMenuPage;
+import org.samarthya.collect.android.utilities.ActivityAvailability;
 
 import java.io.File;
 import java.io.IOException;
 
 import static androidx.test.espresso.intent.Intents.intending;
 import static androidx.test.espresso.intent.matcher.IntentMatchers.hasAction;
-import static org.odk.collect.android.support.FileUtils.copyFileFromAssets;
+import static org.samarthya.collect.android.support.FileUtils.copyFileFromAssets;
 
 @RunWith(AndroidJUnit4.class)
 public class ExternalAudioRecordingTest {

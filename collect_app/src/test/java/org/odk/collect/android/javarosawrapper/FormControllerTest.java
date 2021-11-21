@@ -1,4 +1,4 @@
-package org.odk.collect.android.javarosawrapper;
+package org.samarthya.collect.android.javarosawrapper;
 
 import com.google.common.io.Files;
 

@@ -1,4 +1,4 @@
-package org.odk.collect.android.formentry;
+package org.samarthya.collect.android.formentry;
 
 import android.media.MediaPlayer;
 import android.view.View;
@@ -13,13 +13,13 @@ import org.javarosa.core.reference.ReferenceManager;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.R;
-import org.odk.collect.android.audio.AudioHelper;
-import org.odk.collect.android.formentry.questions.AudioVideoImageTextLabel;
-import org.odk.collect.android.logic.FileReference;
-import org.odk.collect.android.support.CollectHelpers;
-import org.odk.collect.android.support.TestScreenContextActivity;
-import org.odk.collect.async.Scheduler;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.audio.AudioHelper;
+import org.samarthya.collect.android.formentry.questions.AudioVideoImageTextLabel;
+import org.samarthya.collect.android.logic.FileReference;
+import org.samarthya.collect.android.support.CollectHelpers;
+import org.samarthya.collect.android.support.TestScreenContextActivity;
+import org.samarthya.collect.async.Scheduler;
 import org.robolectric.ParameterizedRobolectricTestRunner;
 
 import java.io.File;

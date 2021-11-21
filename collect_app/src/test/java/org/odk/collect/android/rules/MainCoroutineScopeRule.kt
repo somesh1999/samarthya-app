@@ -1,4 +1,4 @@
-package org.odk.collect.android.rules
+package org.samarthya.collect.android.rules
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi

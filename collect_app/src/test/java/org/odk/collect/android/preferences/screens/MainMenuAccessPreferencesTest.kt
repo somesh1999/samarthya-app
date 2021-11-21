@@ -1,4 +1,4 @@
-package org.odk.collect.android.preferences.screens
+package org.samarthya.collect.android.preferences.screens
 
 import android.content.Context
 import androidx.fragment.app.testing.FragmentScenario
@@ -10,12 +10,12 @@ import org.hamcrest.Matchers.`is`
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.odk.collect.android.TestSettingsProvider
-import org.odk.collect.android.preferences.FormUpdateMode
-import org.odk.collect.android.preferences.keys.ProjectKeys
-import org.odk.collect.android.preferences.keys.ProtectedProjectKeys
-import org.odk.collect.android.support.CollectHelpers
-import org.odk.collect.shared.Settings
+import org.samarthya.collect.android.TestSettingsProvider
+import org.samarthya.collect.android.preferences.FormUpdateMode
+import org.samarthya.collect.android.preferences.keys.ProjectKeys
+import org.samarthya.collect.android.preferences.keys.ProtectedProjectKeys
+import org.samarthya.collect.android.support.CollectHelpers
+import org.samarthya.collect.shared.Settings
 
 @RunWith(AndroidJUnit4::class)
 class MainMenuAccessPreferencesTest {

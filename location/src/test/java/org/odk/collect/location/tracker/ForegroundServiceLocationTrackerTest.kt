@@ -1,4 +1,4 @@
-package org.odk.collect.location.tracker
+package org.samarthya.collect.location.tracker
 
 import android.app.Application
 import androidx.test.core.app.ApplicationProvider
@@ -7,10 +7,10 @@ import com.google.android.gms.location.LocationListener
 import org.junit.After
 import org.junit.Before
 import org.junit.runner.RunWith
-import org.odk.collect.location.Location
-import org.odk.collect.location.LocationClient
-import org.odk.collect.location.LocationClientProvider
-import org.odk.collect.testshared.RobolectricHelpers
+import org.samarthya.collect.location.Location
+import org.samarthya.collect.location.LocationClient
+import org.samarthya.collect.location.LocationClientProvider
+import org.samarthya.collect.testshared.RobolectricHelpers
 
 @RunWith(AndroidJUnit4::class)
 class ForegroundServiceLocationTrackerTest : LocationTrackerTest() {

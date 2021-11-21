@@ -1,12 +1,12 @@
-package org.odk.collect.android.support.pages;
+package org.samarthya.collect.android.support.pages;
 
 import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.test.espresso.Espresso;
 
 import org.hamcrest.Matchers;
-import org.odk.collect.android.R;
-import org.odk.collect.android.support.ActivityHelpers;
-import org.odk.collect.android.utilities.FlingRegister;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.support.ActivityHelpers;
+import org.samarthya.collect.android.utilities.FlingRegister;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
@@ -24,7 +24,7 @@ import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.instanceOf;
 import static org.hamcrest.Matchers.not;
 import static org.hamcrest.core.StringEndsWith.endsWith;
-import static org.odk.collect.android.support.CustomMatchers.withIndex;
+import static org.samarthya.collect.android.support.CustomMatchers.withIndex;
 
 public class FormEntryPage extends Page<FormEntryPage> {
 

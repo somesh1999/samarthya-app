@@ -1,4 +1,4 @@
-package org.odk.collect.android.projects
+package org.samarthya.collect.android.projects
 
 import android.content.Context
 import androidx.lifecycle.MutableLiveData
@@ -23,19 +23,19 @@ import org.mockito.Mockito.`when`
 import org.mockito.Mockito.any
 import org.mockito.Mockito.verifyNoInteractions
 import org.mockito.kotlin.mock
-import org.odk.collect.android.R
-import org.odk.collect.android.activities.MainMenuActivity
-import org.odk.collect.android.configure.SettingsImporter
-import org.odk.collect.android.fakes.FakePermissionsProvider
-import org.odk.collect.android.injection.config.AppDependencyModule
-import org.odk.collect.android.permissions.PermissionsChecker
-import org.odk.collect.android.permissions.PermissionsProvider
-import org.odk.collect.android.storage.StoragePathProvider
-import org.odk.collect.android.support.CollectHelpers
-import org.odk.collect.android.utilities.CodeCaptureManagerFactory
-import org.odk.collect.android.views.BarcodeViewDecoder
-import org.odk.collect.projects.ProjectsRepository
-import org.odk.collect.testshared.RobolectricHelpers
+import org.samarthya.collect.android.R
+import org.samarthya.collect.android.activities.MainMenuActivity
+import org.samarthya.collect.android.configure.SettingsImporter
+import org.samarthya.collect.android.fakes.FakePermissionsProvider
+import org.samarthya.collect.android.injection.config.AppDependencyModule
+import org.samarthya.collect.android.permissions.PermissionsChecker
+import org.samarthya.collect.android.permissions.PermissionsProvider
+import org.samarthya.collect.android.storage.StoragePathProvider
+import org.samarthya.collect.android.support.CollectHelpers
+import org.samarthya.collect.android.utilities.CodeCaptureManagerFactory
+import org.samarthya.collect.android.views.BarcodeViewDecoder
+import org.samarthya.collect.projects.ProjectsRepository
+import org.samarthya.collect.testshared.RobolectricHelpers
 import org.robolectric.shadows.ShadowToast
 
 @RunWith(AndroidJUnit4::class)

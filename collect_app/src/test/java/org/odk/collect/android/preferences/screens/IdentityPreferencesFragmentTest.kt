@@ -1,4 +1,4 @@
-package org.odk.collect.android.preferences.screens
+package org.samarthya.collect.android.preferences.screens
 
 import androidx.fragment.app.testing.FragmentScenario
 import androidx.lifecycle.ViewModel
@@ -14,15 +14,15 @@ import org.junit.runner.RunWith
 import org.mockito.kotlin.doReturn
 import org.mockito.kotlin.mock
 import org.mockito.kotlin.whenever
-import org.odk.collect.android.TestSettingsProvider
-import org.odk.collect.android.injection.config.AppDependencyModule
-import org.odk.collect.android.preferences.ProjectPreferencesViewModel
-import org.odk.collect.android.preferences.keys.ProjectKeys
-import org.odk.collect.android.preferences.keys.ProtectedProjectKeys
-import org.odk.collect.android.support.CollectHelpers
-import org.odk.collect.android.utilities.AdminPasswordProvider
-import org.odk.collect.android.version.VersionInformation
-import org.odk.collect.shared.Settings
+import org.samarthya.collect.android.TestSettingsProvider
+import org.samarthya.collect.android.injection.config.AppDependencyModule
+import org.samarthya.collect.android.preferences.ProjectPreferencesViewModel
+import org.samarthya.collect.android.preferences.keys.ProjectKeys
+import org.samarthya.collect.android.preferences.keys.ProtectedProjectKeys
+import org.samarthya.collect.android.support.CollectHelpers
+import org.samarthya.collect.android.utilities.AdminPasswordProvider
+import org.samarthya.collect.android.version.VersionInformation
+import org.samarthya.collect.shared.Settings
 
 @RunWith(AndroidJUnit4::class)
 class IdentityPreferencesFragmentTest {

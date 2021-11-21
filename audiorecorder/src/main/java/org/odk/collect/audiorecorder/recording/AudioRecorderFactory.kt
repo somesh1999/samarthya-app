@@ -1,9 +1,9 @@
-package org.odk.collect.audiorecorder.recording
+package org.samarthya.collect.audiorecorder.recording
 
 import android.app.Application
-import org.odk.collect.audiorecorder.AudioRecorderDependencyComponentProvider
-import org.odk.collect.audiorecorder.recording.internal.ForegroundServiceAudioRecorder
-import org.odk.collect.audiorecorder.recording.internal.RecordingRepository
+import org.samarthya.collect.audiorecorder.AudioRecorderDependencyComponentProvider
+import org.samarthya.collect.audiorecorder.recording.internal.ForegroundServiceAudioRecorder
+import org.samarthya.collect.audiorecorder.recording.internal.RecordingRepository
 import javax.inject.Inject
 
 open class AudioRecorderFactory(private val application: Application) {

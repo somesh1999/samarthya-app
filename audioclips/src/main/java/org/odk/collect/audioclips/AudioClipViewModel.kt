@@ -1,4 +1,4 @@
-package org.odk.collect.audioclips
+package org.samarthya.collect.audioclips
 
 import android.media.MediaPlayer
 import androidx.lifecycle.LiveData
@@ -6,8 +6,8 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import org.odk.collect.async.Cancellable
-import org.odk.collect.async.Scheduler
+import org.samarthya.collect.async.Cancellable
+import org.samarthya.collect.async.Scheduler
 import java.io.File
 import java.io.IOException
 import java.util.LinkedList

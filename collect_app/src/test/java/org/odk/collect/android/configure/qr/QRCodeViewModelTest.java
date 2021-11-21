@@ -1,14 +1,14 @@
-package org.odk.collect.android.configure.qr;
+package org.samarthya.collect.android.configure.qr;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.R;
+import org.samarthya.collect.android.R;
 
-import org.odk.collect.android.TestSettingsProvider;
-import org.odk.collect.shared.Settings;
-import org.odk.collect.testshared.FakeScheduler;
+import org.samarthya.collect.android.TestSettingsProvider;
+import org.samarthya.collect.shared.Settings;
+import org.samarthya.collect.testshared.FakeScheduler;
 
 import static java.util.Arrays.asList;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -16,8 +16,8 @@ import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.nullValue;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
-import static org.odk.collect.android.preferences.keys.ProtectedProjectKeys.KEY_ADMIN_PW;
-import static org.odk.collect.android.preferences.keys.ProjectKeys.KEY_PASSWORD;
+import static org.samarthya.collect.android.preferences.keys.ProtectedProjectKeys.KEY_ADMIN_PW;
+import static org.samarthya.collect.android.preferences.keys.ProjectKeys.KEY_PASSWORD;
 
 @RunWith(AndroidJUnit4.class)
 public class QRCodeViewModelTest {

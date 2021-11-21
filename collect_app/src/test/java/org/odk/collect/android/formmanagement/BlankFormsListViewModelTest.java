@@ -1,4 +1,4 @@
-package org.odk.collect.android.formmanagement;
+package org.samarthya.collect.android.formmanagement;
 
 import android.app.Application;
 
@@ -12,16 +12,16 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.analytics.Analytics;
-import org.odk.collect.android.TestSettingsProvider;
-import org.odk.collect.android.formmanagement.matchexactly.SyncStatusAppState;
-import org.odk.collect.android.preferences.source.SettingsProvider;
-import org.odk.collect.android.projects.CurrentProjectProvider;
-import org.odk.collect.async.Scheduler;
-import org.odk.collect.forms.FormSourceException;
-import org.odk.collect.projects.Project;
-import org.odk.collect.testshared.FakeScheduler;
-import org.odk.collect.testshared.LiveDataTester;
+import org.samarthya.collect.analytics.Analytics;
+import org.samarthya.collect.android.TestSettingsProvider;
+import org.samarthya.collect.android.formmanagement.matchexactly.SyncStatusAppState;
+import org.samarthya.collect.android.preferences.source.SettingsProvider;
+import org.samarthya.collect.android.projects.CurrentProjectProvider;
+import org.samarthya.collect.async.Scheduler;
+import org.samarthya.collect.forms.FormSourceException;
+import org.samarthya.collect.projects.Project;
+import org.samarthya.collect.testshared.FakeScheduler;
+import org.samarthya.collect.testshared.LiveDataTester;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;

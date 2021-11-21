@@ -1,6 +1,6 @@
-package org.odk.collect.projects
+package org.samarthya.collect.projects
 
-import org.odk.collect.shared.strings.UUIDGenerator
+import org.samarthya.collect.shared.strings.UUIDGenerator
 import java.util.function.Supplier
 
 class InMemProjectsRepositoryTest : ProjectsRepositoryTest() {

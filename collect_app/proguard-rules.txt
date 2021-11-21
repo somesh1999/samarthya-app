@@ -7,7 +7,7 @@
 -dontwarn com.rarepebble.**
 
 -keep class org.javarosa.**
--keep class org.odk.collect.android.logic.actions.**
+-keep class org.samarthya.collect.android.logic.actions.**
 -keep class android.support.v7.widget.** { *; }
 -keep class org.mp4parser.boxes.** { *; }
 -keepclassmembers class * {

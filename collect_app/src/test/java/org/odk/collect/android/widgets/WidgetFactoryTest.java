@@ -1,4 +1,4 @@
-package org.odk.collect.android.widgets;
+package org.samarthya.collect.android.widgets;
 
 import android.app.Activity;
 
@@ -9,19 +9,19 @@ import org.javarosa.form.api.FormEntryPrompt;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.odk.collect.android.support.CollectHelpers;
-import org.odk.collect.android.support.MockFormEntryPromptBuilder;
-import org.odk.collect.android.support.TestScreenContextActivity;
-import org.odk.collect.android.widgets.items.LabelWidget;
-import org.odk.collect.android.widgets.items.LikertWidget;
-import org.odk.collect.android.widgets.items.ListMultiWidget;
-import org.odk.collect.android.widgets.items.ListWidget;
-import org.odk.collect.android.widgets.items.SelectMultiImageMapWidget;
-import org.odk.collect.android.widgets.items.SelectMultiMinimalWidget;
-import org.odk.collect.android.widgets.items.SelectMultiWidget;
-import org.odk.collect.android.widgets.items.SelectOneImageMapWidget;
-import org.odk.collect.android.widgets.items.SelectOneMinimalWidget;
-import org.odk.collect.android.widgets.items.SelectOneWidget;
+import org.samarthya.collect.android.support.CollectHelpers;
+import org.samarthya.collect.android.support.MockFormEntryPromptBuilder;
+import org.samarthya.collect.android.support.TestScreenContextActivity;
+import org.samarthya.collect.android.widgets.items.LabelWidget;
+import org.samarthya.collect.android.widgets.items.LikertWidget;
+import org.samarthya.collect.android.widgets.items.ListMultiWidget;
+import org.samarthya.collect.android.widgets.items.ListWidget;
+import org.samarthya.collect.android.widgets.items.SelectMultiImageMapWidget;
+import org.samarthya.collect.android.widgets.items.SelectMultiMinimalWidget;
+import org.samarthya.collect.android.widgets.items.SelectMultiWidget;
+import org.samarthya.collect.android.widgets.items.SelectOneImageMapWidget;
+import org.samarthya.collect.android.widgets.items.SelectOneMinimalWidget;
+import org.samarthya.collect.android.widgets.items.SelectOneWidget;
 
 import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.hamcrest.CoreMatchers.is;

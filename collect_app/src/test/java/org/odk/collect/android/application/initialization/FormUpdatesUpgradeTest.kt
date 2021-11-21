@@ -1,12 +1,12 @@
-package org.odk.collect.android.application.initialization
+package org.samarthya.collect.android.application.initialization
 
 import org.junit.Test
 import org.mockito.kotlin.mock
 import org.mockito.kotlin.verify
-import org.odk.collect.android.backgroundwork.FormUpdateScheduler
-import org.odk.collect.async.Scheduler
-import org.odk.collect.projects.InMemProjectsRepository
-import org.odk.collect.projects.Project
+import org.samarthya.collect.android.backgroundwork.FormUpdateScheduler
+import org.samarthya.collect.async.Scheduler
+import org.samarthya.collect.projects.InMemProjectsRepository
+import org.samarthya.collect.projects.Project
 
 class FormUpdatesUpgradeTest {
 

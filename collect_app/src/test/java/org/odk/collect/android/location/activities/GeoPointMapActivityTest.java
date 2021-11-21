@@ -1,4 +1,4 @@
-package org.odk.collect.android.location.activities;
+package org.samarthya.collect.android.location.activities;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
@@ -8,18 +8,18 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
-import org.odk.collect.android.R;
-import org.odk.collect.android.activities.FormEntryActivity;
-import org.odk.collect.android.activities.GeoPointMapActivity;
-import org.odk.collect.android.geo.MapPoint;
-import org.odk.collect.android.support.CollectHelpers;
+import org.samarthya.collect.android.R;
+import org.samarthya.collect.android.activities.FormEntryActivity;
+import org.samarthya.collect.android.activities.GeoPointMapActivity;
+import org.samarthya.collect.android.geo.MapPoint;
+import org.samarthya.collect.android.support.CollectHelpers;
 import org.robolectric.Robolectric;
 import org.robolectric.android.controller.ActivityController;
 
 import static android.app.Activity.RESULT_OK;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-import static org.odk.collect.testshared.LocationTestUtils.createLocation;
+import static org.samarthya.collect.testshared.LocationTestUtils.createLocation;
 import static org.robolectric.Shadows.shadowOf;
 
 @RunWith(AndroidJUnit4.class)
