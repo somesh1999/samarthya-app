@@ -8,8 +8,8 @@ android {
     defaultConfig {
         minSdkVersion rootProject.androidMinSdk
         targetSdkVersion rootProject.androidTargetSdk
-        versionCode 2
-        versionName "2.0"
+        versionCode 1070
+        versionName "1070.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
