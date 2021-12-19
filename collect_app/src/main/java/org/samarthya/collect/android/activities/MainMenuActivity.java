@@ -15,6 +15,7 @@
 package org.samarthya.collect.android.activities;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -26,6 +27,7 @@ import android.widget.TextView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.lifecycle.ViewModelProvider;
 
+import org.samarthya.collect.android.BuildConfig;
 import org.samarthya.collect.android.R;
 import org.samarthya.collect.android.activities.CollectAbstractActivity;
 import org.samarthya.collect.android.activities.DeleteSavedFormActivity;
@@ -49,6 +51,7 @@ import org.samarthya.collect.forms.instances.Instance;
 import javax.inject.Inject;
 
 import static org.samarthya.collect.android.utilities.DialogUtils.showIfNotShowing;
+import static org.samarthya.collect.android.utilities.ToastUtils.toast;
 
 import java.io.File;
 
@@ -104,6 +107,10 @@ public class MainMenuActivity extends CollectAbstractActivity {
             invalidateOptionsMenu();
             setTitle("  "+getString(R.string.collect_app_name)); // project.getName()
         });
+
+        /*int manager = this.packageManager val info = manager.getPackageInfo(this.getBaseContext(), PackageManager.GET_ACTIVITIES);
+        toast("PackageName = " + info.packageName + "\nVersionCode = " + info.versionCode + "\nVersionName = " + info.versionName + "\nPermissions = " + info.permissions);
+        BuildConfig.VERSION_CODE*/
 
         initToolbar();
 
