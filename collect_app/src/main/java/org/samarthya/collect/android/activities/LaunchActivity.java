@@ -15,12 +15,17 @@
 package org.samarthya.collect.android.activities;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
+import android.os.StrictMode;
+import android.util.Log;
 import android.util.SparseBooleanArray;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -39,11 +44,13 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.Toolbar;
 import androidx.lifecycle.ViewModelProvider;
 
+import org.apache.commons.io.IOUtils;
 import org.samarthya.collect.android.R;
 import org.samarthya.collect.android.activities.CollectAbstractActivity;
 import org.samarthya.collect.android.activities.MainMenuActivity;
@@ -65,6 +72,7 @@ import org.samarthya.collect.android.preferences.source.SettingsProvider;
 import org.samarthya.collect.android.projects.ProjectIconView;
 import org.samarthya.collect.android.projects.ProjectSettingsDialog;
 import org.samarthya.collect.android.storage.StorageInitializer;
+import org.samarthya.collect.android.storage.StorageSubdirectory;
 import org.samarthya.collect.android.tasks.DownloadFormListTask;
 import org.samarthya.collect.android.tasks.DownloadFormsTask;
 import org.samarthya.collect.android.utilities.ApplicationConstants;
@@ -81,12 +89,27 @@ import static org.samarthya.collect.android.utilities.DialogUtils.showIfNotShowi
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.URL;
+import java.net.URLConnection;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+
+import timber.log.Timber;
 
 /**
  * Responsible for displaying buttons to launch the major activities. Launches
@@ -95,7 +118,8 @@ import java.util.Set;
  * @author Carl Hartung (carlhartung@gmail.com)
  * @author Yaw Anokwa (yanokwa@gmail.com)
  */
-public class LaunchActivity extends CollectAbstractActivity implements FormListDownloaderListener, DownloadFormsTaskListener{
+public class LaunchActivity extends CollectAbstractActivity implements FormListDownloaderListener, DownloadFormsTaskListener {
+    private static final String BASE_DOWNLOAD_URL = "https://samarthyaodisha.in/app_form/";
     // buttons
     private Button sendDataButton;
     private Button reviewDataButton;
@@ -170,7 +194,7 @@ public class LaunchActivity extends CollectAbstractActivity implements FormListD
         currentProjectViewModel = new ViewModelProvider(this, currentProjectViewModelFactory).get(CurrentProjectViewModel.class);
         currentProjectViewModel.getCurrentProject().observe(this, project -> {
             invalidateOptionsMenu();
-            setTitle("  "+getString(R.string.collect_app_name)); // project.getName()
+            setTitle("  " + getString(R.string.collect_app_name)); // project.getName()
 
         });
 
@@ -188,12 +212,13 @@ public class LaunchActivity extends CollectAbstractActivity implements FormListD
                 /*Intent i = new Intent(getApplicationContext(),
                         MainMenuActivity.class);
                 startActivity(i);*/
-                downloadedForms.clear();
+                /*downloadedForms.clear();
                 for(int i=1001; i<=1100; i++){
                     downloadedForms.add("snapshot_xml"+i);
-                }
+                }*/
                 formFormat = "Teacher";
-                downloadFormList();
+                downloadFormFromSamarthyaServer(BASE_DOWNLOAD_URL + "teacher.xml");
+                //downloadFormList();
             }
         });
 
@@ -207,11 +232,12 @@ public class LaunchActivity extends CollectAbstractActivity implements FormListD
                 i.putExtra(ApplicationConstants.BundleKeys.FORM_MODE,
                         ApplicationConstants.FormModes.EDIT_SAVED);
                 startActivity(i);*/
-                for(int i=1101; i<=1200; i++){
+                /*for(int i=1101; i<=1200; i++){
                     downloadedForms.add("snapshot_xml"+i);
-                }
+                }*/
                 formFormat = "School";
-                downloadFormList();
+                downloadFormFromSamarthyaServer(BASE_DOWNLOAD_URL + "school_head.xml");
+                //downloadFormList();
             }
         });
 
@@ -224,14 +250,14 @@ public class LaunchActivity extends CollectAbstractActivity implements FormListD
                /* Intent i = new Intent(getApplicationContext(),
                         MainMenuActivity.class);
                 startActivity(i);*/
-                for(int i=1201; i<=1300; i++){
+                /*for(int i=1201; i<=1300; i++){
                     downloadedForms.add("snapshot_xml"+i);
-                }
+                }*/
                 formFormat = "Monitoring";
-                downloadFormList();
+                downloadFormFromSamarthyaServer(BASE_DOWNLOAD_URL + "monitoring.xml");
+                //downloadFormList();
             }
         });
-
 
 
         TextView appName = findViewById(R.id.app_name);
@@ -317,19 +343,18 @@ public class LaunchActivity extends CollectAbstractActivity implements FormListD
                 popupWindow.dismiss();
             }
         });
-        WebView webView = (WebView)popupView.findViewById(R.id.webview);
+        WebView webView = (WebView) popupView.findViewById(R.id.webview);
         webView.getSettings().setJavaScriptEnabled(true);
         final AlertDialog alertDialog = new AlertDialog.Builder(this).create();
         ProgressDialog progressBar = ProgressDialog.show(LaunchActivity.this, "User Guide", "Loading...");
         webView.loadUrl("https://drive.google.com/file/d/1czLt_JKLmmQpa_2IYYYjemhI0MwupHzx/view?usp=sharing");
-        webView.setWebViewClient(new WebViewClient()
-        {
+        webView.setWebViewClient(new WebViewClient() {
             @Override
-            public boolean shouldOverrideUrlLoading(WebView view, String url)
-            {
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 view.loadUrl(url);
                 return true;
             }
+
             public void onPageFinished(WebView view, String url) {
                 if (progressBar.isShowing()) {
                     progressBar.dismiss();
@@ -346,6 +371,28 @@ public class LaunchActivity extends CollectAbstractActivity implements FormListD
         });
     }
 
+    private void downloadFormFromSamarthyaServer(String url) {
+        String path = DaggerUtils.getComponent(Collect.getInstance()).storagePathProvider().getOdkDirPath(StorageSubdirectory.FORMS);
+        File downloadPath = new File(path);
+        if (!connectivityProvider.isDeviceOnline()) {
+            viewModel.setDownloadOnlyMode(true);
+            if (viewModel.isDownloadOnlyMode()) {
+                Intent i = new Intent(getBaseContext(), MainMenuActivity.class);
+                i.putExtra("formFormat", formFormat);
+                startActivity(i);
+            }
+        }else {
+            String existingFile = path + "/" + url.substring(url.lastIndexOf("/")+1);
+            if(new File(existingFile).exists()){
+                Intent i = new Intent(getBaseContext(), MainMenuActivity.class);
+                i.putExtra("formFormat", formFormat);
+                startActivity(i);
+            }else {
+                new DownloadFileFromURL().execute(url, downloadPath.getAbsolutePath());
+            }
+        }
+    }
+
     private void downloadFormList() {
         boolean isFormPresent = false;
         if (!connectivityProvider.isDeviceOnline()) {
@@ -356,13 +403,13 @@ public class LaunchActivity extends CollectAbstractActivity implements FormListD
             }
         } else {
             BlankFormsListViewModel blankFormsListViewModel = new ViewModelProvider(this, blankFormsListViewModelFactory).get(BlankFormsListViewModel.class);
-            for(int i=0; i<blankFormsListViewModel.getForms().size(); i++){
-                if(blankFormsListViewModel.getForms().get(i).getName().contains(formFormat)){
+            for (int i = 0; i < blankFormsListViewModel.getForms().size(); i++) {
+                if (blankFormsListViewModel.getForms().get(i).getName().contains(formFormat)) {
                     isFormPresent = true;
                     break;
                 }
             }
-            if(!isFormPresent) { // condition of form exits
+            if (!isFormPresent) { // condition of form exits
                 viewModel.clearFormDetailsByFormId();
                 DialogUtils.showIfNotShowing(RefreshFormListDialogFragment.class, getSupportFragmentManager());
                 if (downloadFormListTask != null
@@ -376,7 +423,7 @@ public class LaunchActivity extends CollectAbstractActivity implements FormListD
                 downloadFormListTask = new DownloadFormListTask(serverFormsDetailsFetcher);
                 downloadFormListTask.setDownloaderListener(this);
                 downloadFormListTask.execute();
-            }else{
+            } else {
                 Intent i = new Intent(getBaseContext(), MainMenuActivity.class);
                 i.putExtra("formFormat", formFormat);
                 startActivity(i);
@@ -411,14 +458,14 @@ public class LaunchActivity extends CollectAbstractActivity implements FormListD
             List<Integer> tempFormKey = new ArrayList<>();
             for (int i = 0; i < formList.size(); i++) {
                 String formDetailsKey = ids.get(i);
-                if(downloadedForms.contains(formDetailsKey)) {
+                if (downloadedForms.contains(formDetailsKey)) {
                     int tempFormVal = Integer.parseInt(formDetailsKey.split("xml")[1]);
                     tempFormKey.add(tempFormVal);
                     /*ArrayList<ServerFormDetails> filesToDownload = getFilesToDownload(formDetailsKey);
                     startFormsDownload(filesToDownload);*/
                 }
             }
-            ArrayList<ServerFormDetails> filesToDownload = getFilesToDownload("snapshot_xml"+ Collections.max(tempFormKey));
+            ArrayList<ServerFormDetails> filesToDownload = getFilesToDownload("snapshot_xml" + Collections.max(tempFormKey));
             startFormsDownload(filesToDownload);
         }
     }
@@ -540,5 +587,74 @@ public class LaunchActivity extends CollectAbstractActivity implements FormListD
         }
 
         return b.toString().trim();
+    }
+
+
+    class DownloadFileFromURL extends AsyncTask<String, String, String> {
+        ProgressDialog asyncDialog = new ProgressDialog(LaunchActivity.this);
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            asyncDialog.setMessage("Downloading "+formFormat+ " form");
+            asyncDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+            asyncDialog.setProgress(0);
+            asyncDialog.setMax(100);
+            asyncDialog.show();
+        }
+
+        @Override
+        protected String doInBackground(String... f_url) {
+            int count;
+            try {
+                File folder = new File(f_url[1]);
+                boolean success = true;
+                if (!folder.exists()) {
+                    success = folder.mkdir();
+                }
+                if (success) {
+                    Timber.d("Directory created");
+                } else {
+                    Timber.d("Failed to create directory");
+                }
+                URL url = new URL(f_url[0]);
+                URLConnection conection = url.openConnection();
+                conection.connect();
+                int lenghtOfFile = conection.getContentLength();
+                InputStream input = new BufferedInputStream(url.openStream(), 8192);
+                OutputStream output = new FileOutputStream(new File(f_url[1], f_url[0].substring(f_url[0].lastIndexOf("/") + 1)));
+                byte data[] = new byte[1024];
+                long total = 0;
+                while ((count = input.read(data)) != -1) {
+                    total += count;
+                    //publishProgress("" + (int) ((total * 100) / lenghtOfFile));
+                    asyncDialog.incrementProgressBy(10);
+                    output.write(data, 0, count);
+                }
+                output.flush();
+                output.close();
+                input.close();
+
+            } catch (Exception e) {
+                Timber.e(e.getMessage(), e);
+            }
+
+            return null;
+        }
+
+        protected void onProgressUpdate(String... progress) {
+            // setting progress percentage
+            asyncDialog.setProgress(Integer.parseInt(progress[0]));
+        }
+
+
+        @Override
+        protected void onPostExecute(String file_url) {
+            asyncDialog.dismiss();
+            Intent i = new Intent(getBaseContext(), MainMenuActivity.class);
+            i.putExtra("formFormat", formFormat);
+            startActivity(i);
+        }
+
     }
 }

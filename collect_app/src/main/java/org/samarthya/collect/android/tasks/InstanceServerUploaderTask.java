@@ -27,6 +27,11 @@ import org.samarthya.collect.android.upload.UploadException;
 import org.samarthya.collect.android.utilities.TranslationHandler;
 import org.samarthya.collect.android.utilities.WebCredentialsUtils;
 
+import java.io.DataOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.HashMap;
 import java.util.List;
 
@@ -77,13 +82,31 @@ public class InstanceServerUploaderTask extends InstanceUploaderTask {
             publishProgress(i + 1, instancesToUpload.size());
 
             try {
-                String destinationUrl = uploader.getUrlToSubmitTo(instance, deviceId, completeDestinationUrl, null);
-                String customMessage = uploader.uploadOneSubmission(instance, destinationUrl);
+                //String destinationUrl = uploader.getUrlToSubmitTo(instance, deviceId, completeDestinationUrl, null);
+                /*String customMessage = uploader.uploadOneSubmission(instance, destinationUrl);
+                outcome.messagesByInstanceId.put(instance.getDbId().toString(),
+                        customMessage != null ? customMessage : TranslationHandler.getString(Collect.getInstance(), R.string.success));*/
+
+                /*analytics.logEvent(SUBMISSION, "HTTP", Collect.getFormIdentifierHash(instance.getFormId(), instance.getFormVersion()));*/
+
+                String destinationUrl = "";
+                if(instance.getDisplayName().contains("School")){
+                    destinationUrl = "https://samarthyaodisha.in/server/samarthya/uploadfilesfromappschool.php";
+                }else if(instance.getDisplayName().contains("Monitoring")){
+                    destinationUrl = "https://samarthyaodisha.in/server/samarthya/uploadfilesfromappmonitoring.php";
+                }else {
+                    destinationUrl = "https://samarthyaodisha.in/server/samarthya/uploadfilesfromappteacher.php";
+                }
+                String customMessage = uploader.uploadXmlForm(instance, destinationUrl);
                 outcome.messagesByInstanceId.put(instance.getDbId().toString(),
                         customMessage != null ? customMessage : TranslationHandler.getString(Collect.getInstance(), R.string.success));
-
                 analytics.logEvent(SUBMISSION, "HTTP", Collect.getFormIdentifierHash(instance.getFormId(), instance.getFormVersion()));
-            } catch (UploadAuthRequestedException e) {
+
+            }
+            catch (Exception e) {
+                outcome.messagesByInstanceId.put(instance.getDbId().toString(),
+                        e.getMessage());
+            }/*catch (UploadAuthRequestedException e) {
                 outcome.authRequestingServer = e.getAuthRequestingServer();
                 // Don't add the instance that caused an auth request to the map because we want to
                 // retry. Items present in the map are considered already attempted and won't be
@@ -91,7 +114,7 @@ public class InstanceServerUploaderTask extends InstanceUploaderTask {
             } catch (UploadException e) {
                 outcome.messagesByInstanceId.put(instance.getDbId().toString(),
                         e.getDisplayMessage());
-            }
+            }*/
         }
         
         return outcome;

@@ -14,6 +14,8 @@
 
 package org.samarthya.collect.android.upload;
 
+import static org.samarthya.collect.android.analytics.AnalyticsEvents.SUBMISSION;
+
 import android.net.Uri;
 
 import androidx.annotation.NonNull;
@@ -30,14 +32,21 @@ import org.samarthya.collect.android.upload.InstanceUploader;
 import org.samarthya.collect.android.upload.UploadAuthRequestedException;
 import org.samarthya.collect.android.upload.UploadException;
 import org.samarthya.collect.android.utilities.ResponseMessageParser;
+import org.samarthya.collect.android.utilities.StringUtils;
 import org.samarthya.collect.android.utilities.TranslationHandler;
 import org.samarthya.collect.android.utilities.WebCredentialsUtils;
 import org.samarthya.collect.forms.instances.Instance;
 import org.samarthya.collect.shared.Settings;
 
+import java.io.BufferedReader;
+import java.io.DataOutputStream;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
+import java.net.HttpURLConnection;
 import java.net.URI;
+import java.net.URL;
 import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.util.ArrayList;
@@ -71,6 +80,150 @@ public class InstanceServerUploader extends InstanceUploader {
      * <p>
      * Returns a custom success message if one is provided by the server.
      */
+
+
+    public String uploadXmlForm(Instance instance, String destinationUrl){
+        String fileName = instance.getInstanceFilePath();
+        HttpURLConnection conn = null;
+        DataOutputStream dos = null;
+        String lineEnd = "\r\n";
+        String twoHyphens = "--";
+        String boundary = "*****";
+        int bytesRead, bytesAvailable, bufferSize;
+        byte[] buffer;
+        int maxBufferSize = 1 * 1024 * 1024;
+        String successMessage = "Failed to upload";
+        File sourceFile = new File(instance.getInstanceFilePath());
+        try {
+            FileInputStream fileInputStream = new FileInputStream(sourceFile);
+            URL url = new URL(destinationUrl);
+            conn = (HttpURLConnection) url.openConnection();
+            conn.setDoInput(true); // Allow Inputs
+            conn.setDoOutput(true); // Allow Outputs
+            conn.setUseCaches(false); // Don't use a Cached Copy
+            conn.setRequestMethod("POST");
+            conn.setRequestProperty("Connection", "Keep-Alive");
+            conn.setRequestProperty("ENCTYPE", "multipart/form-data");
+            conn.setRequestProperty("Content-Type", "multipart/form-data;boundary=" + boundary);
+            conn.setRequestProperty("uploaded_file", fileName);
+            dos = new DataOutputStream(conn.getOutputStream());
+            dos.writeBytes(twoHyphens + boundary + lineEnd);
+            dos.writeBytes("Content-Disposition: form-data; name=\"uploaded_file\";filename=\"" + fileName + "\"" + lineEnd);
+            dos.writeBytes(lineEnd);
+            bytesAvailable = fileInputStream.available();
+            bufferSize = Math.min(bytesAvailable, maxBufferSize);
+            buffer = new byte[bufferSize];
+            bytesRead = fileInputStream.read(buffer, 0, bufferSize);
+            while (bytesRead > 0) {
+                dos.write(buffer, 0, bufferSize);
+                bytesAvailable = fileInputStream.available();
+                bufferSize = Math.min(bytesAvailable, maxBufferSize);
+                bytesRead = fileInputStream.read(buffer, 0, bufferSize);
+            }
+            dos.writeBytes(lineEnd);
+            dos.writeBytes(twoHyphens + boundary + twoHyphens + lineEnd);
+            String customMessage = "";
+            String imageUploadStatus = "";
+            BufferedReader reader;
+            reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+            StringBuffer sb = new StringBuffer();
+            String str;
+            while((str = reader.readLine())!= null){
+                sb.append(str);
+            }
+            customMessage = sb.toString();
+            fileInputStream.close();
+            dos.flush();
+            dos.close();
+            if(!StringUtils.isBlank(customMessage) && !customMessage.equalsIgnoreCase("fail")) {
+                String[] imageList = customMessage.split("\\+");
+                for(int i=0; i<imageList.length; i++) {
+                    imageUploadStatus = uploadImage(instance, imageList[i]);
+                    if(imageUploadStatus.equalsIgnoreCase("fail")){
+                        break;
+                    }
+                }
+            }
+            if(!StringUtils.isBlank(imageUploadStatus) && imageUploadStatus.equalsIgnoreCase("success")) {
+                successMessage = "Uploaded successfully";
+                submissionComplete(instance, true);
+            }else if(!StringUtils.isBlank(imageUploadStatus) && imageUploadStatus.equalsIgnoreCase("fail")){
+                successMessage = "Failed to upload";
+                submissionComplete(instance, false);
+            }else{
+                successMessage = "Uploaded successfully";
+                submissionComplete(instance, true);
+            }
+        }catch(Exception ex){
+            submissionComplete(instance, false);
+            return "Failed to upload";
+        }
+        return successMessage;
+    }
+
+    public String uploadImage(Instance instance, String imageName){
+        System.out.println("Custom message:- "+imageName);
+        HttpURLConnection conn = null;
+        DataOutputStream dos = null;
+        String lineEnd = "\r\n";
+        String twoHyphens = "--";
+        String boundary = "*****";
+        int bytesRead, bytesAvailable, bufferSize;
+        byte[] buffer;
+        int maxBufferSize = 1 * 1024 * 1024;
+        String instanceFilePath = instance.getInstanceFilePath();
+        File directory = new File(instanceFilePath.substring(0,instanceFilePath.lastIndexOf(File.separatorChar)));
+        System.out.println("Path Dir:- " +directory.getAbsolutePath());
+        String contents[] = directory.list();
+        System.out.println("Path Content:- " + directory+File.separator+ imageName.split("_")[1]);
+        File sourceFile = new File(directory+File.separator+ imageName.split("_")[1]);
+        try {
+            FileInputStream fileInputStream = new FileInputStream(sourceFile);
+            URL url = new URL("https://samarthyaodisha.in/server/samarthya/uploadimagefromapp.php");
+            conn = (HttpURLConnection) url.openConnection();
+            conn.setDoInput(true); // Allow Inputs
+            conn.setDoOutput(true); // Allow Outputs
+            conn.setUseCaches(false); // Don't use a Cached Copy
+            conn.setRequestMethod("POST");
+            conn.setRequestProperty("Connection", "Keep-Alive");
+            conn.setRequestProperty("ENCTYPE", "multipart/form-data");
+            conn.setRequestProperty("Content-Type", "multipart/form-data;boundary=" + boundary);
+            conn.setRequestProperty("uploaded_file", imageName);
+            dos = new DataOutputStream(conn.getOutputStream());
+            dos.writeBytes(twoHyphens + boundary + lineEnd);
+            dos.writeBytes("Content-Disposition: form-data; name=\"uploaded_file\";filename=\"" + imageName + "\"" + lineEnd);
+            dos.writeBytes(lineEnd);
+            bytesAvailable = fileInputStream.available();
+            bufferSize = Math.min(bytesAvailable, maxBufferSize);
+            buffer = new byte[bufferSize];
+            bytesRead = fileInputStream.read(buffer, 0, bufferSize);
+            while (bytesRead > 0) {
+                dos.write(buffer, 0, bufferSize);
+                bytesAvailable = fileInputStream.available();
+                bufferSize = Math.min(bytesAvailable, maxBufferSize);
+                bytesRead = fileInputStream.read(buffer, 0, bufferSize);
+            }
+            dos.writeBytes(lineEnd);
+            dos.writeBytes(twoHyphens + boundary + twoHyphens + lineEnd);
+            String customMessage = "";
+            BufferedReader reader;
+            reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+            StringBuffer sb = new StringBuffer();
+            String str;
+            while ((str = reader.readLine()) != null) {
+                sb.append(str);
+            }
+            customMessage = sb.toString();
+            fileInputStream.close();
+            dos.flush();
+            dos.close();
+            return customMessage;
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            return "fail";
+        }
+    }
+
     @Override
     public String uploadOneSubmission(Instance instance, String urlString) throws org.samarthya.collect.android.upload.UploadException {
         Uri submissionUri = Uri.parse(urlString);

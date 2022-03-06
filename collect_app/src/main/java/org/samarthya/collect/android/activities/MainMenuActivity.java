@@ -36,6 +36,7 @@ import org.samarthya.collect.android.activities.InstanceChooserList;
 import org.samarthya.collect.android.activities.InstanceUploaderListActivity;
 import org.samarthya.collect.android.activities.viewmodels.CurrentProjectViewModel;
 import org.samarthya.collect.android.activities.viewmodels.MainMenuViewModel;
+import org.samarthya.collect.android.application.Collect;
 import org.samarthya.collect.android.database.instances.DatabaseInstancesRepository;
 import org.samarthya.collect.android.injection.DaggerUtils;
 import org.samarthya.collect.android.preferences.keys.MetaKeys;
@@ -43,6 +44,7 @@ import org.samarthya.collect.android.preferences.source.SettingsProvider;
 import org.samarthya.collect.android.projects.ProjectIconView;
 import org.samarthya.collect.android.projects.ProjectSettingsDialog;
 import org.samarthya.collect.android.storage.StorageInitializer;
+import org.samarthya.collect.android.storage.StorageSubdirectory;
 import org.samarthya.collect.android.utilities.ApplicationConstants;
 import org.samarthya.collect.android.utilities.MultiClickGuard;
 import org.samarthya.collect.forms.instances.Instance;
@@ -240,7 +242,7 @@ public class MainMenuActivity extends CollectAbstractActivity {
     }
 
     protected void updateEditAndSendForms(){
-        DatabaseInstancesRepository databaseInstancesRepository = new DatabaseInstancesRepository(this, android.os.Environment.getExternalStorageDirectory().getAbsolutePath()+"/Android/data/org.samarthya.collect.android/files/projects/DEMO/metadata", android.os.Environment.getExternalStorageDirectory().getAbsolutePath()+"/Android/data/org.samarthya.collect.android/files/projects/DEMO/instances", System::currentTimeMillis);
+        DatabaseInstancesRepository databaseInstancesRepository = new DatabaseInstancesRepository(this, DaggerUtils.getComponent(Collect.getInstance()).storagePathProvider().getOdkDirPath(StorageSubdirectory.METADATA), DaggerUtils.getComponent(Collect.getInstance()).storagePathProvider().getOdkDirPath(StorageSubdirectory.INSTANCES), System::currentTimeMillis);
         String[] status = new String[]{ "%"+formFormat+"%", Instance.STATUS_INCOMPLETE, Instance.STATUS_COMPLETE};
         int unsent = databaseInstancesRepository.countForms(status);
         if (unsent > 0) {
